@@ -2,6 +2,8 @@ package iuh.fit.se.entities;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -27,6 +29,10 @@ public class Product {
     @ElementCollection
     private List<String> images; // Danh sách URL của ảnh
 
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private List<OrderProduct> orderProducts;
+    
 	public Product() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -156,6 +162,14 @@ public class Product {
 		return "Product [id=" + id + ", name=" + name + ", oldPrice=" + oldPrice + ", newPrice=" + newPrice
 				+ ", description=" + description + ", size=" + size + ", color=" + color + ", quantity=" + quantity
 				+ ", isActive=" + isActive + ", category=" + category + ", images=" + images + "]";
+	}
+
+	public List<OrderProduct> getOrderProducts() {
+		return orderProducts;
+	}
+
+	public void setOrderProducts(List<OrderProduct> orderProducts) {
+		this.orderProducts = orderProducts;
 	}
     
     

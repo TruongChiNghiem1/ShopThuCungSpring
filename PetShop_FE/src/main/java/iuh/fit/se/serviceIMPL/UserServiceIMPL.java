@@ -1,5 +1,6 @@
 package iuh.fit.se.serviceIMPL;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 
 import org.springframework.http.MediaType;
@@ -50,31 +51,83 @@ public class UserServiceIMPL implements UserService {
 	}
 	
 	@Override
-	public APResponse loginUser(String username, String password) {
+	public APResponse loginUser(User user) {
 	    try {
 	       
-	        String url = UriComponentsBuilder.fromUriString(diaChi)
-	                .path("/login")
-	                .queryParam("username", username)
-	                .queryParam("password", password)
-	                .toUriString();
-
-	        // Gửi yêu cầu GET đến backend để đăng nhập
-	        return restClient.get()
-	                .uri(url)
-	                .accept(MediaType.APPLICATION_JSON)  // Chỉ định kiểu dữ liệu là JSON
+	
+	        return restClient.post()
+	                .uri(diaChi + "/login")  
+	                .accept(MediaType.APPLICATION_JSON)
+	                .body(user)
 	                .exchange((request, response) -> {
 	                    APResponse apResponse = null;
 	                    if (response.getBody().available() > 0) {
-	                        // Đọc dữ liệu từ phản hồi và chuyển thành đối tượng APResponse
+	                      
 	                        apResponse = objectMapper.readValue(response.getBody(), APResponse.class);
+	                        if (apResponse.getData() instanceof LinkedHashMap) {
+	                          
+	                            User loggedUser = objectMapper.convertValue(
+	                                    apResponse.getData(),
+	                                    new TypeReference<User>() {}
+	                            );
+
+	                          
+	                            apResponse.setData(loggedUser);
+	                        }
 	                    }
 	                    return apResponse;
 	                });
 	    } catch (RestClientException e) {
-	        // Xử lý lỗi và trả về thông báo lỗi
+	     
 	        return new APResponse(500, null, null, "Login failed: " + e.getMessage());
 	    }
 	}
+	
+	 @Override
+	    public APResponse updateUser(Long userId, User user) {
+	        try {
+	            
+	            return restClient.put()
+	                    .uri(diaChi + "/updateUser/{userId}",userId)  
+	                    .accept(MediaType.APPLICATION_JSON)
+	                    .body(user) 
+	                    .exchange((request, response) -> {
+	                        APResponse apResponse = null;
+	                        if (response.getBody().available() > 0) {
+	                           
+	                            apResponse = objectMapper.readValue(response.getBody(), APResponse.class);
+	                        }
+	                        return apResponse;
+	                    });
+	        } catch (RestClientException e) {
+	            
+	            return new APResponse(500, null, null, "Update failed: " + e.getMessage());
+	        }
+	    }
 
+	 @Override
+		public APResponse changePasswordUser(long id, String oldPassword, String newPassword, String confirmPassword) {
+			try {
+				// Tạo payload để gửi yêu cầu
+				LinkedHashMap<String, Object> payload = new LinkedHashMap<>();
+				payload.put("id", id);
+				payload.put("oldPassword", oldPassword);
+				payload.put("newPassword", newPassword);
+				payload.put("confirmPassword", confirmPassword);
+
+				// Gửi yêu cầu tới API backend
+				return restClient.post().uri(diaChi + "/change-password").accept(MediaType.APPLICATION_JSON).body(payload)
+						.exchange((request, response) -> {
+							APResponse apResponse = null;
+							if (response.getBody().available() > 0) {
+								apResponse = objectMapper.readValue(response.getBody(), APResponse.class);
+							}
+							return apResponse;
+						});
+			} catch (RestClientException e) {
+				return new APResponse(500, null, null, "Change password failed: " + e.getMessage());
+			} catch (Exception e) {
+				return new APResponse(500, null, null, "An error occurred: " + e.getMessage());
+			}
+		}
 }
