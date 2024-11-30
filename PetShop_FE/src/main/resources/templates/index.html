@@ -108,9 +108,13 @@
                    <a href="cart.html" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
                    <span class="header-info__cart-quantity">03</span>
             </div>
-            <div class="header-info__user">
-               <a href="/loginPage" class="header-info__link"><i class="far fa-user"></i></a>
-            </div>
+          <div class="header-info__user">
+    <!-- Hiển thị khi người dùng đã đăng nhập -->
+    <a href="/account" class="header-info__link" th:if="${loggedIn}"><i class="far fa-user"></i></a>
+    
+    <!-- Hiển thị khi người dùng chưa đăng nhập -->
+    <a href="/loginPage" class="header-info__link" th:unless="${loggedIn}"><i class="far fa-user"></i></a>
+</div>
          </div>
          <div class="header-categories d-block d-lg-none">
             <button class="header-category">

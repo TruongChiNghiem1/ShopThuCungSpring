@@ -1,6 +1,10 @@
 package iuh.fit.se.entities;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -18,16 +22,17 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name; // Tên đầy đủ
-    private String username; // Tên tài khoản
-    private String emailAddress; // Địa chỉ email
-    private String password; // Mật khẩu
+    private String name;
+    private String username;
+    private String emailAddress;
+   private String password; 
+   
+   	@Enumerated(EnumType.STRING)
+   private Role role; 
     
-    @Enumerated(EnumType.STRING)
-    private Role role; // Vai trò (CUSTOMER, ADMIN)
-    
-    @OneToMany(mappedBy = "user") // Mối quan hệ 1 user có nhiều order
-    private List<Order> orders;
+    @OneToMany(mappedBy = "user") 
+    @JsonIgnore
+    private Set<Order> orders;
 
     public Long getId() {
 		return id;
@@ -59,19 +64,19 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 	public Role getRole() {
 		return role;
 	}
 	public void setRole(Role role) {
 		this.role = role;
 	}
-	public List<Order> getOrders() {
+	public Set<Order> getOrders() {
 		return orders;
 	}
-	public void setOrders(List<Order> orders) {
+	public void setOrders(Set<Order> orders) {
 		this.orders = orders;
 	}
+	
 
   
 }
