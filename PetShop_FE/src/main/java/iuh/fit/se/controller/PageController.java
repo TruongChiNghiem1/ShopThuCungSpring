@@ -16,17 +16,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class ProductController {
-    @GetMapping("/products")
-    public String showList() {
-        return "product-category"; 
+public class PageController {
+    @GetMapping("/about")
+    public String showAbout() {
+        return "about"; 
     }
-    
-    @GetMapping("/products/{id}")
-    public String showFormEdit(@PathVariable int id, Model model) {
-    	model.addAttribute("productId", id);
-        return "product-two-details";
-    }
-
     
 }
