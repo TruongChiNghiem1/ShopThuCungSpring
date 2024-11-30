@@ -67,19 +67,19 @@
 							class="las la-angle-down"></i></span></a>
 				<ul class="category-dropdown-two">
 					<li class="category-dropdown-two__item">
-						<a href="product-category.html" class="category-dropdown-two__link">
+						<a href="/products" class="category-dropdown-two__link">
 							<span class="category-dropdown-two__thumb">
 								<img th:src="@{/assets/images/icons/dog01.png}" alt="">
 							</span> Category Dropdown One</a>
 					</li>
 					<li class="category-dropdown-two__item">
-						<a href="product-category.html" class="category-dropdown-two__link">
+						<a href="/products" class="category-dropdown-two__link">
 							<span class="category-dropdown-two__thumb">
 								<img th:src="@{/assets/images/icons/dog01.png}" alt="">
 							</span> Category Dropdown Two</a>
 					</li>
 					<li class="category-dropdown-two__item">
-						<a href="product-category.html" class="category-dropdown-two__link">
+						<a href="/products" class="category-dropdown-two__link">
 							<span class="category-dropdown-two__thumb">
 								<img th:src="@{/assets/images/icons/dog01.png}" alt="">
 							</span> Category Dropdown Three</a>
@@ -87,17 +87,17 @@
 				</ul>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="product-category.html" class="category-menu-two__link"><span
+				<a href="/products" class="category-menu-two__link"><span
 						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/cat.png}" alt=""></span>
 					Cat </a>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="product-category.html" class="category-menu-two__link"> <span
+				<a href="/products" class="category-menu-two__link"> <span
 						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/fish.png}" alt=""></span>
 					Fish </a>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="product-category.html" class="category-menu-two__link"><span
+				<a href="/products" class="category-menu-two__link"><span
 						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/toys.png}" alt=""></span>
 					Pet toy </a>
 			</li>
@@ -108,19 +108,19 @@
 							class="las la-angle-down"></i></span></a>
 				<ul class="category-dropdown-two">
 					<li class="category-dropdown-two__item">
-						<a href="product-category.html" class="category-dropdown-two__link">
+						<a href="/products" class="category-dropdown-two__link">
 							<span class="category-dropdown-two__thumb">
 								<img th:src="@{/assets/images/icons/parrot.png}" alt="">
 							</span> Category Dropdown One</a>
 					</li>
 					<li class="category-dropdown-two__item">
-						<a href="product-category.html" class="category-dropdown-two__link">
+						<a href="/products" class="category-dropdown-two__link">
 							<span class="category-dropdown-two__thumb">
 								<img th:src="@{/assets/images/icons/parrot.png}" alt="">
 							</span> Category Dropdown Two</a>
 					</li>
 					<li class="category-dropdown-two__item">
-						<a href="product-category.html" class="category-dropdown-two__link">
+						<a href="/products" class="category-dropdown-two__link">
 							<span class="category-dropdown-two__thumb">
 								<img th:src="@{/assets/images/icons/parrot.png}" alt="">
 							</span> Category Dropdown Three</a>
@@ -128,17 +128,17 @@
 				</ul>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="product-category.html" class="category-menu-two__link"><span
+				<a href="/products" class="category-menu-two__link"><span
 						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/rabbit.png}" alt=""></span>
 					Rabbit </a>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="product-category.html" class="category-menu-two__link"><span
+				<a href="/products" class="category-menu-two__link"><span
 						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/accessories.png}"
 							alt=""></span> Accessories </a>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="product-category.html" class="category-menu-two__link"><span
+				<a href="/products" class="category-menu-two__link"><span
 						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/dog02.png}" alt=""></span>
 					Small pet </a>
 			</li>
@@ -195,7 +195,7 @@
 								Pages <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="product-category.html">Product category</a></li>
+										href="/products">Product category</a></li>
 								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
 										href="product-two-details.html">Product Details</a></li>
 								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
@@ -547,7 +547,7 @@
 						<div class="footer-item">
 							<h5 class="footer-item__title"> Useful link </h5>
 							<ul class="footer-menu">
-								<li class="footer-menu__item"><a href="product-category.html" class="footer-menu__link">
+								<li class="footer-menu__item"><a href="/products" class="footer-menu__link">
 										Product Category </a></li>
 								<li class="footer-menu__item"><a href="check-out.html"
 										class="footer-menu__link">Checkout </a></li>
@@ -601,9 +601,9 @@
 	<!-- main js -->
 	<script th:src="@{/assets/js/main.js}"></script>
 	<script>
-		const apiUrlBackend = 'http://localhost:9998';
-		const apiUrl = 'http://localhost:9998/products';
-		const categoryApiUrl = 'http://localhost:9998/categories';
+		const apiUrlBackend = 'http://localhost:9998/api';
+		const apiUrl = 'http://localhost:9998/api/products';
+		const categoryApiUrl = 'http://localhost:9998/api/categories';
 
 		const productId = $('#product-id').val();
 

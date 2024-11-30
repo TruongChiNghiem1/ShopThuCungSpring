@@ -28,8 +28,5 @@ public class ProductController {
         return "product-two-details";
     }
 
-    @GetMapping("/products/form")
-    public String showForm() {
-        return "formAdminProduct";
-    }
+    
 }
