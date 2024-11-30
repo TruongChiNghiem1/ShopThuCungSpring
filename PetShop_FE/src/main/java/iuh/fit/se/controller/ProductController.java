@@ -28,5 +28,13 @@ public class ProductController {
         return "product-two-details";
     }
 
+    @GetMapping("/cart")
+    public String cart() {
+        return "cart"; 
+    }
     
+    @GetMapping("/checkout")
+    public String checkout() {
+        return "check-out"; 
+    }
 }
