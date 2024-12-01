@@ -441,7 +441,7 @@
   
 
 <!-- Jquery js -->
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
 <!-- Popper js -->
 <script src="assets/js/popper.min.js"></script>
 <!-- Bootstrap Js -->
@@ -457,8 +457,10 @@
 <!-- magnific popup js -->
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
  <!-- main js -->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script src="assets/js/main.js"></script>
 <script>
+	const apiUrl = 'http://localhost:9998/api';
 	document.getElementById('order-now').addEventListener('click', function() {
 	    // Lấy thông tin từ các trường nhập liệu
 	    const firstName = document.getElementById('first-name').value;
@@ -470,29 +472,57 @@
 
 	    // Lấy thông tin sản phẩm từ giỏ hàng
 	    const orderItems = products.map(product => ({
-	        name: product.name,
+	        productId: product.id, // Giả sử mỗi sản phẩm có id
 	        quantity: product.quantity,
 	        price: product.price
 	    }));
 
 	    // Tạo đối tượng đơn hàng
-	    const orderData = {
-	        customer: {
-	            firstName,
-	            lastName,
-	            address,
-	            phone,
-	            email
-	        },
-	        items: orderItems,
-	        note: orderNote,
-	        total: parseFloat(document.getElementById('total-price').innerText.replace('$', ''))
-	    };
+		const orderData = {
+		        firstName,
+		        lastName,
+		        address,
+		        phone,
+		        email,
+		        note: orderNote,
+		        totalAmount: parseFloat(document.getElementById('total-price').innerText.replace('$', '')),
+		        products: orderItems
+		    };
 
-	    // Lưu thông tin đơn hàng (có thể gửi đến server hoặc lưu vào local storage)
-	    console.log(orderData); // Ghi ra console để kiểm tra
-	    // localStorage.setItem('order', JSON.stringify(orderData)); // Nếu muốn lưu vào local storage
+	    // Gửi thông tin đơn hàng đến server
+	    fetch('http://localhost:9998/api/orders', {
+	        method: 'POST',
+	        headers: {
+	            'Content-Type': 'application/json'
+	        },
+	        body: JSON.stringify(orderData)
+	    })
+	    .then(response => response.json())
+	    .then(data => {
+	        if (data.status === 200) {
+	            Swal.fire({
+	                title: "Success!",
+	                text: "Your order has been placed successfully.",
+	                icon: "success"
+	            });
+	        } else {
+	            Swal.fire({
+	                title: "Error!",
+	                text: data.message || "There was an error placing your order.",
+	                icon: "error"
+	            });
+	        }
+	    })
+	    .catch(error => {
+	        console.error('Error:', error);
+	        Swal.fire({
+	            title: "Error!",
+	            text: "An unexpected error occurred.",
+	            icon: "error"
+	        });
+	    });
 	});
+
 	
 	// Lấy sản phẩm từ local storage
 	const products = JSON.parse(localStorage.getItem('cart')) || [];

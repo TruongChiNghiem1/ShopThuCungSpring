@@ -249,31 +249,38 @@
             </div>
             <div class="mb-3">
                 <label for="product-name" class="form-label">Tên sản phẩm</label>
-                <input type="text" class="form-control" id="product-name" required>
+                <input type="text" class="form-control" id="product-name">
+                <div id="name-error" class="text-danger" style="display: none;">Vui lòng nhập tên sản phẩm.</div>
             </div>
             <div class="mb-3">
                 <label for="old-price" class="form-label">Giá cũ</label>
-                <input type="number" class="form-control" id="old-price" required>
+                <input type="number" class="form-control" id="old-price" >
+                <div id="old-price-error" class="text-danger" style="display: none;">Vui lòng nhập giá cũ.</div>
             </div>
             <div class="mb-3">
                 <label for="new-price" class="form-label">Giá mới</label>
-                <input type="number" class="form-control" id="new-price" required>
+                <input type="number" class="form-control" id="new-price" >
+                <div id="new-price-error" class="text-danger" style="display: none;">Vui lòng nhập giá mới.</div>
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Mô tả</label>
-                <textarea class="form-control" id="description" required></textarea>
+                <textarea class="form-control" id="description" ></textarea>
+                <div id="description-error" class="text-danger" style="display: none;">Vui lòng nhập mô tả.</div>
             </div>
             <div class="mb-3">
                 <label for="size" class="form-label">Kích thước</label>
-                <input type="text" class="form-control" id="size" required>
+                <input type="text" class="form-control" id="size" >
+                <div id="size-error" class="text-danger" style="display: none;">Vui lòng nhập kích thước.</div>
             </div>
             <div class="mb-3">
                 <label for="color" class="form-label">Màu sắc</label>
-                <input type="text" class="form-control" id="color" required>
+                <input type="text" class="form-control" id="color" >
+                <div id="color-error" class="text-danger" style="display: none;">Vui lòng nhập màu sắc.</div>
             </div>
             <div class="mb-3">
                 <label for="quantity" class="form-label">Số lượng</label>
-                <input type="number" class="form-control" id="quantity" required>
+                <input type="number" class="form-control" id="quantity" >
+                <div id="quantity-error" class="text-danger" style="display: none;">Vui lòng nhập số lượng.</div>
             </div>
             <div class="mb-3">
                 <label for="images" class="form-label">Tải lên ảnh sản phẩm</label>
@@ -368,7 +375,7 @@
 <script th:src="@{/assets/js/jquery.magnific-popup.min.js}"></script>
  <!-- main js} -->
 <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script th:src="@{/assets/js/main.js}"></script>
  <script>
      const apiUrl = 'http://localhost:9998/api/products';
@@ -421,67 +428,91 @@
          }
      }
 
-     function handleFormSubmit(event) {
-         event.preventDefault();
+	 function handleFormSubmit(event) {
+	     event.preventDefault();
 
-         const id = $('#product-id').val();
-         const name = $('#product-name').val();
-         const oldPrice = $('#old-price').val();
-         const newPrice = $('#new-price').val();
-         const description = $('#description').val();
-         const size = $('#size').val();
-         const color = $('#color').val();
-         const quantity = $('#quantity').val();
-         const categoryId = $('#category-id').val();
-         const images = $('#images')[0].files;
+	     const id = $('#product-id').val();
+	     const name = $('#product-name').val();
+	     const oldPrice = $('#old-price').val();
+	     const newPrice = $('#new-price').val();
+	     const description = $('#description').val();
+	     const size = $('#size').val();
+	     const color = $('#color').val();
+	     const quantity = $('#quantity').val();
+	     const categoryId = $('#category-id').val();
+	     const images = $('#images')[0].files;
 
-		 const productData = {
-		     name,
-		     oldPrice: parseFloat(oldPrice), // Chuyển đổi thành số
-		     newPrice: parseFloat(newPrice),
-		     description,
-		     size,
-		     color,
-		     quantity: parseInt(quantity, 10), // Chuyển đổi thành số nguyên
-		     category: parseFloat(categoryId),
-		     images: []
-		 };
+	     // Reset thông báo lỗi
+	     $('.text-danger').hide();
 
-         const formData = new FormData();
-         for (const key in productData) {
-             if (key === 'images') {
-                 for (let i = 0; i < images.length; i++) {
-                     formData.append('images', images[i]);
-                 }
-             } else {
-                 formData.append(key, productData[key]);
-             }
-         }
-console.log(productData)
-         if (id) {
-             updateProduct(id, formData);
-         } else {
-             createProduct(formData);
-         }
-     }
+	     // Kiểm tra ràng buộc
+	     let hasError = false;
 
-     function updateProduct(id, formData) {
-         $.ajax({
-             url: `${apiUrl}/${id}`,
-             method: 'PUT',
-             contentType: false,
-             processData: false,
-             data: formData
-         })
-         .done(function() {
-             alert('Sản phẩm đã được cập nhật thành công!');
-             window.location.href = '/admin/products';
-         })
-         .fail(function(error) {
-             console.error('Lỗi:', error);
-             alert('Cập nhật sản phẩm không thành công!');
-         });
-     }
+	     if (!name) {
+	         $('#name-error').show();
+	         hasError = true;
+	     }
+	     if (!oldPrice) {
+	         $('#old-price-error').show();
+	         hasError = true;
+	     }
+	     if (!newPrice) {
+	         $('#new-price-error').show();
+	         hasError = true;
+	     }
+	     if (!description) {
+	         $('#description-error').show();
+	         hasError = true;
+	     }
+	     if (!size) {
+	         $('#size-error').show();
+	         hasError = true;
+	     }
+	     if (!color) {
+	         $('#color-error').show();
+	         hasError = true;
+	     }
+	     if (!quantity) {
+	         $('#quantity-error').show();
+	         hasError = true;
+	     }
+
+	     if (hasError) {
+	         return; // Dừng lại nếu có lỗi
+	     }
+
+	     const productData = {
+	         name,
+	         oldPrice: parseFloat(oldPrice), // Chuyển đổi thành số
+	         newPrice: parseFloat(newPrice),
+	         description,
+	         size,
+	         color,
+	         quantity: parseInt(quantity, 10), // Chuyển đổi thành số nguyên
+	         category: parseFloat(categoryId),
+	         images: []
+	     };
+
+	     const formData = new FormData();
+	     for (const key in productData) {
+	         if (key === 'images') {
+	             for (let i = 0; i < images.length; i++) {
+	                 formData.append('images', images[i]);
+	             }
+	         } else {
+	             formData.append(key, productData[key]);
+	         }
+	     }
+
+	     console.log(productData);
+
+	     if (id) {
+	         updateProduct(id, formData);
+	     } else {
+	         createProduct(formData);
+	     }
+	 }
+
 
      function createProduct(formData) {
          $.ajax({
@@ -492,8 +523,17 @@ console.log(productData)
              data: formData
          })
          .done(function() {
-             alert('Sản phẩm đã được thêm thành công!');
-             window.location.href = '/admin/products';
+			Swal.fire({
+			  position: "top-end",
+			  icon: "success",
+			  title: "Your product has been saved",
+			  showConfirmButton: true,
+			  timer: 1500
+			}).then((result) => {
+  			  if (result.isConfirmed) {
+				window.location.href = '/admin/products'
+			  }
+		  	});
          })
          .fail(function(error) {
              console.error('Lỗi:', error);

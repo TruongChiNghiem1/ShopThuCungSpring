@@ -238,12 +238,13 @@
 <!-- ==================== Contact Start Here ==================== -->
 <section class="contact-top pt-5">
     <div class="container">
-		<h2>Thêm danh mục</h2>
+		<h2>Add new category</h2>
 		<form id="category-form">
 			<input type="hidden" th:value="${categoryId}" id="category-id">
 		  <div class="mb-3">
-		    <label for="category-name" class="form-label">Tên danh mục</label>
+		    <label for="category-name" class="form-label">Category name</label>
 			<input type="text" class="form-control" id="category-name">
+			<div id="name-error" class="text-danger" style="display: none;">Catergory is not empty.</div>
 		  </div>
 		  <button type="submit" class="btn btn-primary p-2" style="background-color: #804d4e;">Lưu</button>
 		</form>
@@ -333,7 +334,7 @@
 <script th:src="@{/assets/js/jquery.magnific-popup.min.js}"></script>
  <!-- main js} -->
 <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script th:src="@{/assets/js/main.js}"></script>
 <script>
 	const apiUrl = 'http://localhost:9998/api/products';
@@ -357,6 +358,16 @@
 
 	    const id = $('#category-id').val();
 	    const name = $('#category-name').val();
+	    const nameError = $('#name-error');
+
+	    // Reset thông báo lỗi
+	    nameError.hide();
+
+	    // Kiểm tra ràng buộc
+	    if (!name) {
+	        nameError.show(); // Hiện thông báo lỗi
+	        return; // Dừng lại nếu không có tên danh mục
+	    }
 
 	    const categoryData = { id, name };
 
@@ -384,14 +395,25 @@
 	            data: JSON.stringify(categoryData)
 	        })
 	        .done(function() {
-	            alert('Thêm danh mục thành công!');
-	            window.location.href = '/admin/categoties'
+				Swal.fire({
+				  position: "top-end",
+				  icon: "success",
+				  title: "Your category has been saved",
+				  showConfirmButton: true,
+				  timer: 1500
+				}).then((result) => {
+	  			  if (result.isConfirmed) {
+					window.location.href = '/admin/categoties'
+				  }
+			  	});
+	            
 	        })
 	        .fail(function(error) {
 	            console.error('Lỗi:', error);
 	        });
 	    }
 	}
+
 	
 	// Chỉnh sửa danh mục
 	function editCategory(id) {

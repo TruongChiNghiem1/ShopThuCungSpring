@@ -9,9 +9,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import iuh.fit.se.dtos.OrderDTO;
 
 import iuh.fit.se.services.OrderService;
@@ -39,5 +40,17 @@ public class OrderController {
 
 		}
 	}
+	
+	@PostMapping("/orders")
+    public ResponseEntity<?> placeOrder(@RequestBody OrderDTO orderDTO) {
+        // Xử lý đơn hàng tại đây (lưu vào database, v.v.)
+        try {
+            orderService.saveOrder(orderDTO);
+            return ResponseEntity.ok(Map.of("status", HttpStatus.OK.value(), "message", "Order placed successfully."));
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                                 .body(Map.of("status", HttpStatus.INTERNAL_SERVER_ERROR.value(), "message", "Failed to place order."));
+        }
+    }
 
 }
