@@ -150,8 +150,8 @@
 					<nav class="category">
 						<span class="close-sidebar d-lg-none d-block"><i class="las la-times"></i></span>
 						<ul class="category-menu category-menu-show">
-							
-							
+
+
 						</ul>
 						<div class="contact-list__wrapper d-md-none d-block">
 							<div class="contact-list">
@@ -239,7 +239,7 @@
 				</div>
 			</div>
 			<div class="row justify-content-center gy-4" id="trending-product">
-			
+
 			</div>
 		</div>
 	</div>
@@ -274,7 +274,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 	<!--============================feature section start here =======================-->
 	<div class="feature-section bg-img py-60"
@@ -448,39 +448,39 @@
 
 	<script>
 		const apiUrlBackend = 'http://localhost:9998/api';
-	    const categoryApiUrl = 'http://localhost:9998/api/categories';
+		const categoryApiUrl = 'http://localhost:9998/api/categories';
 		const productsApiUrl = 'http://localhost:9998/api/products'
-		 
-	     $(document).ready(function() {
-	         fetchCategories();
-			 fetchProducts()
-	     });
-		 
-		 // Lấy danh sách danh mục từ API
-	 	function fetchCategories() {
-	 	    $.get(categoryApiUrl)
-	 	        .done(function(categories) {
-	 	            const categorySelect = $('.category-menu-show');
-	 	            categories.forEach(category => {
-	 	                const option = $(`<li class="category-menu__item">
+
+		$(document).ready(function () {
+			fetchCategories();
+			fetchProducts()
+		});
+
+		// Lấy danh sách danh mục từ API
+		function fetchCategories() {
+			$.get(categoryApiUrl)
+				.done(function (categories) {
+					const categorySelect = $('.category-menu-show');
+					categories.forEach(category => {
+						const option = $(`<li class="category-menu__item">
 												<a href="/products/${category.id}" class="category-menu__link"><span class="category-menu__thumb">
 													<img src="assets/images/icons/cat.png" alt=""></span> ${category.name} </a>
 											</li>`);
-	 	                categorySelect.append(option);
-	 	            });
-	 	        })
-	 	        .fail(function(error) {
-	 	            console.error('Lỗi:', error);
-	 	        });
-	 	}
-		
+						categorySelect.append(option);
+					});
+				})
+				.fail(function (error) {
+					console.error('Lỗi:', error);
+				});
+		}
+
 		function fetchProducts() {
-			 	    $.get(productsApiUrl)
-			 	        .done(function(products) {
-			 	            const productSelect = $('#trending-product');
-			 	            products.forEach(product => {
-			 	                const option = $(
-					`									<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+			$.get(productsApiUrl)
+				.done(function (products) {
+					const productSelect = $('#trending-product');
+					products.forEach(product => {
+						const option = $(
+							`									<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
 														<div class="product-item text-center">
 															<div class="product-item__thumb">
 																<a href="/products/${product.id}" class="product-item__thumb-link">
@@ -528,44 +528,44 @@
 															</div>
 														</div>
 													</div>`
-								);
-			 	                productSelect.append(option);
-			 	            });
-			 	        })
-			 	        .fail(function(error) {
-			 	            console.error('Lỗi:', error);
-			 	        });
-			 	}
-				// Hàm thêm sản phẩm vào giỏ hàng
-				function addToCart(productId, productName, productPrice, images) {
-					// Lấy giỏ hàng hiện tại từ localStorage
-					let cart = JSON.parse(localStorage.getItem('cart')) || [];
+						);
+						productSelect.append(option);
+					});
+				})
+				.fail(function (error) {
+					console.error('Lỗi:', error);
+				});
+		}
+		// Hàm thêm sản phẩm vào giỏ hàng
+		function addToCart(productId, productName, productPrice, images) {
+			// Lấy giỏ hàng hiện tại từ localStorage
+			let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-					// Tạo sản phẩm mới
-					const product = {
-						id: productId,
-						name: productName,
-						price: productPrice,
-						images: images,
-						quantity: 1
-					};
+			// Tạo sản phẩm mới
+			const product = {
+				id: productId,
+				name: productName,
+				price: productPrice,
+				images: images,
+				quantity: 1
+			};
 
-					// Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
-					const existingProductIndex = cart.findIndex(item => item.id === productId);
-					if (existingProductIndex > -1) {
-						// Nếu có, tăng số lượng
-						cart[existingProductIndex].quantity += 1;
-					} else {
-						// Nếu không, thêm sản phẩm mới vào giỏ hàng
-						cart.push(product);
-					}
+			// Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+			const existingProductIndex = cart.findIndex(item => item.id === productId);
+			if (existingProductIndex > -1) {
+				// Nếu có, tăng số lượng
+				cart[existingProductIndex].quantity += 1;
+			} else {
+				// Nếu không, thêm sản phẩm mới vào giỏ hàng
+				cart.push(product);
+			}
 
-					// Lưu giỏ hàng vào localStorage
-					localStorage.setItem('cart', JSON.stringify(cart));
+			// Lưu giỏ hàng vào localStorage
+			localStorage.setItem('cart', JSON.stringify(cart));
 
-					// Thông báo cho người dùng
-					alert(`${productName} đã được thêm vào giỏ hàng!`);
-				}
+			// Thông báo cho người dùng
+			alert(`${productName} đã được thêm vào giỏ hàng!`);
+		}
 	</script>
 </body>
 
