@@ -5,6 +5,7 @@ import java.util.List;
 
 public interface ProductService {
     List<Product> getAllProducts();
+    List<Product> getProductByFilter(float minPrice, float maxPrice, List<Integer> categories);
     Product getProductById(Long id);
     Product saveProduct(Product product);
     void deleteProduct(Long id);

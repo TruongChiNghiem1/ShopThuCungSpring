@@ -1,6 +1,7 @@
 package iuh.fit.se.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -15,6 +16,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -151,5 +153,19 @@ public class ProductController {
     @DeleteMapping("/{id}")
     public void deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
+    }
+    
+    @GetMapping("/search")
+    public List<Product> getProductByFilter(
+    		@RequestParam(value = "minPrice", required = false) Float minPrice,
+    	    @RequestParam(value = "maxPrice", required = false) Float maxPrice,
+    	    @RequestParam(value = "categories", required = false) List<Integer> categories
+    	    ) {
+    	 try {
+    		 return productService.getProductByFilter(minPrice, maxPrice, categories);
+    	        
+    	    } catch (Exception e) {
+    	        return productService.getProductByFilter(minPrice, maxPrice, categories);
+    	    }
     }
 }

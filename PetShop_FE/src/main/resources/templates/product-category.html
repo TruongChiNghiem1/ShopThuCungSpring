@@ -172,15 +172,15 @@
 						<div class="sidebar-item">
 							<h5 class="sidebar-item__title">Filter by Price</h5>
 
-							<div class=" custom--range">
+							<div class="custom--range">
 								<div id="slider-range" class="custom--range__range"></div>
 								<div class="custom--range__content d-flex flex-wrap justify-content-betwwen">
 									<label for="amount" class="custom--range__text">Price range:</label>
-									<input type="text" class="custom--range__prices" id="amount" readonly>
+									<input type="text" class="custom--range__prices" id="amount"  readonly>
 								</div>
 							</div>
 							<div class="sidebar-item__button">
-								<a href="/products" class="btn btn--base pill btn--sm"> Filter</a>
+								<button id="filter-button" class="btn btn--base pill btn--sm"> Filter<buttona>
 							</div>
 						</div>
 						<div class="sidebar-item">
@@ -191,24 +191,9 @@
 					</div>
 				</div>
 				<div class="col-lg-9">
-					<div class="product-sidebar-filter d-lg-none d-block">
-						<button class="product-sidebar-filter__button">
-							<i class="las la-filter"></i>
-							<span class="text"> Filter </span>
-						</button>
-					</div>
 					<div class="row justify-content-center gy-4" id="product-list">
 
 					</div>
-					<nav aria-label="Page navigation example">
-						<ul class="pagination">
-							<li class="page-item"><a class="page-link" href="#">01</a></li>
-							<li class="page-item "><a class="page-link" href="#">02</a></li>
-							<li class="page-item"><a class="page-link" href="#">03</a></li>
-							<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i> </a>
-							</li>
-						</ul>
-					</nav>
 				</div>
 			</div>
 		</div>
@@ -392,6 +377,37 @@
 	$(document).ready(function () {
 		fetchProducts();
 		fetchCategories();
+		
+		$("#slider-range").slider({
+		       range: true,
+		       min: 0,
+		       max: 1000000,
+		       values: [0, 1000000],
+		       slide: function (event, ui) {
+		           $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+		       }
+		   });
+
+		   // Set initial value
+		   $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+	
+	});
+	
+
+	$("#filter-button").on("click", function (event) {
+	    event.preventDefault(); // Prevent any default action
+
+	    const priceRange = $("#slider-range").slider("values");
+	    const minPrice = priceRange[0];
+	    const maxPrice = priceRange[1];
+
+	    // Get selected categories if needed
+	    const selectedCategories = $('input[name="category_id"]:checked').map(function () {
+	         return this.value;
+	     }).get();
+
+	    // Call your fetchProducts function if needed
+	     fetchProducts(minPrice, maxPrice, selectedCategories);
 	});
 
 	function fetchCategories() {
@@ -400,7 +416,7 @@
 				const categorySelect = $('#category');
 				categories.forEach(category => {
 					const option = $(`<div class="form-check form--check">
-					<input class="form-check-input" type="checkbox" value="${category.name}" name="category_id" id="${category.name}">
+					<input class="form-check-input" type="checkbox" value="${category.id}" name="category_id" id="${category.name}">
 					<label class="form-check-label" for="${category.name}">
 						${category.name}
 					</label>`);
@@ -411,58 +427,64 @@
 				console.error('Lỗi:', error);
 			});
 	}
+	
+	
 
 
-	// Lấy danh sách sản phẩm từ API
-	function fetchProducts() {
-		$.get(apiUrl)
-			.done(function (products) {
-				// Khởi tạo DataTable
-				const productList = $('#product-list');
-				productList.empty();
-				products.forEach(product => {
-					const productDiv = $(`
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6">
-                        <div class="product-item">
-                            <div class="product-item__thumb">
-                                <a href="/products/${product.id}" class="product-item__thumb-link">
-                                    <img src="${apiUrlBackend}/assets/upload${product.images[0]}" alt="">
-                                </a>
-                                <button class="product-item__icon">
-                                    <span class="product-item__icon-style">
-                                        <i class="las la-heart"></i>
-                                    </span>
-                                </button>
-                                <div class="product-item__badge">
-                                    <span class="badge badge--base">Sale</span>
-                                </div>
-                            </div>
-                            <div class="product-item__content">   
-                                <h5 class="product-item__title">
-                                    <a href="/products/${product.id}" class="product-item__title-link">
-                                        ${product.name}
-                                    </a>
-                                </h5>
-                                <ul class="product-info__rating justify-content-center">
-                                    ${'<li class="product-info__rating-item"><i class="fas fa-star"></i></li>'.repeat(5)}
-                                    <li class="product-info__number">5.0</li>
-                                </ul>
-                                <h6 class="product-item__price">
-                                    <span class="product-item__price-new">$${product.oldPrice}</span> $${product.newPrice}
-                                </h6>
-                                <button class="btn btn--base pill btn--sm" onclick="addToCart('${product.id}', '${product.name}', ${product.newPrice}, '${product.images[0]}')">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                `);
-					productList.append(productDiv);
-				});
-			})
-			.fail(function (error) {
-				console.error('Lỗi:', error);
-			});
+	function fetchProducts(minPrice = 0, maxPrice = 1000, categories = []) {
+	    // Construct query parameters
+		console.log(categories)
+	    const categoryParam = categories.length > 0 ? `&categories=${categories.join(",")}` : '';
+	    const url = `${apiUrl}/search?minPrice=${minPrice}&maxPrice=${maxPrice}`;
+
+	    $.get(url)
+	        .done(function (products) {
+	            const productList = $('#product-list');
+	            productList.empty();
+
+	            // Render products returned from the API
+	            products.forEach(product => {
+	                const productDiv = $(`
+	                    <div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6">
+	                        <div class="product-item">
+	                            <div class="product-item__thumb">
+	                                <a href="/products/${product.id}" class="product-item__thumb-link">
+	                                    <img src="${apiUrlBackend}/assets/upload${product.images[0]}" alt="">
+	                                </a>
+	                                <button class="product-item__icon">
+	                                    <span class="product-item__icon-style">
+	                                        <i class="las la-heart"></i>
+	                                    </span>
+	                                </button>
+	                                <div class="product-item__badge">
+	                                    <span class="badge badge--base">Sale</span>
+	                                </div>
+	                            </div>
+	                            <div class="product-item__content">   
+	                                <h5 class="product-item__title">
+	                                    <a href="/products/${product.id}" class="product-item__title-link">
+	                                        ${product.name}
+	                                    </a>
+	                                </h5>
+	                                <ul class="product-info__rating justify-content-center">
+	                                    ${'<li class="product-info__rating-item"><i class="fas fa-star"></i></li>'.repeat(5)}
+	                                    <li class="product-info__number">5.0</li>
+	                                </ul>
+	                                <h6 class="product-item__price">
+	                                    <span class="product-item__price-new">$${product.oldPrice}</span> $${product.newPrice}
+	                                </h6>
+	                                <button class="btn btn--base pill btn--sm" onclick="addToCart('${product.id}', '${product.name}', ${product.newPrice}, '${product.images[0]}')">Add to Cart</button>
+	                            </div>
+	                        </div>
+	                    </div>
+	                `);
+	                productList.append(productDiv);
+	            });
+	        })
+	        .fail(function (error) {
+	            console.error('Error:', error);
+	        });
 	}
-
 	// Hàm thêm sản phẩm vào giỏ hàng
 	function addToCart(productId, productName, productPrice, images) {
 		// Lấy giỏ hàng hiện tại từ localStorage
@@ -493,6 +515,8 @@
 		// Thông báo cho người dùng
 		alert(`${productName} đã được thêm vào giỏ hàng!`);
 	}
+	
+	
 </script>
 
 </html>
