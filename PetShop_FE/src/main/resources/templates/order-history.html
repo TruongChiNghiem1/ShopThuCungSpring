@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Lịch sử đơn hàng</title>
+<style>
+/* Cài đặt font chữ và màu nền tổng thể */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+h1 {
+	text-align: center;
+	background-color: #4CAF50;
+	color: white;
+	padding: 20px;
+	margin: 0;
+}
+
+/* Phần danh sách đơn hàng */
+.order-list {
+	margin: 20px;
+}
+
+/* Mỗi đơn hàng */
+.order-item {
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	margin-bottom: 15px;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề của đơn hàng */
+.order-item h3 {
+	margin-top: 0;
+	color: #333;
+}
+
+/* Thông tin đơn hàng */
+.order-info {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.order-info span {
+	font-weight: bold;
+}
+
+/* Sản phẩm trong đơn hàng */
+.product-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.product-item {
+	margin: 5px 0;
+}
+
+.product-item span {
+	color: #555;
+}
+
+/* Không có đơn hàng */
+.no-orders {
+	text-align: center;
+	font-size: 18px;
+	color: #888;
+}
+
+.back-btn {
+	position: absolute; /* Đưa nút lên trên cùng */
+	top: 20px; /* Cách lề trên 20px */
+	left: 20px; /* Cách lề trái 20px */
+	background-color: #2196f3;
+	color: white;
+	padding: 10px 20px; /* Tăng kích thước nút */
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s ease;
+	z-index: 10; /* Hiển thị trên tất cả nội dung */
+}
+
+.back-btn:hover {
+	background-color: #1976d2;
+}
+</style>
+</head>
+<body>
+	<button type="button" class="back-btn" onclick="history.back()">Back</button>
+	<h1>Lịch sử mua hàng của bạn</h1>
+
+	<div th:if="${orderHistory != null}" class="order-list">
+		<ul>
+			<li th:each="order : ${orderHistory}" class="order-item">
+				<h3>
+					Đơn hàng ID: <span th:text="${order.id}"></span>
+				</h3>
+				<p class="order-info">
+					Ngày đặt: <span th:text="${order.orderDate}"></span>
+				</p>
+				<p class="order-info">
+					Tổng tiền: <span th:text="${order.totalAmount}"></span> VND
+				</p>
+
+				<h4>Sản phẩm trong đơn hàng:</h4>
+				<ul class="product-list">
+					<li th:each="product : ${order.products}" class="product-item">
+						<span th:text="${product.name}"></span> - <span
+						th:text="${product.price}"></span> VND
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div th:if="${orderHistory == null}" class="no-orders">
+		<p>Không có đơn hàng nào.</p>
+	</div>
+</body>
+</html>

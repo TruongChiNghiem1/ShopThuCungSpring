@@ -1,46 +1,84 @@
 package iuh.fit.se.entities;
 
+import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
-	 private String name; // Tên đầy đủ
-	    private String username; // Tên tài khoản
-	    private String emailAddress; // Địa chỉ email
-	    private String password; // Mật khẩu
+		private Long id;
+
+	    private String name;
+	    private String username; 
+	    private String emailAddress; 
+	    private String password; 
+	   
+	    @JsonIgnore
+	    private Set<Order> orders;
+		public Long getId() {
+			return id;
+		}
+
+		public void setId(Long id) {
+			this.id = id;
+		}
+
 		public String getName() {
 			return name;
 		}
+
 		public void setName(String name) {
 			this.name = name;
 		}
+
 		public String getUsername() {
 			return username;
 		}
+
 		public void setUsername(String username) {
 			this.username = username;
 		}
+
 		public String getEmailAddress() {
 			return emailAddress;
 		}
+
 		public void setEmailAddress(String emailAddress) {
 			this.emailAddress = emailAddress;
 		}
+
 		public String getPassword() {
 			return password;
 		}
+
 		public void setPassword(String password) {
 			this.password = password;
 		}
-		public User(String name, String username, String emailAddress, String password) {
+
+
+
+		public User(Long id, String name, String username, String emailAddress, String password) {
 			super();
+			this.id = id;
 			this.name = name;
 			this.username = username;
 			this.emailAddress = emailAddress;
 			this.password = password;
+	
 		}
+
+		public User() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
+
 		@Override
 		public String toString() {
-			return "User [name=" + name + ", username=" + username + ", emailAddress=" + emailAddress + ", password="
-					+ password + "]";
+			return "User [id=" + id + ", name=" + name + ", username=" + username + ", emailAddress=" + emailAddress
+					+ ", password=" + password + "]";
 		}
+	
 
     // Constructor
     

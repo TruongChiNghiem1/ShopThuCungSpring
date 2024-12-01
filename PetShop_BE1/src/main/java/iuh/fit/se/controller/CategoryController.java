@@ -1,6 +1,7 @@
 package iuh.fit.se.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import iuh.fit.se.entities.Category;
@@ -42,7 +43,13 @@ public class CategoryController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteCategory(@PathVariable Long id) {
+    public ResponseEntity<String> deleteCategory(@PathVariable Long id) {
+    	if (categoryService.hasProducts(id)) {
+            return ResponseEntity.status(HttpStatus.CONFLICT)
+                                 .body("Cannot delete category. There are products associated with this category.");
+        }
+        
         categoryService.deleteCategory(id);
+        return ResponseEntity.ok("Category deleted successfully.");
     }
 }

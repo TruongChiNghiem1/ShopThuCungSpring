@@ -28,8 +28,13 @@ public class ProductController {
         return "product-two-details";
     }
 
-    @GetMapping("/products/form")
-    public String showForm() {
-        return "formAdminProduct";
+    @GetMapping("/cart")
+    public String cart() {
+        return "cart"; 
+    }
+    
+    @GetMapping("/checkout")
+    public String checkout() {
+        return "check-out"; 
     }
 }

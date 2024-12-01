@@ -1,0 +1,702 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title -->
+	<title> Document</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" th:href="@{/assets/images/logo/favicon.png}">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}">
+	<!-- Fontawesome -->
+	<link rel="stylesheet" th:href="@{/assets/css/fontawesome-all.min.css}">
+	<!-- Slick -->
+	<link rel="stylesheet" th:href="@{/assets/css/slick.css}">
+	<!-- line awesome -->
+	<link rel="stylesheet" th:href="@{/assets/css/line-awesome.min.css}">
+	<!-- countdown css link-->
+	<link rel="stylesheet" th:href="@{/assets/css/jquery.classycountdown.min.css}">
+	<!-- range css -->
+	<link rel="stylesheet" th:href="@{/assets/css/jquery-ui.css}">
+	<!-- magnific css link -->
+	<link rel="stylesheet" th:href="@{/assets/css/magnific-popup.css}">
+	<!-- Main css -->
+	<link rel="stylesheet" th:href="@{/assets/css/main.css}">
+</head>
+<style>
+	.product-details__thumb {
+	    position: relative;
+	}
+
+	.product-details__image img {
+	    width: 100%;
+	    height: auto;
+	    display: block;
+	}
+</style>
+<body>
+
+	<!--==================== Preloader Start ====================-->
+
+	<!--==================== Preloader End ====================-->
+
+	<!--==================== Overlay Start ====================-->
+	<div class="body-overlay"></div>
+	<!--==================== Overlay End ====================-->
+
+	<!--==================== Sidebar Overlay End ====================-->
+	<div class="sidebar-overlay"></div>
+	<!--==================== Sidebar Overlay End ====================-->
+
+	<!-- ==================== Scroll to Top End Here ==================== -->
+	<a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
+	<!-- ==================== Scroll to Top End Here ==================== -->
+
+	<nav class="category-two">
+		<span class="close-sidebar"><i class="las la-times"></i></span>
+		<ul class="category-menu-two">
+			<li class="category-menu-two__item has-dropdown-two">
+				<a href="#" class="category-menu-two__link">
+					<span class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/dog01.png}"
+							alt=""></span> Dog Food <span class="category-menu-two__icon"><i
+							class="las la-angle-down"></i></span></a>
+				<ul class="category-dropdown-two">
+					<li class="category-dropdown-two__item">
+						<a href="/products" class="category-dropdown-two__link">
+							<span class="category-dropdown-two__thumb">
+								<img th:src="@{/assets/images/icons/dog01.png}" alt="">
+							</span> Category Dropdown One</a>
+					</li>
+					<li class="category-dropdown-two__item">
+						<a href="/products" class="category-dropdown-two__link">
+							<span class="category-dropdown-two__thumb">
+								<img th:src="@{/assets/images/icons/dog01.png}" alt="">
+							</span> Category Dropdown Two</a>
+					</li>
+					<li class="category-dropdown-two__item">
+						<a href="/products" class="category-dropdown-two__link">
+							<span class="category-dropdown-two__thumb">
+								<img th:src="@{/assets/images/icons/dog01.png}" alt="">
+							</span> Category Dropdown Three</a>
+					</li>
+				</ul>
+			</li>
+			<li class="category-menu-two__item">
+				<a href="/products" class="category-menu-two__link"><span
+						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/cat.png}" alt=""></span>
+					Cat </a>
+			</li>
+			<li class="category-menu-two__item">
+				<a href="/products" class="category-menu-two__link"> <span
+						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/fish.png}" alt=""></span>
+					Fish </a>
+			</li>
+			<li class="category-menu-two__item">
+				<a href="/products" class="category-menu-two__link"><span
+						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/toys.png}" alt=""></span>
+					Pet toy </a>
+			</li>
+			<li class="category-menu-two__item has-dropdown-two">
+				<a href="#" class="category-menu-two__link">
+					<span class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/parrot.png}"
+							alt=""></span> Parrot Food <span class="category-menu-two__icon"><i
+							class="las la-angle-down"></i></span></a>
+				<ul class="category-dropdown-two">
+					<li class="category-dropdown-two__item">
+						<a href="/products" class="category-dropdown-two__link">
+							<span class="category-dropdown-two__thumb">
+								<img th:src="@{/assets/images/icons/parrot.png}" alt="">
+							</span> Category Dropdown One</a>
+					</li>
+					<li class="category-dropdown-two__item">
+						<a href="/products" class="category-dropdown-two__link">
+							<span class="category-dropdown-two__thumb">
+								<img th:src="@{/assets/images/icons/parrot.png}" alt="">
+							</span> Category Dropdown Two</a>
+					</li>
+					<li class="category-dropdown-two__item">
+						<a href="/products" class="category-dropdown-two__link">
+							<span class="category-dropdown-two__thumb">
+								<img th:src="@{/assets/images/icons/parrot.png}" alt="">
+							</span> Category Dropdown Three</a>
+					</li>
+				</ul>
+			</li>
+			<li class="category-menu-two__item">
+				<a href="/products" class="category-menu-two__link"><span
+						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/rabbit.png}" alt=""></span>
+					Rabbit </a>
+			</li>
+			<li class="category-menu-two__item">
+				<a href="/products" class="category-menu-two__link"><span
+						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/accessories.png}"
+							alt=""></span> Accessories </a>
+			</li>
+			<li class="category-menu-two__item">
+				<a href="/products" class="category-menu-two__link"><span
+						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/dog02.png}" alt=""></span>
+					Small pet </a>
+			</li>
+		</ul>
+		<div class="contact-list__wrapper d-md-none d-block">
+			<div class="contact-list">
+				<span class="contact-list__icon">
+					<img th:src="@{/assets/images/icons/phone.png}" alt="">
+				</span>
+				<span class="contact-list__info"> 000 - 8888 - 9999</span>
+			</div>
+			<div class="contact-list">
+				<span class="contact-list__icon">
+					<img th:src="@{/assets/images/icons/email.png}" alt="">
+				</span>
+				<span class="contact-list__info"> <a href="https://template.viserlab.com/cdn-cgi/l/email-protection"
+						class="__cf_email__"
+						data-cfemail="1d6b746e786f6d78695d7a707c7471337e7270">[email&#160;protected]</a></span>
+			</div>
+		</div>
+	</nav>
+
+	<!-- ==================== Bottom Header End Here ==================== -->
+	<header class="main-header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span id="hiddenNav"><i class="las la-bars"></i></span>
+				</button>
+				<div class="header-category-two">
+					<button class="header-category-two__item">Categories <span class="header-category-two__icon"><i
+								class="las la-bars"></i></span></button>
+
+				</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav nav-menu me-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="/" role="button" > Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="about.html">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="/products" role="button" > Products</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Blog <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
+										href="blog.html">Blog</a></li>
+								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
+										href="blog-details.html">Blog Details</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class=" nav-item">
+							<div class="toggle-search-box d-none d-lg-block">
+								<button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-box"
+									data-bs-whatever="@mdo"><i class="las la-search"></i></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="header-info">
+					<div class="toggle-search-box d-lg-none d-block">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-box"
+							data-bs-whatever="@mdo"><i class="las la-search"></i></button>
+					</div>
+					<div class="header-info__wishlist">
+						<a href="wishlist.html" class="header-info__link"><i class="far fa-heart"></i></a>
+					</div>
+					<div class="header-info__cart">
+						<a href="/cart" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
+						<span class="header-info__cart-quantity">03</span>
+					</div>
+					<div class="header-info__user">
+						<a href="login.html" class="header-info__link"><i class="far fa-user"></i></a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- ==================== Bottom Header End Here ==================== -->
+
+	<!--========================== Search Modal Start ==========================-->
+	<div class="overlay-search-box position-relative">
+		<div class="modal fade" id="search-box" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="search-overlay-close" data-bs-dismiss="modal" aria-label="Close"><i
+								class="las la-times"></i></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="search-box">
+										<div class="input--group">
+											<input type="text" class="form--control style-two" placeholder="Search....">
+											<button class="search-btn" type="submit"><i
+													class="las la-search"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--========================== Search Modal End ==========================-->
+
+	<!-- ==================== Breadcumb Start Here ==================== -->
+	<section class="breadcumb py-120 bg-img">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="breadcumb__wrapper">
+						<h1 class="breadcumb__title product-name"> </h1>
+						<ul class="breadcumb__list">
+							<li class="breadcumb__item"><a href="index.html" class="breadcumb__link"> <i
+										class="las la-home"></i> Home</a> </li>
+							<li class="breadcumb__item"> / </li>
+							<li class="breadcumb__item"> <span class="breadcumb__item-text product-name"> </span> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ==================== Breadcumb End Here ==================== -->
+
+	<!-- ======================product details two section start here ====================-->
+	<div class="product-details-section py-120">
+		<div class="container">
+			<div class="row align-items-center gy-4">
+
+				<div class="col-lg-7 pe-lg-5">
+				    <div class="row align-items-center">
+				        <div class="col-lg-9 order-lg-2">
+				            <div class="product-details__thumb image-preview-1">
+				                <div class="slick-carousel">
+				                    <!-- Các ảnh sẽ được thêm vào đây -->
+				                </div>
+				            </div>
+				        </div>
+				        <div class="col-lg-3 order-lg-1">
+				            <ul class="product-details-gallery image-preview-2">
+				                <!-- Các ảnh nhỏ sẽ được thêm vào đây -->
+				            </ul>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-lg-5">
+					<div class="product-info">
+						<h3 class="product-info__title product-name">
+						</h3>
+						<ul class="product-info__rating mb-3">
+							<li class="product-info__rating-item">
+								<i class="fas fa-star"></i>
+							</li>
+							<li class="product-info__rating-item">
+								<i class="fas fa-star"></i>
+							</li>
+							<li class="product-info__rating-item">
+								<i class="fas fa-star"></i>
+							</li>
+							<li class="product-info__rating-item">
+								<i class="fas fa-star"></i>
+							</li>
+							<li class="product-info__rating-item">
+								<i class="fas fa-star-half-alt"></i>
+							</li>
+							<li class="product-info__number">
+								4.8
+							</li>
+						</ul>
+						<h6 class="product-info__price">
+							<span class="product-info__price-new old-price"></span> <span class="new-price"></span>
+						</h6>
+						<div class="product-style">
+							<span class="product-style__title">Size :</span>
+							<span class="product-style__size size"></span>
+						</div>
+						<div class="product-variation product-style">
+							<span class="product-style__title">Color :</span>
+							<div class="product-color__variant-wrapper color">
+
+							</div>
+						</div>
+						<div class="product-style">
+							<span class="product-style__title">Type :</span>
+							<span class="product-style__size category"></span>
+						</div>
+						<div class="qty-cart d-flex product-style">
+							<span class="product-style__title">QTY :</span>
+							<div class="product-qty">
+								<button type="button" class="product-qty__decrement"><i
+										class="las la-angle-down"></i></button>
+								<input type="number" class="product-qty__value" value="00">
+								<button type="button" class="product-qty__increment"><i class="las la-angle-up"></i>
+								</button>
+							</div>
+						</div>
+						<div class="product-info__button">
+							<input type="hidden" id="product-id" th:value="${productId}">
+							<a href="index.html" class="btn btn--base pill product-info__link">BUY NOW</a>
+							<a href="wishlist.html" class="product-info__heart product-info__link"><i
+									class="fas fa-heart"></i></a>
+							<a href="/cart" class="product-info__cart product-info__link"><i
+									class="fas fa-shopping-cart"></i></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ======================product details two section end here ====================-->
+
+	<!-- =====================tab section start here ========================-->
+	<div class="tab-section pb-120">
+		<div class="container">
+			<ul class="nav nav-pills mb-3 custom--tab" id="pills-tab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+						data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+						aria-selected="true">Description</button>
+				</li>
+			</ul>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+					tabindex="0">
+					<p class="tab-desc description">
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ==============tab section end here ==============-->
+
+	<div class="pb-120">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-heading style-two">
+						<h4 class="section-heading__title style-two"> You may also like <span
+								class="section-heading__bars style-two"></span></h4>
+					</div>
+				</div>
+			</div>
+			<div class="row gy-4 product-list">
+				
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ===============related section two end here ===================-->
+
+
+
+
+
+	<!--============================feature section start here =======================-->
+	<div class="feature-section bg-img py-60">
+		<div class="container">
+			<div class="row gy-4">
+				<div class="col-md-3 col-sm-6 col-xxsm-6">
+					<div class="feature-item">
+						<div class="feature-item__thumb">
+							<img th:src="@{/assets/images/thumbs/feature/f04.png}" alt="">
+						</div>
+						<div class="feature-item__info">
+							<h5 class="feature-item__title">
+								FREE SHIPPING
+							</h5>
+							<span class="feature-item__payment"> For All Order Over $99 </span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xxsm-6">
+					<div class="feature-item">
+						<div class="feature-item__thumb">
+							<img th:src="@{/assets/images/thumbs/feature/f03.png}" alt="">
+						</div>
+						<div class="feature-item__info">
+							<h5 class="feature-item__title">
+								FRIENDLY SUPPORT
+							</h5>
+							<span class="feature-item__payment"> 24/7 Customer Support </span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xxsm-6">
+					<div class="feature-item">
+						<div class="feature-item__thumb">
+							<img th:src="@{/assets/images/thumbs/feature/f02.png}" alt="">
+						</div>
+						<div class="feature-item__info">
+							<h5 class="feature-item__title">
+								SECURE PAYMENT
+							</h5>
+							<span class="feature-item__payment">100% Secure Payment</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xxsm-6">
+					<div class="feature-item">
+						<div class="feature-item__thumb">
+							<img th:src="@{/assets/images/thumbs/feature/f01.png}" alt="">
+						</div>
+						<div class="feature-item__info">
+							<h5 class="feature-item__title">
+								SHIPPING & RETURN
+							</h5>
+							<span class="feature-item__payment"> within 30days For Refund </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ==========================feature setion end here ============================-->
+
+
+
+	<!-- ========footer===== -->
+
+	<!-- ==================== Footer Start Here ==================== -->
+	<footer class="footer-area section-bg-light bg-img">
+		<div class="pb-60 pt-120">
+			<div class="container">
+				<div class="row justify-content-center gy-5">
+					<div class="col-xl-3 col-sm-6">
+						<div class="footer-item">
+							<div class="footer-item__logo">
+								<a href="index.html"> <img th:src="@{/assets/images/logo/footer-logo02.png}" alt=""></a>
+							</div>
+							<p class="footer-item__desc"> Maecenas tempus tellus eget cdimentum rhoncus sem quam semper
+							</p>
+							<ul class="social-list">
+								<li class="social-list__item"><a href="https://www.facebook.com/"
+										class="social-list__link"><i class="fab fa-facebook-f"></i></a> </li>
+								<li class="social-list__item"><a href="https://www.twitter.com/"
+										class="social-list__link"> <i class="fab fa-twitter"></i></a></li>
+								<li class="social-list__item"><a href="https://www.linkedin.com/"
+										class="social-list__link"> <i class="fab fa-linkedin-in"></i></a></li>
+								<li class="social-list__item"><a href="https://www.pinterest.com/"
+										class="social-list__link"> <i class="fab fa-pinterest-p"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-1 d-xl-block d-none"></div>
+					<div class="col-xl-2 col-sm-6">
+						<div class="footer-item">
+							<h5 class="footer-item__title"> Pages </h5>
+							<ul class="footer-menu">
+								<li class="footer-menu__item"><a href="about.html" class="footer-menu__link"> About
+										Us</a></li>
+								<li class="footer-menu__item"><a href="faq.html" class="footer-menu__link"> Faq</a></li>
+								<li class="footer-menu__item"><a href="/cart" class="footer-menu__link">Shopping
+										Cart </a></li>
+								<li class="footer-menu__item"><a href="blog.html" class="footer-menu__link"> Blog</a>
+								</li>
+								<li class="footer-menu__item"><a href="product-two-details.html"
+										class="footer-menu__link"> Product Details</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-2 col-sm-6">
+						<div class="footer-item">
+							<h5 class="footer-item__title"> Useful link </h5>
+							<ul class="footer-menu">
+								<li class="footer-menu__item"><a href="/products" class="footer-menu__link">
+										Product Category </a></li>
+								<li class="footer-menu__item"><a href="check-out.html"
+										class="footer-menu__link">Checkout </a></li>
+								<li class="footer-menu__item"><a href="login.html" class="footer-menu__link">Login </a>
+								</li>
+								<li class="footer-menu__item"><a href="registration.html" class="footer-menu__link">
+										Registration </a></li>
+								<li class="footer-menu__item"><a href="contact.html" class="footer-menu__link"> Contact
+										Us </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-1 d-xl-block d-none"></div>
+					<div class="col-xl-3 col-sm-6">
+						<div class="footer-item">
+							<h5 class="footer-item__title">Subscribe now</h5>
+							<div class="subscriber-form mb-3">
+								<input type="text" class=" form--control style-two" placeholder="Email Address"
+									aria-label="Recipient's username">
+								<button class="btn btn--base subscribe-button"><i
+										class="fas fa-paper-plane"></i></button>
+							</div>
+							<p>Subscribe to our newsletter and get 10% off your first purchase..</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Top End-->
+
+
+	</footer>
+	<!-- ==================== Footer End Here ==================== -->
+
+
+	<script th:src="@{/assets/js/jquery-3.6.1.min.js}"></script>
+	<!-- Popper js -->
+	<script th:src="@{/assets/js/popper.min.js}"></script>
+	<!-- Bootstrap Js -->
+	<script th:src="@{/assets/js/bootstrap.min.js}"></script>
+	<!-- Slick js -->
+	<script th:src="@{/assets/js/slick.min.js}"></script>
+	<!-- countdown js -->
+	<script th:src="@{/assets/js/jquery.knob.js}"></script>
+	<script th:src="@{/assets/js/jquery.throttle.js}"></script>
+	<script th:src="@{/assets/js/jquery.classycountdown.min.js}"></script>
+	<!-- range js -->
+	<script th:src="@{/assets/js/jquery-ui.js}"></script>
+	<!-- magnific popup js -->
+	<script th:src="@{/assets/js/jquery.magnific-popup.min.js}"></script>
+	<!-- main js -->
+	<script th:src="@{/assets/js/main.js}"></script>
+	<script>
+		const apiUrlBackend = 'http://localhost:9998';
+		const apiUrl = 'http://localhost:9998/products';
+		const categoryApiUrl = 'http://localhost:9998/categories';
+
+		const productId = $('#product-id').val();
+
+		editProduct(productId);
+		fetchProducts();
+
+		function editProduct(id) {
+		    $.get(`${apiUrl}/find-id/${id}`)
+		        .done(function (product) {
+		            $('.product-name').text(product.name);
+		            $('.old-price').text('$' + product.oldPrice);
+		            $('.new-price').text('$' + product.newPrice);
+		            $('.description').text(product.description);
+		            $('.size').text(product.size + 'Kg');
+		            $('.color').text(product.color);
+		            $('.quantity').text(product.quantity);
+		            $('.category').text(product.category.name);
+
+		            // Hiển thị ảnh hiện tại nếu có
+		            if (product.images) {
+		                let img1 = '';
+		                let img2 = '';
+		                product.images.forEach(image => {
+		                    img1 += `<div class="product-details__image"><img src="${apiUrlBackend}/assets/upload${image}" alt=""></div>`;
+		                    img2 += `<li class="product-details-gallery__image"><img src="${apiUrlBackend}/assets/upload${image}" alt=""></li>`;
+		                });
+		                $('.slick-carousel').append(img1);
+		                $('.image-preview-2').append(img2);
+
+		                // Khởi tạo Slick Carousel
+		                $('.slick-carousel').slick({
+		                    dots: true,
+		                    infinite: true,
+		                    speed: 500,
+		                    slidesToShow: 1,
+		                    slidesToScroll: 1,
+		                    adaptiveHeight: true,
+		                });
+		            }
+		        })
+		        .fail(function (error) {
+		            console.error('Lỗi:', error);
+		        });
+		}
+		
+		
+		
+		// Lấy danh sách sản phẩm từ API
+		     function fetchProducts() {
+		         $.get(apiUrl)
+		             .done(function(products) {
+		                 // Khởi tạo DataTable
+						 const productList = $('.product-list');
+			             productList.empty();
+			             products.forEach(product => {
+			                 const productDiv = $(`
+							 				<div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6">
+							 					<div class="product-item">
+							 						<div class="product-item__thumb">
+							 							<a href="/products/${product.id}" class="product-item__thumb-link">
+							 								<img src="${apiUrlBackend}/assets/upload${product.images[0]}" alt="">
+							 							</a>
+							 							<button class="product-item__icon">
+							 								<span class="product-item__icon-style">
+							 									<i class="las la-heart"></i>
+							 								</span>
+							 							</button>
+							 							<div class="product-item__badge">
+							 								<span class="badge badge--base">Sale</span>
+							 							</div>
+							 						</div>
+							 						<div class="product-item__content">
+							 							<h5 class="product-item__title">
+							 								<a href="/products/${product.id}" class="product-item__title-link">
+																${product.name}
+							 								</a>
+							 							</h5>
+							 							<ul class="product-info__rating justify-content-center">
+							 								<li class="product-info__rating-item">
+							 									<i class="fas fa-star"></i>
+							 								</li>
+							 								<li class="product-info__rating-item">
+							 									<i class="fas fa-star"></i>
+							 								</li>
+							 								<li class="product-info__rating-item">
+							 									<i class="fas fa-star"></i>
+							 								</li>
+							 								<li class="product-info__rating-item">
+							 									<i class="fas fa-star"></i>
+							 								</li>
+							 								<li class="product-info__rating-item">
+							 									<i class="fas fa-star-half-alt"></i>
+							 								</li>
+							 								<li class="product-info__number">
+							 									4.8
+							 								</li>
+							 							</ul>
+							 							<h6 class="product-item__price">
+							 								<span class="product-item__price-new">$${product.oldPrice}</span> $${product.newPrice}
+							 							</h6>
+							 							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+							 						</div>
+							 					</div>
+							 				</div>
+			                 `);
+			                 productList.append(productDiv);
+			             });
+		             })
+		             .fail(function(error) {
+		                 console.error('Lỗi:', error);
+		             });
+		     }
+	</script>
+</body>
+
+</html>

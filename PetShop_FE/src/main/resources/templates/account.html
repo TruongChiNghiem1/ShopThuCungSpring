@@ -83,22 +83,46 @@
             z-index: -1;
             opacity: 0.8;
         }
+
+        /* Nút Back */
+        .back-btn {
+            position: absolute; /* Đưa nút lên trên cùng */
+            top: 20px; /* Cách lề trên 20px */
+            left: 20px; /* Cách lề trái 20px */
+            background-color: #2196f3;
+            color: white;
+            padding: 10px 20px; /* Tăng kích thước nút */
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            z-index: 10; /* Hiển thị trên tất cả nội dung */
+        }
+
+        .back-btn:hover {
+            background-color: #1976d2;
+        }
     </style>
 </head>
 <body>
-    <!-- Nền hình ảnh từ trang Home -->
     <div class="background-overlay"></div>
+
+    <!-- Nút Back -->
+    <button type="button" class="back-btn" onclick="history.back()">Back</button>
 
     <div class="account-container">
         <div class="account-header">
             <h1>User Account</h1>
-            <p>Welcome, [User Name]</p>
+            <p>Welcome, <span th:text="${user.name}">[User Name]</span></p>
+            <p>Email: <span th:text="${user.emailAddress}">[User Email]</span></p>
         </div>
         <div class="account-buttons">
-            <a href="/order-history.html">🛒 View Purchase History</a>
-            <a href="/change-password.html">🔒 Change Password</a>
-            <a href="/user-info.html">👤 View User Info</a>
-            <a href="/logout.html" class="logout">🚪 Log Out</a>
+            <a href="/orders/history">🛒 View Purchase History</a>
+            <a href="/ChangePasswordPage">🔒 Change Password</a>
+            <a href="/userinfo">👤 Change User Info</a>
+            <a href="/logout" class="logout">🚪 Log Out</a>
         </div>
     </div>
 </body>

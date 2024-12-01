@@ -44,7 +44,7 @@ public class ProductController {
     @PutMapping("/{id}/status")
     public ResponseEntity<Void> updateProductStatus(@PathVariable Long id, @RequestBody Map<String, Boolean> status) {
         boolean isActive = status.get("isActive");
-        productService.updateProductStatus(id, isActive);
+        productService.updateProductStatus(id, isActive); 
         return ResponseEntity.ok().build();
     }
 

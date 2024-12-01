@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit User Info</title>
+<style>
+/* Đặt font và nền mặc định */
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url('assets/images/bg/bg_account.png') no-repeat center
+		center fixed;
+	background-size: cover; /* Đảm bảo hình ảnh phủ toàn bộ màn hình */
+	color: #333;
+}
+
+/* Phần container của form */
+.user-info-container {
+	max-width: 800px; /* Tăng chiều rộng form */
+	margin: 50px auto;
+	padding: 40px; /* Tăng khoảng cách padding */
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	border-radius: 12px; /* Tăng bán kính bo tròn */
+	background: rgba(255, 255, 255, 0.95); /* Nền trắng mờ hơn */
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Tăng bóng */
+}
+
+/* Tiêu đề */
+.user-info-container h2 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 30px; /* Tăng khoảng cách dưới */
+	font-size: 32px; /* Tăng kích thước chữ */
+}
+
+/* Các trường trong form */
+.form-field {
+	margin-bottom: 25px; /* Tăng khoảng cách giữa các trường */
+}
+
+.form-field label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	font-size: 18px; /* Tăng kích thước chữ label */
+	color: #555;
+}
+
+.form-field input {
+	width: 100%;
+	padding: 15px; /* Tăng kích thước padding */
+	border: 1px solid #ccc;
+	border-radius: 8px; /* Tăng bán kính bo tròn */
+	font-size: 18px; /* Tăng kích thước chữ input */
+	transition: all 0.3s ease-in-out;
+}
+
+.form-field input:focus {
+	border-color: #4caf50;
+	box-shadow: 0 0 12px rgba(76, 175, 80, 0.5);
+	/* Tăng hiệu ứng khi focus */
+	outline: none;
+}
+
+/* Phần nút */
+.form-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px; /* Tăng khoảng cách phía trên */
+}
+
+.form-buttons button {
+	flex: 1;
+	padding: 15px 30px; /* Tăng kích thước nút */
+	margin: 0 10px; /* Tăng khoảng cách giữa các nút */
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 18px; /* Tăng kích thước chữ nút */
+	transition: background-color 0.3s ease;
+}
+
+.save-btn {
+	background-color: #4caf50;
+	color: white;
+}
+
+.save-btn:hover {
+	background-color: #45a049;
+}
+
+.cancel-btn {
+	background-color: #f44336;
+	color: white;
+}
+
+.cancel-btn:hover {
+	background-color: #e53935;
+}
+
+.back-btn {
+	background-color: #2196f3;
+	color: white;
+}
+
+.back-btn:hover {
+	background-color: #1976d2;
+}
+
+/* Hiệu ứng hover nhẹ */
+.user-info-container:hover {
+	transform: scale(1.03);
+	transition: all 0.3s ease;
+}
+
+.error {
+	color: #ff4d4d; 
+	font-size: 14px;
+	margin-top: 5px; 
+	font-weight: bold;
+}
+
+
+.form--control.error-input {
+	border: 2px solid #ff4d4d;
+	background-color: #fff4f4;
+}
+</style>
+</head>
+<body>
+	<div class="user-info-container">
+    <h2>Edit User Info</h2>
+    <form th:action="@{/updateUser}" th:object="${user}" method="post">
+        <input type="hidden" name="userId" th:value="${user.id}" />
+        
+        <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" th:value="${user.name}" required />
+            <!-- Hiển thị lỗi nếu có -->
+            <div th:if="${errors != null and errors['name'] != null}" class="error">
+                <span th:text="${errors['name']}"></span>
+            </div>
+        </div>
+        
+        <div class="form-field">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" th:value="${user.username}" required />
+            <!-- Hiển thị lỗi nếu có -->
+            <div th:if="${errors != null and errors['username'] != null}" class="error">
+                <span th:text="${errors['username']}"></span>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label for="emailAddress">Email:</label>
+            <input type="email" id="emailAddress" name="emailAddress" th:value="${user.emailAddress}" required />
+            <!-- Hiển thị lỗi nếu có -->
+            <div th:if="${errors != null and errors['emailAddress'] != null}" class="error">
+                <span th:text="${errors['emailAddress']}"></span>
+            </div>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit" class="save-btn">Save</button>
+            
+            <button type="button" class="back-btn" onclick="history.back()">Back</button>
+        </div>
+    </form>
+</div>
+
+	<script>
+		// Hiển thị thông báo khi có message
+		const message = /*[[${message}]]*/'';
+		if (message) {
+			alert(message);
+		}
+	</script>
+</body>
+</html>

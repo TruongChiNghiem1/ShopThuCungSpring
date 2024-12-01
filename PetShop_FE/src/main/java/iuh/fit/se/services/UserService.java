@@ -6,7 +6,9 @@ import iuh.fit.se.utils.APResponse;
 public interface UserService {
 
 	public APResponse registerUser(User user);
-	public APResponse loginUser(String username, String password);
+	public APResponse loginUser(User user);
+	APResponse updateUser(Long userId, User user);
+	APResponse changePasswordUser(long id, String oldPassword, String newPassword, String confirmPassword);
 
 
   
