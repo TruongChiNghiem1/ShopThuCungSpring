@@ -39,4 +39,12 @@ public class ProductServiceImpl implements ProductService {
         product.setActive(isActive); // Giả sử bạn có thuộc tính `active` trong Product entity
         productRepository.save(product);
     }
+
+	@Override
+	public List<Product> getProductByFilter(float minPrice, float maxPrice, List<Integer> categories) {
+		if (categories == null || categories.isEmpty()) {
+            return productRepository.searchProductsByPrice(minPrice, maxPrice);
+        } else {
+            return productRepository.searchProductsByPriceAndCategories(minPrice, maxPrice, categories);
+        }	}
 }
