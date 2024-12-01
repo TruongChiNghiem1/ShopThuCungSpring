@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Title -->
-	<title> Viserpet HTML Template</title>
+	<title> Document</title>
 	<!-- Favicon -->
 	<link rel="shortcut icon" th:href="@{/assets/images/logo/favicon.png}">
 	<!-- Bootstrap -->
@@ -178,33 +178,13 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav nav-menu me-auto">
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Home <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="index.html"> Home One </a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="index-two.html"> Home Two </a></li>
-							</ul>
+							<a class="nav-link" href="/" role="button" > Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="about.html">About</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Pages <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="/products">Product category</a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="product-two-details.html">Product Details</a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="check-out.html"> Check Out</a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="faq.html"> Faq </a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="error.html"> Error page </a></li>
-							</ul>
+							<a class="nav-link" href="/products" role="button" > Products</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -238,7 +218,7 @@
 						<a href="wishlist.html" class="header-info__link"><i class="far fa-heart"></i></a>
 					</div>
 					<div class="header-info__cart">
-						<a href="cart.html" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
+						<a href="/cart" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
 						<span class="header-info__cart-quantity">03</span>
 					</div>
 					<div class="header-info__user">
@@ -378,7 +358,7 @@
 							<a href="index.html" class="btn btn--base pill product-info__link">BUY NOW</a>
 							<a href="wishlist.html" class="product-info__heart product-info__link"><i
 									class="fas fa-heart"></i></a>
-							<a href="cart.html" class="product-info__cart product-info__link"><i
+							<a href="/cart" class="product-info__cart product-info__link"><i
 									class="fas fa-shopping-cart"></i></a>
 						</div>
 
@@ -534,7 +514,7 @@
 								<li class="footer-menu__item"><a href="about.html" class="footer-menu__link"> About
 										Us</a></li>
 								<li class="footer-menu__item"><a href="faq.html" class="footer-menu__link"> Faq</a></li>
-								<li class="footer-menu__item"><a href="cart.html" class="footer-menu__link">Shopping
+								<li class="footer-menu__item"><a href="/cart" class="footer-menu__link">Shopping
 										Cart </a></li>
 								<li class="footer-menu__item"><a href="blog.html" class="footer-menu__link"> Blog</a>
 								</li>
@@ -704,7 +684,7 @@
 							 							<h6 class="product-item__price">
 							 								<span class="product-item__price-new">$${product.oldPrice}</span> $${product.newPrice}
 							 							</h6>
-							 							<a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
+							 							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
 							 						</div>
 							 					</div>
 							 				</div>

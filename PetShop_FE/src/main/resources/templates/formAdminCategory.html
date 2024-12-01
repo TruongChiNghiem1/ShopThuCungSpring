@@ -148,34 +148,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-menu me-auto">
                   <li class="nav-item dropdown">
-                      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-                         <ul class="dropdown-menu">
-                          <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="index.html"> Home One </a></li>
-                          <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="index-two.html"> Home Two </a></li>
-                         </ul>
+                      <a class="nav-link" href="/" role="button" > Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="/about">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-                      <ul class="dropdown-menu">
-                          <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="/products">Product category</a></li>
-                          <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="product-two-details.html">Product Details</a></li>
-                          <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="check-out.html"> Check Out</a></li>
-                          <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="faq.html"> Faq </a></li>
-                          <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="error.html"> Error page </a></li>
-                      </ul>
-                      </li> 
-                        <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Blog <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="blog.html">Blog</a></li>
-                            <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="blog-details.html">Blog Details</a>
-                          </li>
-                        </ul>
-                        </li> 
-  
+                        <a class="nav-link" href="/products" role="button" > Products</a>
+                      </li>
                     <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact</a>
                   </li>
@@ -194,7 +174,7 @@
                  <a href="wishlist.html" class="header-info__link"><i class="far fa-heart"></i></a>
               </div>
               <div class="header-info__cart">
-                     <a href="cart.html" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
+                     <a href="/cart" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
                      <span class="header-info__cart-quantity">03</span>
               </div>
               <div class="header-info__user">
@@ -258,12 +238,13 @@
 <!-- ==================== Contact Start Here ==================== -->
 <section class="contact-top pt-5">
     <div class="container">
-		<h2>Thêm danh mục</h2>
+		<h2>Add new category</h2>
 		<form id="category-form">
 			<input type="hidden" th:value="${categoryId}" id="category-id">
 		  <div class="mb-3">
-		    <label for="category-name" class="form-label">Tên danh mục</label>
+		    <label for="category-name" class="form-label">Category name</label>
 			<input type="text" class="form-control" id="category-name">
+			<div id="name-error" class="text-danger" style="display: none;">Catergory is not empty.</div>
 		  </div>
 		  <button type="submit" class="btn btn-primary p-2" style="background-color: #804d4e;">Lưu</button>
 		</form>
@@ -298,7 +279,7 @@
                         <ul class="footer-menu">
                             <li class="footer-menu__item"><a href="/about" class="footer-menu__link"> About Us</a></li>
                             <li class="footer-menu__item"><a href="faq.html" class="footer-menu__link"> Faq</a></li>
-                            <li class="footer-menu__item"><a href="cart.html" class="footer-menu__link">Shopping Cart </a></li>
+                            <li class="footer-menu__item"><a href="/cart" class="footer-menu__link">Shopping Cart </a></li>
                             <li class="footer-menu__item"><a href="blog.html" class="footer-menu__link"> Blog</a></li>
                             <li class="footer-menu__item"><a href="product-two-details.html" class="footer-menu__link"> Product Details</a></li>
                         </ul>
@@ -353,7 +334,7 @@
 <script th:src="@{/assets/js/jquery.magnific-popup.min.js}"></script>
  <!-- main js} -->
 <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script th:src="@{/assets/js/main.js}"></script>
 <script>
 	const apiUrl = 'http://localhost:9998/api/products';
@@ -377,6 +358,16 @@
 
 	    const id = $('#category-id').val();
 	    const name = $('#category-name').val();
+	    const nameError = $('#name-error');
+
+	    // Reset thông báo lỗi
+	    nameError.hide();
+
+	    // Kiểm tra ràng buộc
+	    if (!name) {
+	        nameError.show(); // Hiện thông báo lỗi
+	        return; // Dừng lại nếu không có tên danh mục
+	    }
 
 	    const categoryData = { id, name };
 
@@ -404,14 +395,25 @@
 	            data: JSON.stringify(categoryData)
 	        })
 	        .done(function() {
-	            alert('Thêm danh mục thành công!');
-	            window.location.href = '/admin/categoties'
+				Swal.fire({
+				  position: "top-end",
+				  icon: "success",
+				  title: "Your category has been saved",
+				  showConfirmButton: true,
+				  timer: 1500
+				}).then((result) => {
+	  			  if (result.isConfirmed) {
+					window.location.href = '/admin/categoties'
+				  }
+			  	});
+	            
 	        })
 	        .fail(function(error) {
 	            console.error('Lỗi:', error);
 	        });
 	    }
 	}
+
 	
 	// Chỉnh sửa danh mục
 	function editCategory(id) {

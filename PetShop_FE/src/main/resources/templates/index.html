@@ -4,1262 +4,1242 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Viserpet HTML Template</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" th:href="@{/assets/images/logo/favicon.png}">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" th:href="@{/assets/css/fontawesome-all.min.css}">
-    <!-- Slick -->
-    <link rel="stylesheet" th:href="@{/assets/css/slick.css}">
-    <!-- Line Awesome -->
-    <link rel="stylesheet" th:href="@{/assets/css/line-awesome.min.css}">
-    <!-- Countdown CSS -->
-    <link rel="stylesheet" th:href="@{/assets/css/jquery.classycountdown.min.css}">
-    <!-- Range CSS -->
-    <link rel="stylesheet" th:href="@{/assets/css/jquery-ui.css}">
-    <!-- Magnific CSS -->
-    <link rel="stylesheet" th:href="@{/assets/css/magnific-popup.css}">
-    <!-- Main CSS -->
-    <link rel="stylesheet" th:href="@{/assets/css/main.css}">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title -->
+	<title>Document</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" th:href="@{/assets/images/logo/favicon.png}">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}">
+	<!-- Fontawesome -->
+	<link rel="stylesheet" th:href="@{/assets/css/fontawesome-all.min.css}">
+	<!-- Slick -->
+	<link rel="stylesheet" th:href="@{/assets/css/slick.css}">
+	<!-- Line Awesome -->
+	<link rel="stylesheet" th:href="@{/assets/css/line-awesome.min.css}">
+	<!-- Countdown CSS -->
+	<link rel="stylesheet" th:href="@{/assets/css/jquery.classycountdown.min.css}">
+	<!-- Range CSS -->
+	<link rel="stylesheet" th:href="@{/assets/css/jquery-ui.css}">
+	<!-- Magnific CSS -->
+	<link rel="stylesheet" th:href="@{/assets/css/magnific-popup.css}">
+	<!-- Main CSS -->
+	<link rel="stylesheet" th:href="@{/assets/css/main.css}">
 </head>
 
 <body>
-    
-<!--==================== Preloader Start ====================-->
-<div class="preloader">
-    <div class="loader-p"></div>
-  </div>
-<!--==================== Preloader End ====================-->
 
-<!--==================== Overlay Start ====================-->
-<div class="body-overlay"></div>
-<!--==================== Overlay End ====================-->
+	<!--==================== Preloader Start ====================-->
+	<div class="preloader">
+		<div class="loader-p"></div>
+	</div>
+	<!--==================== Preloader End ====================-->
 
-<!--==================== Sidebar Overlay End ====================-->
-<div class="sidebar-overlay"></div>
-<!--==================== Sidebar Overlay End ====================-->
+	<!--==================== Overlay Start ====================-->
+	<div class="body-overlay"></div>
+	<!--==================== Overlay End ====================-->
 
-<!-- ==================== Scroll to Top End Here ==================== -->
-<a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
-<!-- ==================== Scroll to Top End Here ==================== -->
+	<!--==================== Sidebar Overlay End ====================-->
+	<div class="sidebar-overlay"></div>
+	<!--==================== Sidebar Overlay End ====================-->
 
-<!-- ==================== Bottom Header End Here ==================== -->
-<header class="header" id="header">
-  <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span id="hiddenNav"><i class="las la-bars"></i></span>
-          </button>
-		  <h1>Uyển Quyên nè</h1>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav nav-menu me-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-                       <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="index.html"> Home One </a></li>
-                        <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="index-two.html"> Home Two </a></li>
-                       </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="/about">About</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="/products">Product Category</a></li>
-                        <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="product-two-details.html">Product Details</a></li>
-                        <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="check-out.html"> Check Out</a></li>
-                        <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="faq.html"> Faq </a></li>
-                        <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="error.html"> Error Page </a></li>
-                    </ul>
-                    </li> 
-                      <li class="nav-item dropdown">
-                      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Blog <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-                      <ul class="dropdown-menu">
-                          <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="blog.html">Blog</a></li>
-                          <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="blog-details.html">Blog Details</a></li>
-                      </ul>
-                      </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                  <li class=" nav-item">
-                    <div class="toggle-search-box d-none d-lg-block">
-                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-box" data-bs-whatever="@mdo"><i class="las la-search"></i></button>
-                    </div>
-                  </li>
-              </ul>
-          </div>
-          <div class="header-info">
-            <div class="toggle-search-box d-lg-none d-block">
-                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-box" data-bs-whatever="@mdo"><i class="las la-search"></i></button>
-            </div>
-            <div class="header-info__wishlist">
-               <a href="wishlist.html" class="header-info__link"><i class="far fa-heart"></i></a>
-            </div>
-            <div class="header-info__cart">
-                   <a href="cart.html" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
-                   <span class="header-info__cart-quantity">03</span>
-            </div>
-          <div class="header-info__user">
-    <!-- Hiển thị khi người dùng đã đăng nhập -->
-    <a href="/account" class="header-info__link" th:if="${loggedIn}"><i class="far fa-user"></i></a>
-    
-    <!-- Hiển thị khi người dùng chưa đăng nhập -->
-    <a href="/loginPage" class="header-info__link" th:unless="${loggedIn}"><i class="far fa-user"></i></a>
-</div>
-         </div>
-         <div class="header-categories d-block d-lg-none">
-            <button class="header-category">
-                Categories <span class="header-category__icon"><i class="las la-bars"></i></span>
-            </button>
-        </div>
-      </nav>
-  </div>
-</header>
-<!-- ==================== Bottom Header End Here ==================== -->
+	<!-- ==================== Scroll to Top End Here ==================== -->
+	<a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
+	<!-- ==================== Scroll to Top End Here ==================== -->
 
- <!--========================== Search Modal Start ==========================-->
- <div class="overlay-search-box position-relative">
-  <div class="modal fade" id="search-box" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="search-overlay-close" data-bs-dismiss="modal" aria-label="Close"><i class="las la-times"></i></button>
-              </div>
-              <div class="modal-body">
-                  <form>
-                      <div class="row">
-                          <div class="col-lg-12">
-                              <div class="search-box">
-                                  <div class="input--group">
-                                      <input type="text" class="form--control style-two" placeholder="Search....">
-                                      <button class="search-btn" type="submit"><i class="las la-search"></i></button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-<!--========================== Search Modal End ==========================-->
+	<!-- ==================== Bottom Header End Here ==================== -->
+	<header class="header" id="header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span id="hiddenNav"><i class="las la-bars"></i></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav nav-menu me-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="/" role="button"> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="/about">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="/products" role="button"> Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class=" nav-item">
+							<div class="toggle-search-box d-none d-lg-block">
+								<button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-box"
+									data-bs-whatever="@mdo"><i class="las la-search"></i></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="header-info">
+					<div class="toggle-search-box d-lg-none d-block">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-box"
+							data-bs-whatever="@mdo"><i class="las la-search"></i></button>
+					</div>
+					<div class="header-info__wishlist">
+						<a href="wishlist.html" class="header-info__link"><i class="far fa-heart"></i></a>
+					</div>
+					<div class="header-info__cart">
+						<a href="/cart" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
+						<span class="header-info__cart-quantity">03</span>
+					</div>
+					<div class="header-info__user">
+						<!-- Hiển thị khi người dùng đã đăng nhập -->
+						<a href="/account" class="header-info__link" th:if="${loggedIn}"><i class="far fa-user"></i></a>
+
+						<!-- Hiển thị khi người dùng chưa đăng nhập -->
+						<a href="/loginPage" class="header-info__link" th:unless="${loggedIn}"><i
+								class="far fa-user"></i></a>
+					</div>
+				</div>
+				<div class="header-categories d-block d-lg-none">
+					<button class="header-category">
+						Categories <span class="header-category__icon"><i class="las la-bars"></i></span>
+					</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- ==================== Bottom Header End Here ==================== -->
+
+	<!--========================== Search Modal Start ==========================-->
+	<div class="overlay-search-box position-relative">
+		<div class="modal fade" id="search-box" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="search-overlay-close" data-bs-dismiss="modal" aria-label="Close"><i
+								class="las la-times"></i></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="search-box">
+										<div class="input--group">
+											<input type="text" class="form--control style-two" placeholder="Search....">
+											<button class="search-btn" type="submit"><i
+													class="las la-search"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--========================== Search Modal End ==========================-->
 
 
-<!--========================== Banner Section Start ==========================-->
-<section class="banner-section pt-60 pb-60">
-  <div class="container">
-      <div class="row gy-4 justify-content-center">
-          <div class="col-lg-3">
-            <nav class="category">
-                <span class="close-sidebar d-lg-none d-block"><i class="las la-times"></i></span>
-                <ul class="category-menu">
-                    <li class="category-menu__item has-dropdown">
-                        <a href="#" class="category-menu__link">
-                            <span class="category-menu__thumb"><img src="assets/images/icons/dog01.png" alt=""></span> Dog Food <span class="category-menu__icon"><i class="las la-angle-down"></i></span></a>
-                        <ul class="category-dropdown">
-                            <li class="category-dropdown__item">
-                                <a href="/products" class="category-dropdown__link">
-                                    <span class="category-dropdown__thumb">
-                                        <img src="assets/images/icons/dog01.png" alt="">
-                                    </span> Category Dropdown One</a>
-                            </li>
-                            <li class="category-dropdown__item">
-                                <a href="/products" class="category-dropdown__link">
-                                    <span class="category-dropdown__thumb">
-                                        <img src="assets/images/icons/dog01.png" alt="">
-                                    </span> Category Dropdown Two</a>
-                            </li>
-                            <li class="category-dropdown__item">
-                                <a href="/products" class="category-dropdown__link">
-                                    <span class="category-dropdown__thumb">
-                                        <img src="assets/images/icons/dog01.png" alt="">
-                                    </span> Category Dropdown Three</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="category-menu__item">
-                        <a href="/products" class="category-menu__link"><span class="category-menu__thumb"><img src="assets/images/icons/cat.png" alt=""></span> Cat </a>
-                    </li>
-                    <li class="category-menu__item">
-                        <a href="/products" class="category-menu__link"> <span class="category-menu__thumb"><img src="assets/images/icons/fish.png" alt=""></span> Fish </a>
-                    </li>
-                    <li class="category-menu__item">                 
-                        <a href="/products" class="category-menu__link"><span class="category-menu__thumb"><img src="assets/images/icons/toys.png" alt=""></span> Pet toy </a>
-                    </li>
-                    <li class="category-menu__item has-dropdown">
-                        <a href="#" class="category-menu__link"> 
-                            <span class="category-menu__thumb"><img src="assets/images/icons/parrot.png" alt=""></span>
-                               Parrot <span class="category-menu__icon">
-                              <i class="las la-angle-down"></i>
-                            </span>
-                        </a>
-                        <ul class="category-dropdown">
-                            <li class="category-dropdown__item">
-                                <a href="/products" class="category-dropdown__link">
-                                    <span class="category-dropdown__thumb">
-                                        <img src="assets/images/icons/parrot.png" alt="">
-                                    </span> Category Dropdown One</a>
-                            </li>
-                            <li class="category-dropdown__item">
-                                <a href="/products" class="category-dropdown__link">
-                                    <span class="category-dropdown__thumb">
-                                        <img src="assets/images/icons/parrot.png" alt="">
-                                    </span> Category Dropdown Two</a>
-                            </li>
-                            <li class="category-dropdown__item">
-                                <a href="/products" class="category-dropdown__link">
-                                    <span class="category-dropdown__thumb">
-                                        <img src="assets/images/icons/parrot.png" alt="">
-                                    </span> Category Dropdown Three</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="category-menu__item">
-                        <a href="/products" class="category-menu__link"><span class="category-menu__thumb"><img src="assets/images/icons/rabbit.png" alt=""></span> Rabbit </a>
-                    </li>
-                    <li class="category-menu__item">
-                        <a href="/products" class="category-menu__link"><span class="category-menu__thumb"><img src="assets/images/icons/accessories.png" alt=""></span> Accessories </a>
-                    </li>
-                    <li class="category-menu__item">
-                        <a href="/products" class="category-menu__link"><span class="category-menu__thumb"><img src="assets/images/icons/dog02.png" alt=""></span> Small pet </a>
-                    </li>
-                 </ul>
-                 <div class="contact-list__wrapper d-md-none d-block">
-                    <div class="contact-list">
-                     <div class="contact-list__item">
-                         <span class="contact-list__icon">
-                            <img src="assets/images/icons/phone.png" alt="">
-                         </span>
-                     </div>
-                      <div class="contact-list__number-link">
-                         <span class="contact-list__info"> 000 - 8888 - 9999</span>
-                      </div>
-                    </div>
-                    <div class="contact-list">
-                     <div class="contact-list__item">
-                         <span class="contact-list__icon">
-                            <img src="assets/images/icons/email.png" alt="">
-                         </span>
-                     </div>
-                      <div class="contact-list__number-link">
-                         <span class="contact-list__info"> <a href="https://template.viserlab.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="46302f35233436233206212b272f2a6825292b">[email&#160;protected]</a></span>
-                      </div>
-                    </div>
-                 </div>
-            </nav>
-          </div>
+	<!--========================== Banner Section Start ==========================-->
+	<section class="banner-section pt-60 pb-60">
+		<div class="container">
+			<div class="row gy-4 justify-content-center">
+				<div class="col-lg-3">
+					<nav class="category">
+						<span class="close-sidebar d-lg-none d-block"><i class="las la-times"></i></span>
+						<ul class="category-menu category-menu-show">
+							
+							
+						</ul>
+						<div class="contact-list__wrapper d-md-none d-block">
+							<div class="contact-list">
+								<div class="contact-list__item">
+									<span class="contact-list__icon">
+										<img src="assets/images/icons/phone.png" alt="">
+									</span>
+								</div>
+								<div class="contact-list__number-link">
+									<span class="contact-list__info"> 000 - 8888 - 9999</span>
+								</div>
+							</div>
+							<div class="contact-list">
+								<div class="contact-list__item">
+									<span class="contact-list__icon">
+										<img src="assets/images/icons/email.png" alt="">
+									</span>
+								</div>
+								<div class="contact-list__number-link">
+									<span class="contact-list__info"> <a
+											href="https://template.viserlab.com/cdn-cgi/l/email-protection"
+											class="__cf_email__"
+											data-cfemail="46302f35233436233206212b272f2a6825292b">[email&#160;protected]</a></span>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
 
-          <div class="col-lg-9 col-md-12">
-            <div class="banner">
-                <div class="banner-content">
-                    <h4 class="banner-content__subtitle">Best Product</h4>
-                    <h2 class="banner-content__title">DOG FOOD</h2>
-                    <p class="banner-content__desc">
-                        Wusmod tempor incididu nt ut labore et dolore magna aliqua.
-                    </p>
-                    <div class="banner-content__buttons">
-                        <a href="/products" class="btn btn--base pill">SHOP NOW</a>
-                        <div class="button-shape">
-                            <img src="assets/images/shapes/button-shape.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="banner-thumb">
-                    <img src="assets/images/thumbs/banner-img.png" alt="">
-                    <div class="banner-thumb__shape">
-                        <img src="assets/images/shapes/banner-shape.png" alt="">
-                    </div>
-                </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</section>
-<!--========================== Banner Section End ==========================-->
+				<div class="col-lg-9 col-md-12">
+					<div class="banner">
+						<div class="banner-content">
+							<h4 class="banner-content__subtitle">Best Product</h4>
+							<h2 class="banner-content__title">DOG FOOD</h2>
+							<p class="banner-content__desc">
+								Wusmod tempor incididu nt ut labore et dolore magna aliqua.
+							</p>
+							<div class="banner-content__buttons">
+								<a href="/products" class="btn btn--base pill">SHOP NOW</a>
+								<div class="button-shape">
+									<img src="assets/images/shapes/button-shape.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="banner-thumb">
+							<img src="assets/images/thumbs/banner-img.png" alt="">
+							<div class="banner-thumb__shape">
+								<img src="assets/images/shapes/banner-shape.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--========================== Banner Section End ==========================-->
 
-<!--==============================offer-section start  here=============================-->
-<div class="offer-section pt-60 pb-60">
-    <div class="container">
-        <div class="row gy-4">
-            <div class="col-lg-6">
-                <a href="/products" class="offer">
-                    <img src="assets/images/thumbs/offer-img.png" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a href="/products" class="offer">
-                    <img src="assets/images/thumbs/offer-img03.png" alt="">
-                 </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--======================product sections start here =================-->
-<div class="product-section py-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-heading">
-                   <h4 class="section-heading__subtitle">Special products</h4>
-                   <h3 class="section-heading__title style-two">Trending Products<span class="section-heading__bars"></span></h3>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center gy-4">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
-                <div class="product-item text-center">
-                    <div class="product-item__thumb">
-                        <a href="product-two-details.html" class="product-item__thumb-link">
-                           <img src="assets/images/thumbs/product/product09.png" alt="">
-                        </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                        <div class="product-item__badge">
-                            <span class="badge badge--base">Sale</span>
-                        </div>
-                    </div>
-                    <div class="product-item__content">
-                      <h5 class="product-item__title">
-                       <a href="product-two-details.html" class="product-item__title-link">
-                           Coco Kat Kitten Milk 
-                       </a>
-                      </h5>
-                      <ul class="product-info__rating justify-content-center align-items-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star-half-alt"></i>
-                        </li>
-                        <li class="product-info__number">
-                          4.8
-                        </li>
-                      </ul>
-                       <h6 class="product-item__price">
-                          <span class="product-item__price-new">$200</span> $180
-                       </h6>
-                       <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                        <a href="product-two-details.html" class="product-item__thumb-link">
-                           <img src="assets/images/thumbs/product/product02.png" alt="">
-                        </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                    </div>
-                    <div class="product-item__content">
-                      <h5 class="product-item__title">  
-                        <a href="product-two-details.html" class="product-item__title-link">
-                           Moderna Scoop & Sift  
-                        </a>
-                      </h5>
-                      <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star-half-alt"></i>
-                        </li>
-                        <li class="product-info__number">
-                          4.8
-                        </li>
-                      </ul>
-                      <h6 class="product-item__price">
-                        <span class="product-item__price-new">$360</span> $310
-                      </h6>
-                       <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                        <a href="product-two-details.html" class="product-item__thumb-link">
-                           <img src="assets/images/thumbs/product/product03.png" alt="">
-                        </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                        <div class="product-item__badge">
-                            <span class="badge badge--base">Sale</span>
-                        </div>
-                    </div>
-                    <div class="product-item__content">
-                        <h5 class="product-item__title">
-                            <a href="product-two-details.html" class="product-item__title-link">
-                                BonaCibo Kitten Pouch 
-                             </a>
-                        </h5>
-                        <ul class="product-info__rating justify-content-center">
-                            <li class="product-info__rating-item">
-                              <i class="fas fa-star"></i>
-                            </li>
-                            <li class="product-info__rating-item">
-                              <i class="fas fa-star"></i>
-                            </li>
-                            <li class="product-info__rating-item">
-                              <i class="fas fa-star"></i>
-                            </li>
-                            <li class="product-info__rating-item">
-                              <i class="fas fa-star"></i>
-                            </li>
-                            <li class="product-info__rating-item">
-                              <i class="fas fa-star"></i>
-                            </li>
-                            <li class="product-info__number">
-                              5.0
-                            </li>
-                          </ul>
-                        <h6 class="product-item__price">
-                            <span class="product-item__price-new">$200</span> $180
-                        </h6>
-                        <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                        <a href="product-two-details.html" class="product-item__thumb-link">
-                           <img src="assets/images/thumbs/product/product04.png" alt="">
-                        </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                    </div>
-                    <div class="product-item__content">
-                    <h5 class="product-item__title">
-                        <a href="product-two-details.html" class="product-item__title-link">
-                            Oropharma 
-                        </a>
-                    </h5>
-                    <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__number">
-                          5.0
-                        </li>
-                      </ul>
-                    <h6 class="product-item__price">
-                        <span class="product-item__price-new">$150</span> $330
-                    </h6>
-                    <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                        <a href="product-two-details.html" class="product-item__thumb-link">
-                            <img src="assets/images/thumbs/product/product05.png" alt="">
-                         </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                        <div class="product-item__badge">
-                            <span class="badge badge--base">-30%</span>
-                        </div>
-                    </div>
-                    <div class="product-item__content">
-                       <h5 class="product-item__title">
-                        <a href="product-two-details.html" class="product-item__title-link">
-                          Coco Kat Kitten Milk  
-                        </a>
-                       </h5>
-                       <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__number">
-                          5.0
-                        </li>
-                      </ul>
-                       <h6 class="product-item__price">
-                        <span class="product-item__price-new">$290</span> $280
-                       </h6>
-                       <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                   </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                        <a href="product-two-details.html" class="product-item__thumb-link">
-                           <img src="assets/images/thumbs/product/product06.png" alt="">
-                       </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                    </div>
-                 <div class="product-item__content">  
-                    <h5 class="product-item__title">
-                        <a href="product-two-details.html" class="product-item__title-link">
-                          Cat Food Chicke
-                        </a>
-                    </h5>
-                    <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__number">
-                          5.0
-                        </li>
-                      </ul>
-                    <h6 class="product-item__price">
-                        <span class="product-item__price-new">$490</span> $480
-                    </h6>
-                    <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                </div> 
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                        <a href="product-two-details.html" class="product-item__thumb-link">
-                           <img src="assets/images/thumbs/product/product07.png" alt="">
-                        </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                        <div class="product-item__badge">
-                            <span class="badge badge--base">Sale</span>
-                        </div>
-                    </div>
-                  <div class="product-item__content">  
-                    <h5 class="product-item__title">
-                        <a href="product-two-details.html" class="product-item__title-link">
-                            Naughty Cat Bentonite 
-                        </a>
-                    </h5>
-                    <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__number">
-                          5.0
-                        </li>
-                      </ul>
-                    <h6 class="product-item__price">
-                        <span class="product-item__price-new">$760</span> $630
-                    </h6>
-                    <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                        <a href="product-two-details.html" class="product-item__thumb-link">
-                           <img src="assets/images/thumbs/product/product08.png" alt="">
-                        </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                    </div>
-                  <div class="product-item__content"> 
-                    <h5 class="product-item__title">
-                        <a href="product-two-details.html" class="product-item__title-link">
-                            Moderna Trendy Story 
-                         </a>
-                    </h5>
-                    <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__number">
-                          4.8
-                        </li>
-                      </ul>
-                    <h6 class="product-item__price">
-                        <span class="product-item__price-new">$620</span> $520
-                    </h6>
-                    <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                </div> 
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ====================deal section start here ====================-->
-<div class="best-deals-section py-60">
-        <div class="container-fluid p-0">
-        <div class="row gx-0 justify-content-center flex-wrap-reverse">
-                <div class="col-xl-4">
-                   <div class="deal-thumb">
-                      <img src="assets/images/thumbs/deal-img.png" alt="">
-                  </div>
-                </div>
-                <div class="col-xl-8">
-                <div class="deal-counter py-120" style="background-image: url(assets/images/thumbs/deal-product-img.png);">
-                    <div class="section-heading style-three">
-                        <h4 class="section-heading__subtitle">Best products</h4>
-                        <h3 class="section-heading__title">Best Deals Of T he Week!</h3>
-                     </div>
-                     <div id="countdown-container"></div>
-                     <div class="deal-counter__footer text-center">
-                        <p class="deal-counter__title mb-3">Dummy Product Name</p>
-                        <h6 class="deal-counter__price">
-                            <span class="deal-counter__price-new">$620</span> $520
-                        </h6>
-                    </div>
-                    <div class="text-center">
-                        <a href="/products" class="btn btn--base pill">SHOP NOW</a>
-                    </div>
-                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!--===================== deal section end Here ====================-->
-<!--==========================new arrival section start here======================-->
-<div class="new-arrival-section py-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h4 class="section-heading__subtitle">Special products</h4>
-                    <h3 class="section-heading__title style-two">New Arrivals product<span class="section-heading__bars"></span></h3>
-                 </div>
-            </div>
-         </div>
-            <div class="col-lg-12">
-                <div class="filter">
-                    <button type="button" data-filter="all" class="mixitup-control-active">All</button>
-                    <button type="button" data-filter=".cat">Cat</button>
-                    <button type="button" data-filter=".dog">Dog</button>
-                    <button type="button" data-filter=".small-pet">Small Pet</button>
-                 </div>
-            </div>
+	<!--==============================offer-section start  here=============================-->
+	<div class="offer-section pt-60 pb-60">
+		<div class="container">
+			<div class="row gy-4">
+				<div class="col-lg-6">
+					<a href="/products" class="offer">
+						<img src="assets/images/thumbs/offer-img.png" alt="">
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a href="/products" class="offer">
+						<img src="assets/images/thumbs/offer-img03.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--======================product sections start here =================-->
+	<div class="product-section py-60">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-heading">
+						<h4 class="section-heading__subtitle">Special products</h4>
+						<h3 class="section-heading__title style-two">Trending Products<span
+								class="section-heading__bars"></span></h3>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center gy-4">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+					<div class="product-item text-center">
+						<div class="product-item__thumb">
+							<a href="product-two-details.html" class="product-item__thumb-link">
+								<img src="assets/images/thumbs/product/product09.png" alt="">
+							</a>
+							<button class="product-item__icon">
+								<span class="product-item__icon-style">
+									<i class="las la-heart"></i>
+								</span>
+							</button>
+							<div class="product-item__badge">
+								<span class="badge badge--base">Sale</span>
+							</div>
+						</div>
+						<div class="product-item__content">
+							<h5 class="product-item__title">
+								<a href="product-two-details.html" class="product-item__title-link">
+									Coco Kat Kitten Milk
+								</a>
+							</h5>
+							<ul class="product-info__rating justify-content-center align-items-center">
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star-half-alt"></i>
+								</li>
+								<li class="product-info__number">
+									4.8
+								</li>
+							</ul>
+							<h6 class="product-item__price">
+								<span class="product-item__price-new">$200</span> $180
+							</h6>
+							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+					<div class="product-item">
+						<div class="product-item__thumb">
+							<a href="product-two-details.html" class="product-item__thumb-link">
+								<img src="assets/images/thumbs/product/product02.png" alt="">
+							</a>
+							<button class="product-item__icon">
+								<span class="product-item__icon-style">
+									<i class="las la-heart"></i>
+								</span>
+							</button>
+						</div>
+						<div class="product-item__content">
+							<h5 class="product-item__title">
+								<a href="product-two-details.html" class="product-item__title-link">
+									Moderna Scoop & Sift
+								</a>
+							</h5>
+							<ul class="product-info__rating justify-content-center">
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star-half-alt"></i>
+								</li>
+								<li class="product-info__number">
+									4.8
+								</li>
+							</ul>
+							<h6 class="product-item__price">
+								<span class="product-item__price-new">$360</span> $310
+							</h6>
+							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+					<div class="product-item">
+						<div class="product-item__thumb">
+							<a href="product-two-details.html" class="product-item__thumb-link">
+								<img src="assets/images/thumbs/product/product03.png" alt="">
+							</a>
+							<button class="product-item__icon">
+								<span class="product-item__icon-style">
+									<i class="las la-heart"></i>
+								</span>
+							</button>
+							<div class="product-item__badge">
+								<span class="badge badge--base">Sale</span>
+							</div>
+						</div>
+						<div class="product-item__content">
+							<h5 class="product-item__title">
+								<a href="product-two-details.html" class="product-item__title-link">
+									BonaCibo Kitten Pouch
+								</a>
+							</h5>
+							<ul class="product-info__rating justify-content-center">
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__number">
+									5.0
+								</li>
+							</ul>
+							<h6 class="product-item__price">
+								<span class="product-item__price-new">$200</span> $180
+							</h6>
+							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+					<div class="product-item">
+						<div class="product-item__thumb">
+							<a href="product-two-details.html" class="product-item__thumb-link">
+								<img src="assets/images/thumbs/product/product04.png" alt="">
+							</a>
+							<button class="product-item__icon">
+								<span class="product-item__icon-style">
+									<i class="las la-heart"></i>
+								</span>
+							</button>
+						</div>
+						<div class="product-item__content">
+							<h5 class="product-item__title">
+								<a href="product-two-details.html" class="product-item__title-link">
+									Oropharma
+								</a>
+							</h5>
+							<ul class="product-info__rating justify-content-center">
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__number">
+									5.0
+								</li>
+							</ul>
+							<h6 class="product-item__price">
+								<span class="product-item__price-new">$150</span> $330
+							</h6>
+							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+					<div class="product-item">
+						<div class="product-item__thumb">
+							<a href="product-two-details.html" class="product-item__thumb-link">
+								<img src="assets/images/thumbs/product/product05.png" alt="">
+							</a>
+							<button class="product-item__icon">
+								<span class="product-item__icon-style">
+									<i class="las la-heart"></i>
+								</span>
+							</button>
+							<div class="product-item__badge">
+								<span class="badge badge--base">-30%</span>
+							</div>
+						</div>
+						<div class="product-item__content">
+							<h5 class="product-item__title">
+								<a href="product-two-details.html" class="product-item__title-link">
+									Coco Kat Kitten Milk
+								</a>
+							</h5>
+							<ul class="product-info__rating justify-content-center">
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__number">
+									5.0
+								</li>
+							</ul>
+							<h6 class="product-item__price">
+								<span class="product-item__price-new">$290</span> $280
+							</h6>
+							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+					<div class="product-item">
+						<div class="product-item__thumb">
+							<a href="product-two-details.html" class="product-item__thumb-link">
+								<img src="assets/images/thumbs/product/product06.png" alt="">
+							</a>
+							<button class="product-item__icon">
+								<span class="product-item__icon-style">
+									<i class="las la-heart"></i>
+								</span>
+							</button>
+						</div>
+						<div class="product-item__content">
+							<h5 class="product-item__title">
+								<a href="product-two-details.html" class="product-item__title-link">
+									Cat Food Chicke
+								</a>
+							</h5>
+							<ul class="product-info__rating justify-content-center">
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__number">
+									5.0
+								</li>
+							</ul>
+							<h6 class="product-item__price">
+								<span class="product-item__price-new">$490</span> $480
+							</h6>
+							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+					<div class="product-item">
+						<div class="product-item__thumb">
+							<a href="product-two-details.html" class="product-item__thumb-link">
+								<img src="assets/images/thumbs/product/product07.png" alt="">
+							</a>
+							<button class="product-item__icon">
+								<span class="product-item__icon-style">
+									<i class="las la-heart"></i>
+								</span>
+							</button>
+							<div class="product-item__badge">
+								<span class="badge badge--base">Sale</span>
+							</div>
+						</div>
+						<div class="product-item__content">
+							<h5 class="product-item__title">
+								<a href="product-two-details.html" class="product-item__title-link">
+									Naughty Cat Bentonite
+								</a>
+							</h5>
+							<ul class="product-info__rating justify-content-center">
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__number">
+									5.0
+								</li>
+							</ul>
+							<h6 class="product-item__price">
+								<span class="product-item__price-new">$760</span> $630
+							</h6>
+							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+					<div class="product-item">
+						<div class="product-item__thumb">
+							<a href="product-two-details.html" class="product-item__thumb-link">
+								<img src="assets/images/thumbs/product/product08.png" alt="">
+							</a>
+							<button class="product-item__icon">
+								<span class="product-item__icon-style">
+									<i class="las la-heart"></i>
+								</span>
+							</button>
+						</div>
+						<div class="product-item__content">
+							<h5 class="product-item__title">
+								<a href="product-two-details.html" class="product-item__title-link">
+									Moderna Trendy Story
+								</a>
+							</h5>
+							<ul class="product-info__rating justify-content-center">
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__rating-item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="product-info__number">
+									4.8
+								</li>
+							</ul>
+							<h6 class="product-item__price">
+								<span class="product-item__price-new">$620</span> $520
+							</h6>
+							<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ====================deal section start here ====================-->
+	<div class="best-deals-section py-60">
+		<div class="container-fluid p-0">
+			<div class="row gx-0 justify-content-center flex-wrap-reverse">
+				<div class="col-xl-4">
+					<div class="deal-thumb">
+						<img src="assets/images/thumbs/deal-img.png" alt="">
+					</div>
+				</div>
+				<div class="col-xl-8">
+					<div class="deal-counter py-120"
+						style="background-image: url(assets/images/thumbs/deal-product-img.png);">
+						<div class="section-heading style-three">
+							<h4 class="section-heading__subtitle">Best products</h4>
+							<h3 class="section-heading__title">Best Deals Of T he Week!</h3>
+						</div>
+						<div id="countdown-container"></div>
+						<div class="deal-counter__footer text-center">
+							<p class="deal-counter__title mb-3">Dummy Product Name</p>
+							<h6 class="deal-counter__price">
+								<span class="deal-counter__price-new">$620</span> $520
+							</h6>
+						</div>
+						<div class="text-center">
+							<a href="/products" class="btn btn--base pill">SHOP NOW</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--===================== deal section end Here ====================-->
+	<!--==========================new arrival section start here======================-->
+	<div class="new-arrival-section py-60">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-heading">
+						<h4 class="section-heading__subtitle">Special products</h4>
+						<h3 class="section-heading__title style-two">New Arrivals product<span
+								class="section-heading__bars"></span></h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="filter">
+					<button type="button" data-filter="all" class="mixitup-control-active">All</button>
+					<button type="button" data-filter=".cat">Cat</button>
+					<button type="button" data-filter=".dog">Dog</button>
+					<button type="button" data-filter=".small-pet">Small Pet</button>
+				</div>
+			</div>
 
-            <div class="product">
-                <div class="row justify-content-center gy-4">            
-                 <div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6 dog mix small-pet">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                        <a href="product-two-details.html" class="product-item__thumb-link">
-                            <img src="assets/images/thumbs/product/product04.png" alt="">
-                         </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                       </div>
-                     <div class="product-item__content">  
-                       <h5 class="product-item__title">
-                          <a href="product-two-details.html" class="product-item__title-link">
-                             Nekko Kitten Pouch  
-                          </a>
-                      </h5>
-                      <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__number">
-                          5.0
-                        </li>
-                      </ul>
-                      <h6 class="product-item__price">
-                         <span class="product-item__price-new">$220</span> $180
-                      </h6>
-                      <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                     </div>
-                </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6 dog mix">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                         <a href="product-two-details.html" class="product-item__thumb-link">
-                             <img src="assets/images/thumbs/product/product02.png" alt="">
-                         </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                       </div>
-                     <div class="product-item__content"> 
-                       <h5 class="product-item__title">
-                          <a href="product-two-details.html" class="product-item__title-link">
-                              Brit Premium  
-                          </a>
-                      </h5>
-                      <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__number">
-                          5.0
-                        </li>
-                      </ul>
-                      <h6 class="product-item__price">
-                         <span class="product-item__price-new">$360</span> $280
-                      </h6>
-                      <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                    </div> 
-                </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6 cat small-pet mix">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                         <a href="product-two-details.html" class="product-item__thumb-link">
-                             <img src="assets/images/thumbs/product/product08.png" alt="">
-                         </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                       </div>
-                     <div class="product-item__content">  
-                       <h5 class="product-item__title">
-                          <a href="product-two-details.html" class="product-item__title-link">
-                             Moderna Trendy Story  
-                          </a>
-                      </h5>
-                      <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__number">
-                          5.0
-                        </li>
-                      </ul>
-                      <h6 class="product-item__price">
-                         <span class="product-item__price-new">$490</span> $360
-                      </h6>
-                      <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                   </div>
-                </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6 cat mix">
-                <div class="product-item">
-                    <div class="product-item__thumb">
-                         <a href="product-two-details.html" class="product-item__thumb-link">
-                             <img src="assets/images/thumbs/product/product09.png" alt="">
-                         </a>
-                        <button class="product-item__icon">
-                            <span class="product-item__icon-style">
-                              <i class="las la-heart"></i>
-                            </span>
-                        </button>
-                       </div>
-                     <div class="product-item__content">  
-                       <h5 class="product-item__title">
-                          <a href="product-two-details.html" class="product-item__title-link">
-                              Naughty Cat Bentonite 
-                          </a>
-                      </h5>
-                      <ul class="product-info__rating justify-content-center">
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__rating-item">
-                          <i class="fas fa-star"></i>
-                        </li>
-                        <li class="product-info__number">
-                          5.0
-                        </li>
-                      </ul>
-                      <h6 class="product-item__price">
-                         <span class="product-item__price-new">$620</span> $520
-                      </h6>
-                      <a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
-                    </div>
-                </div>
-                 </div>
+			<div class="product">
+				<div class="row justify-content-center gy-4">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6 dog mix small-pet">
+						<div class="product-item">
+							<div class="product-item__thumb">
+								<a href="product-two-details.html" class="product-item__thumb-link">
+									<img src="assets/images/thumbs/product/product04.png" alt="">
+								</a>
+								<button class="product-item__icon">
+									<span class="product-item__icon-style">
+										<i class="las la-heart"></i>
+									</span>
+								</button>
+							</div>
+							<div class="product-item__content">
+								<h5 class="product-item__title">
+									<a href="product-two-details.html" class="product-item__title-link">
+										Nekko Kitten Pouch
+									</a>
+								</h5>
+								<ul class="product-info__rating justify-content-center">
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__number">
+										5.0
+									</li>
+								</ul>
+								<h6 class="product-item__price">
+									<span class="product-item__price-new">$220</span> $180
+								</h6>
+								<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6 dog mix">
+						<div class="product-item">
+							<div class="product-item__thumb">
+								<a href="product-two-details.html" class="product-item__thumb-link">
+									<img src="assets/images/thumbs/product/product02.png" alt="">
+								</a>
+								<button class="product-item__icon">
+									<span class="product-item__icon-style">
+										<i class="las la-heart"></i>
+									</span>
+								</button>
+							</div>
+							<div class="product-item__content">
+								<h5 class="product-item__title">
+									<a href="product-two-details.html" class="product-item__title-link">
+										Brit Premium
+									</a>
+								</h5>
+								<ul class="product-info__rating justify-content-center">
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__number">
+										5.0
+									</li>
+								</ul>
+								<h6 class="product-item__price">
+									<span class="product-item__price-new">$360</span> $280
+								</h6>
+								<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6 cat small-pet mix">
+						<div class="product-item">
+							<div class="product-item__thumb">
+								<a href="product-two-details.html" class="product-item__thumb-link">
+									<img src="assets/images/thumbs/product/product08.png" alt="">
+								</a>
+								<button class="product-item__icon">
+									<span class="product-item__icon-style">
+										<i class="las la-heart"></i>
+									</span>
+								</button>
+							</div>
+							<div class="product-item__content">
+								<h5 class="product-item__title">
+									<a href="product-two-details.html" class="product-item__title-link">
+										Moderna Trendy Story
+									</a>
+								</h5>
+								<ul class="product-info__rating justify-content-center">
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__number">
+										5.0
+									</li>
+								</ul>
+								<h6 class="product-item__price">
+									<span class="product-item__price-new">$490</span> $360
+								</h6>
+								<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6 cat mix">
+						<div class="product-item">
+							<div class="product-item__thumb">
+								<a href="product-two-details.html" class="product-item__thumb-link">
+									<img src="assets/images/thumbs/product/product09.png" alt="">
+								</a>
+								<button class="product-item__icon">
+									<span class="product-item__icon-style">
+										<i class="las la-heart"></i>
+									</span>
+								</button>
+							</div>
+							<div class="product-item__content">
+								<h5 class="product-item__title">
+									<a href="product-two-details.html" class="product-item__title-link">
+										Naughty Cat Bentonite
+									</a>
+								</h5>
+								<ul class="product-info__rating justify-content-center">
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__rating-item">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="product-info__number">
+										5.0
+									</li>
+								</ul>
+								<h6 class="product-item__price">
+									<span class="product-item__price-new">$620</span> $520
+								</h6>
+								<a href="/cart" class="btn btn--base pill btn--sm">Add to Cart </a>
+							</div>
+						</div>
+					</div>
 
-                </div>
-            </div>
-    </div>
-</div>
-<!-- ==================new offer section start here==================-->
-<div class="new-offer-section py-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <a href="/products" class="new-offer-content">
-                    <img src="assets/images/thumbs/new-offer-img.png" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ==================new offer section start here==================-->
+	<div class="new-offer-section py-60">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<a href="/products" class="new-offer-content">
+						<img src="assets/images/thumbs/new-offer-img.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
-<!-- ===================new offer section end here =====================-->
-<!-- ==========================testimonial section start here=======================-->
-<div class="testimonial-section py-60">
-    <div class="container">
-        <div class="row align-items-center flex-wrap">
-            <div class="col-lg-6">
-                <div class="testimonials-thumb-slider">
-                    <div class="testimonial-thumb">
-                        <img src="assets/images/thumbs/t-1.png" alt="">
-                    </div>  
-                    <div class="testimonial-thumb">
-                        <img src="assets/images/thumbs/testimonial-img.png" alt="">
-                    </div>  
-                    <div class="testimonial-thumb">
-                        <img src="assets/images/thumbs/t-2.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="testimonial-slick-slider">
-                   <div class="testimonial-slider">
-                    <div class="testimonial-slider__icon">
-                        <img src="assets/images/icons/testimonial-icon.png" alt="">
-                    </div>
-                    <p class="testimonial-slider__desc">
-                        A great about us block helps builds trubetween you customers. The more content you provide about you and your business
-                    </p>
-                    <div class="testimonial-slider__details">
-                        <h4 class="testimonial-slider__name">Dianne Russell</h4>
-                        <span class="testimonial-slider__designation">Customer </span>
-                    </div>
-                   </div>
-                   <div class="testimonial-slider">
-                    <div class="testimonial-slider__icon">
-                        <img src="assets/images/icons/testimonial-icon.png" alt="">
-                    </div>
-                    <p class="testimonial-slider__desc">
-                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero necessitatibus deserunt Eligendi dolorem delectus illo impedit nulla.
-                    </p>
-                    <div class="testimonial-slider__details">
-                        <h4 class="testimonial-slider__name"> Walton </h4>
-                        <span class="testimonial-slider__designation">Customer </span>
-                    </div>
-                   </div>
-                   <div class="testimonial-slider">
-                    <div class="testimonial-slider__icon">
-                        <img src="assets/images/icons/testimonial-icon.png" alt="">
-                    </div>
-                    <p class="testimonial-slider__desc">
-                        A great about us block helps builds trubetween you customers. The more content you provide about you and your business
-                    </p>
-                    <div class="testimonial-slider__details">
-                        <h4 class="testimonial-slider__name">Andre Russell</h4>
-                        <span class="testimonial-slider__designation">Customer </span>
-                    </div>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+	<!-- ===================new offer section end here =====================-->
+	<!-- ==========================testimonial section start here=======================-->
+	<div class="testimonial-section py-60">
+		<div class="container">
+			<div class="row align-items-center flex-wrap">
+				<div class="col-lg-6">
+					<div class="testimonials-thumb-slider">
+						<div class="testimonial-thumb">
+							<img src="assets/images/thumbs/t-1.png" alt="">
+						</div>
+						<div class="testimonial-thumb">
+							<img src="assets/images/thumbs/testimonial-img.png" alt="">
+						</div>
+						<div class="testimonial-thumb">
+							<img src="assets/images/thumbs/t-2.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="testimonial-slick-slider">
+						<div class="testimonial-slider">
+							<div class="testimonial-slider__icon">
+								<img src="assets/images/icons/testimonial-icon.png" alt="">
+							</div>
+							<p class="testimonial-slider__desc">
+								A great about us block helps builds trubetween you customers. The more content you
+								provide about you and your business
+							</p>
+							<div class="testimonial-slider__details">
+								<h4 class="testimonial-slider__name">Dianne Russell</h4>
+								<span class="testimonial-slider__designation">Customer </span>
+							</div>
+						</div>
+						<div class="testimonial-slider">
+							<div class="testimonial-slider__icon">
+								<img src="assets/images/icons/testimonial-icon.png" alt="">
+							</div>
+							<p class="testimonial-slider__desc">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero necessitatibus deserunt
+								Eligendi dolorem delectus illo impedit nulla.
+							</p>
+							<div class="testimonial-slider__details">
+								<h4 class="testimonial-slider__name"> Walton </h4>
+								<span class="testimonial-slider__designation">Customer </span>
+							</div>
+						</div>
+						<div class="testimonial-slider">
+							<div class="testimonial-slider__icon">
+								<img src="assets/images/icons/testimonial-icon.png" alt="">
+							</div>
+							<p class="testimonial-slider__desc">
+								A great about us block helps builds trubetween you customers. The more content you
+								provide about you and your business
+							</p>
+							<div class="testimonial-slider__details">
+								<h4 class="testimonial-slider__name">Andre Russell</h4>
+								<span class="testimonial-slider__designation">Customer </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
-<!-- =========================testimonial section end here ==========================-->
-<!--========================== Coverage Section Start ==========================-->
-<div class="client pb-120 pt-60">
-    <div class="container">
-        <div class="client-logos client-slider">
-            <img src="assets/images/2__brands/client-01.png" alt="">
-            <img src="assets/images/2__brands/client-04.png" alt="">
-            <img src="assets/images/2__brands/client-03.png" alt="">
-            <img src="assets/images/2__brands/client-04.png" alt="">
-            <img src="assets/images/2__brands/client-01.png" alt="">
-            <img src="assets/images/2__brands/client-04.png" alt="">
-            <img src="assets/images/2__brands/client-03.png" alt="">
-        </div>
-    </div>
-</div>
-<!--========================== Coverage Section End ==========================-->
-<!-- ==================== Blog Start Here ==================== -->
-<section class="blog py-120">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h2 class="section-heading__subtitle">Blog Post</h2>
-                    <h3 class="section-heading__title style-two"> Latest news post <span class="section-heading__bars"></span> </h3>
-                </div>
-            </div>
-        </div>
-        <div class="row gy-4 justify-content-center align-items-center">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6">
-                <div class="blog-item">
-                    <div class="blog-item__thumb">
-                        <a href="blog-details.html" class="blog-item__thumb-link">
-                            <img src="assets/images/thumbs/blog/blog03.png" alt="">
-                        </a>
-                    </div>
-                    <div class="blog-item__date">
-                        <span class="blog-item__month">18</span>
-                        <span class="blog-item__month">May</span>
-                    </div>
-                    <div class="blog-item__content">
-                        <h4 class="blog-item__title"><a href="blog-details.html" class="blog-item__title-link">Amet Occumsan Fringilla Molestie Urna Hendrerit  </a></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6">
-                <div class="blog-item">
-                    <div class="blog-item__thumb">
-                        <a href="blog-details.html" class="blog-item__thumb-link">
-                            <img src="assets/images/thumbs/blog/blog01.png" alt="">
-                        </a>
-                    </div>
-                    <div class="blog-item__date">
-                        <span class="blog-item__month">22</span>
-                        <span class="blog-item__month">May</span>
-                    </div>
-                    <div class="blog-item__content">
-                        <h4 class="blog-item__title"><a href="blog-details.html" class="blog-item__title-link">Maecenas Sed Facilisis Ipsum. Duis Scelerisque Mi Magna </a></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6 d-block d-lg-none">
-                <div class="blog-item">
-                    <div class="blog-item__thumb">
-                        <a href="blog-details.html" class="blog-item__thumb-link">
-                            <img src="assets/images/thumbs/blog/blog01.png" alt="">
-                        </a>
-                    </div>
-                    <div class="blog-item__date">
-                        <span class="blog-item__month">22</span>
-                        <span class="blog-item__month">May</span>
-                    </div>
-                    <div class="blog-item__content">
-                        <h4 class="blog-item__title"><a href="blog-details.html" class="blog-item__title-link">Maecenas Sed Facilisis Ipsum. Duis Scelerisque Mi Magna </a></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6">
-                <div class="blog-item">
-                    <div class="blog-item__thumb">
-                        <a href="blog-details.html" class="blog-item__thumb-link">
-                            <img src="assets/images/thumbs/blog/blog02.png" alt="">
-                        </a>
-                    </div>
-                    <div class="blog-item__date">
-                        <span class="blog-item__month">29</span>
-                        <span class="blog-item__month">May</span>
-                    </div>
-                    <div class="blog-item__content">
-                        <h4 class="blog-item__title"><a href="blog-details.html" class="blog-item__title-link">Wenean Vitae Porttitor Ante Tempor Posuere Nisl.  </a></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ==================== Blog End Here ==================== -->
-<!--============================feature section start here =======================-->
-<div class="feature-section bg-img py-60" style="background-image: url(assets/images/thumbs/feature/feature-img.png);">
-    <div class="container">
-        <div class="row gy-4">
-            <div class="col-md-3 col-sm-6 col-xxsm-6">
-                <div class="feature-item">
-                    <div class="feature-item__thumb">
-                        <img src="assets/images/thumbs/feature/f04.png" alt="">
-                    </div>
-                    <div class="feature-item__info">
-                        <h5 class="feature-item__title">
-                            FREE SHIPPING
-                        </h5>
-                        <span class="feature-item__payment"> For All Order Over $99 </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xxsm-6">
-                <div class="feature-item">
-                    <div class="feature-item__thumb">
-                        <img src="assets/images/thumbs/feature/f03.png" alt="">
-                    </div>
-                    <div class="feature-item__info">
-                        <h5 class="feature-item__title">
-                            FRIENDLY SUPPORT
-                        </h5>
-                        <span class="feature-item__payment"> 24/7 Customer Support </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xxsm-6">
-                <div class="feature-item">
-                    <div class="feature-item__thumb">
-                        <img src="assets/images/thumbs/feature/f02.png" alt="">
-                    </div>
-                    <div class="feature-item__info">
-                        <h5 class="feature-item__title">
-                            SECURE PAYMENT
-                        </h5>
-                        <span class="feature-item__payment">100%  Secure Payment</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xxsm-6">
-                <div class="feature-item">
-                    <div class="feature-item__thumb">
-                        <img src="assets/images/thumbs/feature/f01.png" alt="">
-                    </div>
-                    <div class="feature-item__info">
-                        <h5 class="feature-item__title">
-                            SHIPPING & RETURN
-                        </h5>
-                        <span class="feature-item__payment"> within 30days For Refund </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+	<!-- =========================testimonial section end here ==========================-->
+	<!--========================== Coverage Section Start ==========================-->
+	<div class="client pb-120 pt-60">
+		<div class="container">
+			<div class="client-logos client-slider">
+				<img src="assets/images/2__brands/client-01.png" alt="">
+				<img src="assets/images/2__brands/client-04.png" alt="">
+				<img src="assets/images/2__brands/client-03.png" alt="">
+				<img src="assets/images/2__brands/client-04.png" alt="">
+				<img src="assets/images/2__brands/client-01.png" alt="">
+				<img src="assets/images/2__brands/client-04.png" alt="">
+				<img src="assets/images/2__brands/client-03.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!--========================== Coverage Section End ==========================-->
+	<!-- ==================== Blog Start Here ==================== -->
+	<section class="blog py-120">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-heading">
+						<h2 class="section-heading__subtitle">Blog Post</h2>
+						<h3 class="section-heading__title style-two"> Latest news post <span
+								class="section-heading__bars"></span> </h3>
+					</div>
+				</div>
+			</div>
+			<div class="row gy-4 justify-content-center align-items-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6">
+					<div class="blog-item">
+						<div class="blog-item__thumb">
+							<a href="blog-details.html" class="blog-item__thumb-link">
+								<img src="assets/images/thumbs/blog/blog03.png" alt="">
+							</a>
+						</div>
+						<div class="blog-item__date">
+							<span class="blog-item__month">18</span>
+							<span class="blog-item__month">May</span>
+						</div>
+						<div class="blog-item__content">
+							<h4 class="blog-item__title"><a href="blog-details.html" class="blog-item__title-link">Amet
+									Occumsan Fringilla Molestie Urna Hendrerit </a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6">
+					<div class="blog-item">
+						<div class="blog-item__thumb">
+							<a href="blog-details.html" class="blog-item__thumb-link">
+								<img src="assets/images/thumbs/blog/blog01.png" alt="">
+							</a>
+						</div>
+						<div class="blog-item__date">
+							<span class="blog-item__month">22</span>
+							<span class="blog-item__month">May</span>
+						</div>
+						<div class="blog-item__content">
+							<h4 class="blog-item__title"><a href="blog-details.html"
+									class="blog-item__title-link">Maecenas Sed Facilisis Ipsum. Duis Scelerisque Mi
+									Magna </a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6 d-block d-lg-none">
+					<div class="blog-item">
+						<div class="blog-item__thumb">
+							<a href="blog-details.html" class="blog-item__thumb-link">
+								<img src="assets/images/thumbs/blog/blog01.png" alt="">
+							</a>
+						</div>
+						<div class="blog-item__date">
+							<span class="blog-item__month">22</span>
+							<span class="blog-item__month">May</span>
+						</div>
+						<div class="blog-item__content">
+							<h4 class="blog-item__title"><a href="blog-details.html"
+									class="blog-item__title-link">Maecenas Sed Facilisis Ipsum. Duis Scelerisque Mi
+									Magna </a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6">
+					<div class="blog-item">
+						<div class="blog-item__thumb">
+							<a href="blog-details.html" class="blog-item__thumb-link">
+								<img src="assets/images/thumbs/blog/blog02.png" alt="">
+							</a>
+						</div>
+						<div class="blog-item__date">
+							<span class="blog-item__month">29</span>
+							<span class="blog-item__month">May</span>
+						</div>
+						<div class="blog-item__content">
+							<h4 class="blog-item__title"><a href="blog-details.html"
+									class="blog-item__title-link">Wenean Vitae Porttitor Ante Tempor Posuere Nisl. </a>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ==================== Blog End Here ==================== -->
+	<!--============================feature section start here =======================-->
+	<div class="feature-section bg-img py-60"
+		style="background-image: url(assets/images/thumbs/feature/feature-img.png);">
+		<div class="container">
+			<div class="row gy-4">
+				<div class="col-md-3 col-sm-6 col-xxsm-6">
+					<div class="feature-item">
+						<div class="feature-item__thumb">
+							<img src="assets/images/thumbs/feature/f04.png" alt="">
+						</div>
+						<div class="feature-item__info">
+							<h5 class="feature-item__title">
+								FREE SHIPPING
+							</h5>
+							<span class="feature-item__payment"> For All Order Over $99 </span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xxsm-6">
+					<div class="feature-item">
+						<div class="feature-item__thumb">
+							<img src="assets/images/thumbs/feature/f03.png" alt="">
+						</div>
+						<div class="feature-item__info">
+							<h5 class="feature-item__title">
+								FRIENDLY SUPPORT
+							</h5>
+							<span class="feature-item__payment"> 24/7 Customer Support </span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xxsm-6">
+					<div class="feature-item">
+						<div class="feature-item__thumb">
+							<img src="assets/images/thumbs/feature/f02.png" alt="">
+						</div>
+						<div class="feature-item__info">
+							<h5 class="feature-item__title">
+								SECURE PAYMENT
+							</h5>
+							<span class="feature-item__payment">100% Secure Payment</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xxsm-6">
+					<div class="feature-item">
+						<div class="feature-item__thumb">
+							<img src="assets/images/thumbs/feature/f01.png" alt="">
+						</div>
+						<div class="feature-item__info">
+							<h5 class="feature-item__title">
+								SHIPPING & RETURN
+							</h5>
+							<span class="feature-item__payment"> within 30days For Refund </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-<!-- ==========================feature setion end here ============================-->
+	<!-- ==========================feature setion end here ============================-->
 
 
 
-<!-- ========footer===== -->
+	<!-- ========footer===== -->
 
-<!-- ==================== Footer Start Here ==================== -->
-<footer class="footer-area section-bg-light bg-img">
-    <div class="pb-60 pt-120">
-        <div class="container">
-            <div class="row justify-content-center gy-5">
-                <div class="col-xl-3 col-sm-6">
-                    <div class="footer-item">
-                        <div class="footer-item__logo">
-                            <a href="index.html"> <img src="assets/images/logo/footer-logo02.png" alt=""></a>
-                        </div>
-                        <p class="footer-item__desc"> Maecenas tempus tellus eget cdimentum rhoncus sem quam semper </p>
-                        <ul class="social-list">
-                            <li class="social-list__item"><a href="https://www.facebook.com/" class="social-list__link"><i class="fab fa-facebook-f"></i></a> </li>
-                            <li class="social-list__item"><a href="https://www.twitter.com/" class="social-list__link"> <i class="fab fa-twitter"></i></a></li>
-                            <li class="social-list__item"><a href="https://www.linkedin.com/" class="social-list__link"> <i class="fab fa-linkedin-in"></i></a></li>
-                            <li class="social-list__item"><a href="https://www.pinterest.com/" class="social-list__link"> <i class="fab fa-pinterest-p"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-1 d-xl-block d-none"></div>
-                <div class="col-xl-2 col-sm-6">
-                    <div class="footer-item">
-                        <h5 class="footer-item__title"> Pages </h5>
-                        <ul class="footer-menu">
-                            <li class="footer-menu__item"><a href="/about" class="footer-menu__link"> About Us</a></li>
-                            <li class="footer-menu__item"><a href="faq.html" class="footer-menu__link"> Faq</a></li>
-                            <li class="footer-menu__item"><a href="cart.html" class="footer-menu__link">Shopping Cart </a></li>
-                            <li class="footer-menu__item"><a href="blog.html" class="footer-menu__link"> Blog</a></li>
-                            <li class="footer-menu__item"><a href="product-two-details.html" class="footer-menu__link"> Product Details</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-sm-6">
-                    <div class="footer-item">
-                        <h5 class="footer-item__title"> Useful link </h5>
-                        <ul class="footer-menu">
-                            <li class="footer-menu__item"><a href="/products" class="footer-menu__link"> Product Category </a></li>
-                            <li class="footer-menu__item"><a href="check-out.html" class="footer-menu__link">Checkout </a></li>
-                            <li class="footer-menu__item"><a href="login.html" class="footer-menu__link">Login </a></li>
-                            <li class="footer-menu__item"><a href="registration.html" class="footer-menu__link"> Registration </a></li>
-                            <li class="footer-menu__item"><a href="contact.html" class="footer-menu__link"> Contact Us </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-1 d-xl-block d-none"></div>
-                <div class="col-xl-3 col-sm-6">
-                    <div class="footer-item">
-                        <h5 class="footer-item__title">Subscribe now</h5>
-                        <div class="subscriber-form mb-3">
-                            <input type="text" class=" form--control style-two" placeholder="Email Address" aria-label="Recipient's username" >
-                            <button class="btn btn--base subscribe-button"><i class="fas fa-paper-plane"></i></button>
-                          </div>
-                          <p>Subscribe to our newsletter and get 10% off your first purchase..</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  <!-- Footer Top End-->
-  
-    <!-- bottom Footer -->
-  </footer>
-  <!-- ==================== Footer End Here ==================== -->
-  
-<!-- Jquery js -->
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.1.min.js"></script>
-<!-- Popper js -->
-<script src="assets/js/popper.min.js"></script>
-<!-- Bootstrap Js -->
-<script src="assets/js/bootstrap.min.js"></script>
-<!-- Slick js -->
-<script src="assets/js/slick.min.js"></script>
-<!-- mixitup js -->
-<script src="assets/js/mixitup.min.js"></script>
-<!-- countdown js -->
-<script src="assets/js/jquery.knob.js"></script>
-<script src="assets/js/jquery.throttle.js"></script>
-<script src="assets/js/jquery.classycountdown.min.js"></script>
-<!-- range js -->
-<script src="assets/js/jquery-ui.js"></script>
-<!-- magnific popup js -->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
- <!-- main js -->
- <script src="assets/js/main.js"></script>
+	<!-- ==================== Footer Start Here ==================== -->
+	<footer class="footer-area section-bg-light bg-img">
+		<div class="pb-60 pt-120">
+			<div class="container">
+				<div class="row justify-content-center gy-5">
+					<div class="col-xl-3 col-sm-6">
+						<div class="footer-item">
+							<div class="footer-item__logo">
+								<a href="index.html"> <img src="assets/images/logo/footer-logo02.png" alt=""></a>
+							</div>
+							<p class="footer-item__desc"> Maecenas tempus tellus eget cdimentum rhoncus sem quam semper
+							</p>
+							<ul class="social-list">
+								<li class="social-list__item"><a href="https://www.facebook.com/"
+										class="social-list__link"><i class="fab fa-facebook-f"></i></a> </li>
+								<li class="social-list__item"><a href="https://www.twitter.com/"
+										class="social-list__link"> <i class="fab fa-twitter"></i></a></li>
+								<li class="social-list__item"><a href="https://www.linkedin.com/"
+										class="social-list__link"> <i class="fab fa-linkedin-in"></i></a></li>
+								<li class="social-list__item"><a href="https://www.pinterest.com/"
+										class="social-list__link"> <i class="fab fa-pinterest-p"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-1 d-xl-block d-none"></div>
+					<div class="col-xl-2 col-sm-6">
+						<div class="footer-item">
+							<h5 class="footer-item__title"> Pages </h5>
+							<ul class="footer-menu">
+								<li class="footer-menu__item"><a href="/about" class="footer-menu__link"> About Us</a>
+								</li>
+								<li class="footer-menu__item"><a href="faq.html" class="footer-menu__link"> Faq</a></li>
+								<li class="footer-menu__item"><a href="/cart" class="footer-menu__link">Shopping Cart
+									</a></li>
+								<li class="footer-menu__item"><a href="blog.html" class="footer-menu__link"> Blog</a>
+								</li>
+								<li class="footer-menu__item"><a href="product-two-details.html"
+										class="footer-menu__link"> Product Details</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-2 col-sm-6">
+						<div class="footer-item">
+							<h5 class="footer-item__title"> Useful link </h5>
+							<ul class="footer-menu">
+								<li class="footer-menu__item"><a href="/products" class="footer-menu__link"> Product
+										Category </a></li>
+								<li class="footer-menu__item"><a href="check-out.html"
+										class="footer-menu__link">Checkout </a></li>
+								<li class="footer-menu__item"><a href="login.html" class="footer-menu__link">Login </a>
+								</li>
+								<li class="footer-menu__item"><a href="registration.html" class="footer-menu__link">
+										Registration </a></li>
+								<li class="footer-menu__item"><a href="contact.html" class="footer-menu__link"> Contact
+										Us </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-1 d-xl-block d-none"></div>
+					<div class="col-xl-3 col-sm-6">
+						<div class="footer-item">
+							<h5 class="footer-item__title">Subscribe now</h5>
+							<div class="subscriber-form mb-3">
+								<input type="text" class=" form--control style-two" placeholder="Email Address"
+									aria-label="Recipient's username">
+								<button class="btn btn--base subscribe-button"><i
+										class="fas fa-paper-plane"></i></button>
+							</div>
+							<p>Subscribe to our newsletter and get 10% off your first purchase..</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Top End-->
 
- <script>
-    // mixitup 
-   var mixer = mixitup('.product');
-</script>
+		<!-- bottom Footer -->
+	</footer>
+	<!-- ==================== Footer End Here ==================== -->
+
+	<!-- Jquery js -->
+
+	<script src="assets/js/jquery-3.6.1.min.js"></script>
+	<!-- Popper js -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- Bootstrap Js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Slick js -->
+	<script src="assets/js/slick.min.js"></script>
+	<!-- mixitup js -->
+	<script src="assets/js/mixitup.min.js"></script>
+	<!-- countdown js -->
+	<script src="assets/js/jquery.knob.js"></script>
+	<script src="assets/js/jquery.throttle.js"></script>
+	<script src="assets/js/jquery.classycountdown.min.js"></script>
+	<!-- range js -->
+	<script src="assets/js/jquery-ui.js"></script>
+	<!-- magnific popup js -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		// mixitup 
+		var mixer = mixitup('.product');
+		
+	     const categoryApiUrl = 'http://localhost:9998/api/categories';
+
+	     $(document).ready(function() {
+	         fetchCategories();
+	     });
+		 
+		 // Lấy danh sách danh mục từ API
+	 	function fetchCategories() {
+			
+	 	    $.get(categoryApiUrl)
+	 	        .done(function(categories) {
+	 	            const categorySelect = $('.category-menu-show');
+	 	            categories.forEach(category => {
+	 	                const option = $(`<li class="category-menu__item">
+												<a href="/products/${category.id}" class="category-menu__link"><span class="category-menu__thumb">
+													<img src="assets/images/icons/cat.png" alt=""></span> ${category.name} </a>
+											</li>`);
+	 	                categorySelect.append(option);
+	 	            });
+	 	        })
+	 	        .fail(function(error) {
+	 	            console.error('Lỗi:', error);
+	 	        });
+	 	}
+	</script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Title -->
-	<title> Viserpet HTML Template</title>
+	<title> Document</title>
 	<!-- Favicon -->
 	<link rel="shortcut icon" th:href="@{/assets/images/logo/favicon.png}">
 	<!-- Bootstrap -->
@@ -30,15 +30,16 @@
 </head>
 <style>
 	.product-details__thumb {
-	    position: relative;
+		position: relative;
 	}
 
 	.product-details__image img {
-	    width: 100%;
-	    height: auto;
-	    display: block;
+		width: 100%;
+		height: auto;
+		display: block;
 	}
 </style>
+
 <body>
 
 	<!--==================== Preloader Start ====================-->
@@ -87,18 +88,18 @@
 				</ul>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="/products" class="category-menu-two__link"><span
-						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/cat.png}" alt=""></span>
+				<a href="/products" class="category-menu-two__link"><span class="category-menu-two__thumb"><img
+							th:src="@{/assets/images/icons/cat.png}" alt=""></span>
 					Cat </a>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="/products" class="category-menu-two__link"> <span
-						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/fish.png}" alt=""></span>
+				<a href="/products" class="category-menu-two__link"> <span class="category-menu-two__thumb"><img
+							th:src="@{/assets/images/icons/fish.png}" alt=""></span>
 					Fish </a>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="/products" class="category-menu-two__link"><span
-						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/toys.png}" alt=""></span>
+				<a href="/products" class="category-menu-two__link"><span class="category-menu-two__thumb"><img
+							th:src="@{/assets/images/icons/toys.png}" alt=""></span>
 					Pet toy </a>
 			</li>
 			<li class="category-menu-two__item has-dropdown-two">
@@ -128,18 +129,17 @@
 				</ul>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="/products" class="category-menu-two__link"><span
-						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/rabbit.png}" alt=""></span>
+				<a href="/products" class="category-menu-two__link"><span class="category-menu-two__thumb"><img
+							th:src="@{/assets/images/icons/rabbit.png}" alt=""></span>
 					Rabbit </a>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="/products" class="category-menu-two__link"><span
-						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/accessories.png}"
-							alt=""></span> Accessories </a>
+				<a href="/products" class="category-menu-two__link"><span class="category-menu-two__thumb"><img
+							th:src="@{/assets/images/icons/accessories.png}" alt=""></span> Accessories </a>
 			</li>
 			<li class="category-menu-two__item">
-				<a href="/products" class="category-menu-two__link"><span
-						class="category-menu-two__thumb"><img th:src="@{/assets/images/icons/dog02.png}" alt=""></span>
+				<a href="/products" class="category-menu-two__link"><span class="category-menu-two__thumb"><img
+							th:src="@{/assets/images/icons/dog02.png}" alt=""></span>
 					Small pet </a>
 			</li>
 		</ul>
@@ -178,33 +178,13 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav nav-menu me-auto">
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Home <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="index.html"> Home One </a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="index-two.html"> Home Two </a></li>
-							</ul>
+							<a class="nav-link" href="/" role="button" > Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="/about">About</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Pages <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="/products">Product category</a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="product-two-details.html">Product Details</a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="check-out.html"> Check Out</a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="faq.html"> Faq </a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										href="error.html"> Error page </a></li>
-							</ul>
+							<a class="nav-link" href="/products" role="button" > Products</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -238,7 +218,7 @@
 						<a href="wishlist.html" class="header-info__link"><i class="far fa-heart"></i></a>
 					</div>
 					<div class="header-info__cart">
-						<a href="cart.html" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
+						<a href="/cart" class="header-info__link"><i class="fas fa-shopping-cart"></i></a>
 						<span class="header-info__cart-quantity">03</span>
 					</div>
 					<div class="header-info__user">
@@ -306,20 +286,20 @@
 			<div class="row align-items-center gy-4">
 
 				<div class="col-lg-7 pe-lg-5">
-				    <div class="row align-items-center">
-				        <div class="col-lg-9 order-lg-2">
-				            <div class="product-details__thumb image-preview-1">
-				                <div class="slick-carousel">
-				                    <!-- Các ảnh sẽ được thêm vào đây -->
-				                </div>
-				            </div>
-				        </div>
-				        <div class="col-lg-3 order-lg-1">
-				            <ul class="product-details-gallery image-preview-2">
-				                <!-- Các ảnh nhỏ sẽ được thêm vào đây -->
-				            </ul>
-				        </div>
-				    </div>
+					<div class="row align-items-center">
+						<div class="col-lg-9 order-lg-2">
+							<div class="product-details__thumb image-preview-1">
+								<div class="slick-carousel">
+									<!-- Các ảnh sẽ được thêm vào đây -->
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 order-lg-1">
+							<ul class="product-details-gallery image-preview-2">
+								<!-- Các ảnh nhỏ sẽ được thêm vào đây -->
+							</ul>
+						</div>
+					</div>
 				</div>
 
 				<div class="col-lg-5">
@@ -368,17 +348,20 @@
 							<div class="product-qty">
 								<button type="button" class="product-qty__decrement"><i
 										class="las la-angle-down"></i></button>
-								<input type="number" class="product-qty__value" value="00">
+								<input type="number" class="product-qty__value" value="1">
 								<button type="button" class="product-qty__increment"><i class="las la-angle-up"></i>
 								</button>
 							</div>
 						</div>
 						<div class="product-info__button">
 							<input type="hidden" id="product-id" th:value="${productId}">
-							<a href="index.html" class="btn btn--base pill product-info__link">BUY NOW</a>
+							<div class="buy_now">
+								
+							</div>
+							
 							<a href="wishlist.html" class="product-info__heart product-info__link"><i
 									class="fas fa-heart"></i></a>
-							<a href="cart.html" class="product-info__cart product-info__link"><i
+							<a href="/cart" class="product-info__cart product-info__link"><i
 									class="fas fa-shopping-cart"></i></a>
 						</div>
 
@@ -423,7 +406,7 @@
 				</div>
 			</div>
 			<div class="row gy-4 product-list">
-				
+
 			</div>
 		</div>
 	</div>
@@ -534,7 +517,7 @@
 								<li class="footer-menu__item"><a href="/about" class="footer-menu__link"> About
 										Us</a></li>
 								<li class="footer-menu__item"><a href="faq.html" class="footer-menu__link"> Faq</a></li>
-								<li class="footer-menu__item"><a href="cart.html" class="footer-menu__link">Shopping
+								<li class="footer-menu__item"><a href="/cart" class="footer-menu__link">Shopping
 										Cart </a></li>
 								<li class="footer-menu__item"><a href="blog.html" class="footer-menu__link"> Blog</a>
 								</li>
@@ -611,55 +594,56 @@
 		fetchProducts();
 
 		function editProduct(id) {
-		    $.get(`${apiUrl}/find-id/${id}`)
-		        .done(function (product) {
-		            $('.product-name').text(product.name);
-		            $('.old-price').text('$' + product.oldPrice);
-		            $('.new-price').text('$' + product.newPrice);
-		            $('.description').text(product.description);
-		            $('.size').text(product.size + 'Kg');
-		            $('.color').text(product.color);
-		            $('.quantity').text(product.quantity);
-		            $('.category').text(product.category.name);
+			$.get(`${apiUrl}/find-id/${id}`)
+				.done(function (product) {
+					$('.product-name').text(product.name);
+					$('.old-price').text('$' + product.oldPrice);
+					$('.new-price').text('$' + product.newPrice);
+					$('.description').text(product.description);
+					$('.size').text(product.size + 'Kg');
+					$('.color').text(product.color);
+					$('.quantity').text(product.quantity);
+					$('.category').text(product.category.name);
+					let qty = $('.product-qty__value').val();
+					$('.buy_now').append(`<a class="btn btn--base pill product-info__link" onclick="addToCart('${product.id}', '${product.name}', ${product.newPrice}, '${product.images[0]}', ${qty})">BUY NOW</a>`)
+					// Hiển thị ảnh hiện tại nếu có
+					if (product.images) {
+						let img1 = '';
+						let img2 = '';
+						product.images.forEach(image => {
+							img1 += `<div class="product-details__image"><img src="${apiUrlBackend}/assets/upload${image}" alt=""></div>`;
+							img2 += `<li class="product-details-gallery__image"><img src="${apiUrlBackend}/assets/upload${image}" alt=""></li>`;
+						});
+						$('.slick-carousel').append(img1);
+						$('.image-preview-2').append(img2);
 
-		            // Hiển thị ảnh hiện tại nếu có
-		            if (product.images) {
-		                let img1 = '';
-		                let img2 = '';
-		                product.images.forEach(image => {
-		                    img1 += `<div class="product-details__image"><img src="${apiUrlBackend}/assets/upload${image}" alt=""></div>`;
-		                    img2 += `<li class="product-details-gallery__image"><img src="${apiUrlBackend}/assets/upload${image}" alt=""></li>`;
-		                });
-		                $('.slick-carousel').append(img1);
-		                $('.image-preview-2').append(img2);
-
-		                // Khởi tạo Slick Carousel
-		                $('.slick-carousel').slick({
-		                    dots: true,
-		                    infinite: true,
-		                    speed: 500,
-		                    slidesToShow: 1,
-		                    slidesToScroll: 1,
-		                    adaptiveHeight: true,
-		                });
-		            }
-		        })
-		        .fail(function (error) {
-		            console.error('Lỗi:', error);
-		        });
+						// Khởi tạo Slick Carousel
+						$('.slick-carousel').slick({
+							dots: true,
+							infinite: true,
+							speed: 500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							adaptiveHeight: true,
+						});
+					}
+				})
+				.fail(function (error) {
+					console.error('Lỗi:', error);
+				});
 		}
-		
-		
-		
+
+
+
 		// Lấy danh sách sản phẩm từ API
-		     function fetchProducts() {
-		         $.get(apiUrl)
-		             .done(function(products) {
-		                 // Khởi tạo DataTable
-						 const productList = $('.product-list');
-			             productList.empty();
-			             products.forEach(product => {
-			                 const productDiv = $(`
+		function fetchProducts() {
+			$.get(apiUrl)
+				.done(function (products) {
+					// Khởi tạo DataTable
+					const productList = $('.product-list');
+					productList.empty();
+					products.forEach(product => {
+						const productDiv = $(`
 							 				<div class="col-lg-3 col-md-6 col-sm-6 col-xsm-6">
 							 					<div class="product-item">
 							 						<div class="product-item__thumb">
@@ -704,18 +688,49 @@
 							 							<h6 class="product-item__price">
 							 								<span class="product-item__price-new">$${product.oldPrice}</span> $${product.newPrice}
 							 							</h6>
-							 							<a href="cart.html" class="btn btn--base pill btn--sm">Add to Cart </a>
+							 							<button class="btn btn--base pill btn--sm" onclick="addToCart('${product.id}', '${product.name}', ${product.newPrice}, '${product.images[0]}')">Add to Cart</button>
 							 						</div>
 							 					</div>
 							 				</div>
 			                 `);
-			                 productList.append(productDiv);
-			             });
-		             })
-		             .fail(function(error) {
-		                 console.error('Lỗi:', error);
-		             });
-		     }
+						productList.append(productDiv);
+					});
+				})
+				.fail(function (error) {
+					console.error('Lỗi:', error);
+				});
+		}
+
+		// Hàm thêm sản phẩm vào giỏ hàng
+		function addToCart(productId, productName, productPrice, images, quantity = 1) {
+			// Lấy giỏ hàng hiện tại từ localStorage
+			let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+			// Tạo sản phẩm mới
+			const product = {
+				id: productId,
+				name: productName,
+				price: productPrice,
+				images: images,
+				quantity: quantity
+			};
+
+			// Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+			const existingProductIndex = cart.findIndex(item => item.id === productId);
+			if (existingProductIndex > -1) {
+				// Nếu có, tăng số lượng
+				cart[existingProductIndex].quantity += 1;
+			} else {
+				// Nếu không, thêm sản phẩm mới vào giỏ hàng
+				cart.push(product);
+			}
+
+			// Lưu giỏ hàng vào localStorage
+			localStorage.setItem('cart', JSON.stringify(cart));
+
+			// Thông báo cho người dùng
+			alert(`${productName} đã được thêm vào giỏ hàng!`);
+		}
 	</script>
 </body>
 
