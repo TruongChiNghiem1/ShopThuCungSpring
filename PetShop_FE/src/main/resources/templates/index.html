@@ -8,25 +8,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Title -->
-	<title> Document</title>
+	<title>Document</title>
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="assets/images/logo/favicon.png">
+	<link rel="shortcut icon" th:href="@{/assets/images/logo/favicon.png}">
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}">
 	<!-- Fontawesome -->
-	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" th:href="@{/assets/css/fontawesome-all.min.css}">
 	<!-- Slick -->
-	<link rel="stylesheet" href="assets/css/slick.css">
-	<!-- line awesome -->
-	<link rel="stylesheet" href="assets/css/line-awesome.min.css">
-	<!-- countdown css link-->
-	<link rel="stylesheet" href="assets/css/jquery.classycountdown.min.css">
-	<!-- range css -->
-	<link rel="stylesheet" href="assets/css/jquery-ui.css">
-	<!-- magnific css link -->
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
-	<!-- Main css -->
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" th:href="@{/assets/css/slick.css}">
+	<!-- Line Awesome -->
+	<link rel="stylesheet" th:href="@{/assets/css/line-awesome.min.css}">
+	<!-- Countdown CSS -->
+	<link rel="stylesheet" th:href="@{/assets/css/jquery.classycountdown.min.css}">
+	<!-- Range CSS -->
+	<link rel="stylesheet" th:href="@{/assets/css/jquery-ui.css}">
+	<!-- Magnific CSS -->
+	<link rel="stylesheet" th:href="@{/assets/css/magnific-popup.css}">
+	<!-- Main CSS -->
+	<link rel="stylesheet" th:href="@{/assets/css/main.css}">
 </head>
 
 <body>
@@ -48,9 +48,8 @@
 	<!-- ==================== Scroll to Top End Here ==================== -->
 	<a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
 	<!-- ==================== Scroll to Top End Here ==================== -->
-
 	<!-- ==================== Bottom Header End Here ==================== -->
-	<header class="main-header">
+	<header class="header" id="header">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse"
@@ -58,6 +57,7 @@
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span id="hiddenNav"><i class="las la-bars"></i></span>
 				</button>
+
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav nav-menu me-auto">
 						<li class="nav-item dropdown">
@@ -68,9 +68,6 @@
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link" href="/products" role="button"> Products</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
 						</li>
 						<li class=" nav-item">
 							<div class="toggle-search-box d-none d-lg-block">
@@ -93,8 +90,18 @@
 						<span class="header-info__cart-quantity">03</span>
 					</div>
 					<div class="header-info__user">
-						<a href="login.html" class="header-info__link"><i class="far fa-user"></i></a>
+						<!-- Hiển thị khi người dùng đã đăng nhập -->
+						<a href="/account" class="header-info__link" th:if="${loggedIn}"><i class="far fa-user"></i></a>
+
+						<!-- Hiển thị khi người dùng chưa đăng nhập -->
+						<a href="/loginPage" class="header-info__link" th:unless="${loggedIn}"><i
+								class="far fa-user"></i></a>
 					</div>
+				</div>
+				<div class="header-categories d-block d-lg-none">
+					<button class="header-category">
+						Categories <span class="header-category__icon"><i class="las la-bars"></i></span>
+					</button>
 				</div>
 			</nav>
 		</div>
@@ -131,88 +138,141 @@
 	</div>
 	<!--========================== Search Modal End ==========================-->
 
-	<!-- ==================== Breadcumb Start Here ==================== -->
-	<section class="breadcumb py-120 bg-img" style="background-image: url(assets/images/thumbs/breadcumb-img.png);">
+
+	<!--========================== Banner Section Start ==========================-->
+	<section class="banner-section pt-60 pb-60">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="breadcumb__wrapper">
-						<h1 class="breadcumb__title"> Product Category</h1>
-						<ul class="breadcumb__list">
-							<li class="breadcumb__item"><a href="index.html" class="breadcumb__link"> <i
-										class="las la-home"></i> Home</a> </li>
-							<li class="breadcumb__item"> / </li>
-							<li class="breadcumb__item"> <span class="breadcumb__item-text"> Product Category </span>
-							</li>
+			<div class="row gy-4 justify-content-center">
+				<div class="col-lg-3">
+					<nav class="category">
+						<span class="close-sidebar d-lg-none d-block"><i class="las la-times"></i></span>
+						<ul class="category-menu category-menu-show">
+
+
 						</ul>
+						<div class="contact-list__wrapper d-md-none d-block">
+							<div class="contact-list">
+								<div class="contact-list__item">
+									<span class="contact-list__icon">
+										<img src="assets/images/icons/phone.png" alt="">
+									</span>
+								</div>
+								<div class="contact-list__number-link">
+									<span class="contact-list__info"> 000 - 8888 - 9999</span>
+								</div>
+							</div>
+							<div class="contact-list">
+								<div class="contact-list__item">
+									<span class="contact-list__icon">
+										<img src="assets/images/icons/email.png" alt="">
+									</span>
+								</div>
+								<div class="contact-list__number-link">
+									<span class="contact-list__info"> <a
+											href="https://template.viserlab.com/cdn-cgi/l/email-protection"
+											class="__cf_email__"
+											data-cfemail="46302f35233436233206212b272f2a6825292b">[email&#160;protected]</a></span>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+				<div class="col-lg-9 col-md-12">
+					<div class="banner">
+						<div class="banner-content">
+							<h4 class="banner-content__subtitle">Best Product</h4>
+							<h2 class="banner-content__title">DOG FOOD</h2>
+							<p class="banner-content__desc">
+								Wusmod tempor incididu nt ut labore et dolore magna aliqua.
+							</p>
+							<div class="banner-content__buttons">
+								<a href="/products" class="btn btn--base pill">SHOP NOW</a>
+								<div class="button-shape">
+									<img src="assets/images/shapes/button-shape.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="banner-thumb">
+							<img src="assets/images/thumbs/banner-img.png" alt="">
+							<div class="banner-thumb__shape">
+								<img src="assets/images/shapes/banner-shape.png" alt="">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- ==================== Breadcumb End Here ==================== -->
+	<!--========================== Banner Section End ==========================-->
 
-	<!-- ==================product category two section start here ==============================-->
-	<div class="product-category-two py-120 ">
+	<!--==============================offer-section start  here=============================-->
+	<div class="offer-section pt-60 pb-60">
+		<div class="container">
+			<div class="row gy-4">
+				<div class="col-lg-6">
+					<a href="/products" class="offer">
+						<img src="assets/images/thumbs/offer-img.png" alt="">
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a href="/products" class="offer">
+						<img src="assets/images/thumbs/offer-img03.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--======================product sections start here =================-->
+	<div class="product-section py-60">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
-					<div class="left-sidebar">
-						<span class="close-sidebar d-lg-none d-block">
-							<i class="las la-times"></i>
-						</span>
-						<h6 class="sidebar-item__title">
-							Category
-						</h6>
-						<div class="sidebar-item" id="category">
-
-						</div>
-						<div class="sidebar-item">
-							<h5 class="sidebar-item__title">Filter by Price</h5>
-
-							<div class=" custom--range">
-								<div id="slider-range" class="custom--range__range"></div>
-								<div class="custom--range__content d-flex flex-wrap justify-content-betwwen">
-									<label for="amount" class="custom--range__text">Price range:</label>
-									<input type="text" class="custom--range__prices" id="amount" readonly>
-								</div>
-							</div>
-							<div class="sidebar-item__button">
-								<a href="/products" class="btn btn--base pill btn--sm"> Filter</a>
-							</div>
-						</div>
-						<div class="sidebar-item">
-							<a href="/" class="sidebar-item__thumb">
-								<img src="assets/images/thumbs/side-img.png" alt="">
-							</a>
-						</div>
+				<div class="col-12">
+					<div class="section-heading">
+						<h4 class="section-heading__subtitle">Special products</h4>
+						<h3 class="section-heading__title style-two">Trending Products<span
+								class="section-heading__bars"></span></h3>
 					</div>
 				</div>
-				<div class="col-lg-9">
-					<div class="product-sidebar-filter d-lg-none d-block">
-						<button class="product-sidebar-filter__button">
-							<i class="las la-filter"></i>
-							<span class="text"> Filter </span>
-						</button>
-					</div>
-					<div class="row justify-content-center gy-4" id="product-list">
+			</div>
+			<div class="row justify-content-center gy-4" id="trending-product">
 
+			</div>
+		</div>
+	</div>
+	<!-- ====================deal section start here ====================-->
+	<div class="best-deals-section">
+		<div class="container-fluid p-0">
+			<div class="row gx-0 justify-content-center flex-wrap-reverse">
+				<div class="col-xl-4">
+					<div class="deal-thumb">
+						<img src="assets/images/thumbs/deal-img.png" alt="">
 					</div>
-					<nav aria-label="Page navigation example">
-						<ul class="pagination">
-							<li class="page-item"><a class="page-link" href="#">01</a></li>
-							<li class="page-item "><a class="page-link" href="#">02</a></li>
-							<li class="page-item"><a class="page-link" href="#">03</a></li>
-							<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i> </a>
-							</li>
-						</ul>
-					</nav>
+				</div>
+				<div class="col-xl-8">
+					<div class="deal-counter py-120"
+						style="background-image: url(assets/images/thumbs/deal-product-img.png);">
+						<div class="section-heading style-three">
+							<h4 class="section-heading__subtitle">Best products</h4>
+							<h3 class="section-heading__title">Best Deals Of T he Week!</h3>
+						</div>
+						<div id="countdown-container"></div>
+						<div class="deal-counter__footer text-center">
+							<p class="deal-counter__title mb-3">Dummy Product Name</p>
+							<h6 class="deal-counter__price">
+								<span class="deal-counter__price-new">$620</span> $520
+							</h6>
+						</div>
+						<div class="text-center">
+							<a href="/products" class="btn btn--base pill">SHOP NOW</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- ==================product category two section end here ==============================-->
+
 	<!--============================feature section start here =======================-->
 	<div class="feature-section bg-img py-60"
 		style="background-image: url(assets/images/thumbs/feature/feature-img.png);">
@@ -357,12 +417,12 @@
 		</div>
 		<!-- Footer Top End-->
 
+		<!-- bottom Footer -->
 	</footer>
 	<!-- ==================== Footer End Here ==================== -->
 
-
 	<!-- Jquery js -->
-	<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
 	<script src="assets/js/jquery-3.6.1.min.js"></script>
 	<!-- Popper js -->
 	<script src="assets/js/popper.min.js"></script>
@@ -370,6 +430,8 @@
 	<script src="assets/js/bootstrap.min.js"></script>
 	<!-- Slick js -->
 	<script src="assets/js/slick.min.js"></script>
+	<!-- mixitup js -->
+	<script src="assets/js/mixitup.min.js"></script>
 	<!-- countdown js -->
 	<script src="assets/js/jquery.knob.js"></script>
 	<script src="assets/js/jquery.throttle.js"></script>
@@ -381,116 +443,127 @@
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
 
-</body>
-<script>
-	const apiUrlBackend = 'http://localhost:9998/api';
-	const apiUrl = 'http://localhost:9998/api/products';
-	const categoryApiUrl = 'http://localhost:9998/api/categories';
+	<script>
+		const apiUrlBackend = 'http://localhost:9998/api';
+		const categoryApiUrl = 'http://localhost:9998/api/categories';
+		const productsApiUrl = 'http://localhost:9998/api/products'
 
-	$(document).ready(function () {
-		fetchProducts();
-		fetchCategories();
-	});
+		$(document).ready(function () {
+			fetchCategories();
+			fetchProducts()
+		});
 
-	function fetchCategories() {
-		$.get(categoryApiUrl)
-			.done(function (categories) {
-				const categorySelect = $('#category');
-				categories.forEach(category => {
-					const option = $(`<div class="form-check form--check">
-					<input class="form-check-input" type="checkbox" value="${category.name}" name="category_id" id="${category.name}">
-					<label class="form-check-label" for="${category.name}">
-						${category.name}
-					</label>`);
-					categorySelect.append(option);
+		// Lấy danh sách danh mục từ API
+		function fetchCategories() {
+			$.get(categoryApiUrl)
+				.done(function (categories) {
+					const categorySelect = $('.category-menu-show');
+					categories.forEach(category => {
+						const option = $(`<li class="category-menu__item">
+												<a href="/products/${category.id}" class="category-menu__link"><span class="category-menu__thumb">
+													<img src="assets/images/icons/cat.png" alt=""></span> ${category.name} </a>
+											</li>`);
+						categorySelect.append(option);
+					});
+				})
+				.fail(function (error) {
+					console.error('Lỗi:', error);
 				});
-			})
-			.fail(function (error) {
-				console.error('Lỗi:', error);
-			});
-	}
-
-
-	// Lấy danh sách sản phẩm từ API
-	function fetchProducts() {
-		$.get(apiUrl)
-			.done(function (products) {
-				// Khởi tạo DataTable
-				const productList = $('#product-list');
-				productList.empty();
-				products.forEach(product => {
-					const productDiv = $(`
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xsm-6">
-                        <div class="product-item">
-                            <div class="product-item__thumb">
-                                <a href="/products/${product.id}" class="product-item__thumb-link">
-                                    <img src="${apiUrlBackend}/assets/upload${product.images[0]}" alt="">
-                                </a>
-                                <button class="product-item__icon">
-                                    <span class="product-item__icon-style">
-                                        <i class="las la-heart"></i>
-                                    </span>
-                                </button>
-                                <div class="product-item__badge">
-                                    <span class="badge badge--base">Sale</span>
-                                </div>
-                            </div>
-                            <div class="product-item__content">   
-                                <h5 class="product-item__title">
-                                    <a href="/products/${product.id}" class="product-item__title-link">
-                                        ${product.name}
-                                    </a>
-                                </h5>
-                                <ul class="product-info__rating justify-content-center">
-                                    ${'<li class="product-info__rating-item"><i class="fas fa-star"></i></li>'.repeat(5)}
-                                    <li class="product-info__number">5.0</li>
-                                </ul>
-                                <h6 class="product-item__price">
-                                    <span class="product-item__price-new">$${product.oldPrice}</span> $${product.newPrice}
-                                </h6>
-                                <button class="btn btn--base pill btn--sm" onclick="addToCart('${product.id}', '${product.name}', ${product.newPrice}, '${product.images[0]}')">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                `);
-					productList.append(productDiv);
-				});
-			})
-			.fail(function (error) {
-				console.error('Lỗi:', error);
-			});
-	}
-
-	// Hàm thêm sản phẩm vào giỏ hàng
-	function addToCart(productId, productName, productPrice, images) {
-		// Lấy giỏ hàng hiện tại từ localStorage
-		let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-		// Tạo sản phẩm mới
-		const product = {
-			id: productId,
-			name: productName,
-			price: productPrice,
-			images: images,
-			quantity: 1
-		};
-
-		// Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
-		const existingProductIndex = cart.findIndex(item => item.id === productId);
-		if (existingProductIndex > -1) {
-			// Nếu có, tăng số lượng
-			cart[existingProductIndex].quantity += 1;
-		} else {
-			// Nếu không, thêm sản phẩm mới vào giỏ hàng
-			cart.push(product);
 		}
 
-		// Lưu giỏ hàng vào localStorage
-		localStorage.setItem('cart', JSON.stringify(cart));
+		function fetchProducts() {
+			$.get(productsApiUrl)
+				.done(function (products) {
+					const productSelect = $('#trending-product');
+					products.forEach(product => {
+						const option = $(
+							`									<div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6">
+														<div class="product-item text-center">
+															<div class="product-item__thumb">
+																<a href="/products/${product.id}" class="product-item__thumb-link">
+																	<img src="${apiUrlBackend}/assets/upload${product.images[0]}" alt="">
+																</a>
+																<button class="product-item__icon">
+																	<span class="product-item__icon-style">
+																		<i class="las la-heart"></i>
+																	</span>
+																</button>
+																<div class="product-item__badge">
+																	<span class="badge badge--base">Sale</span>
+																</div>
+															</div>
+															<div class="product-item__content">
+																<h5 class="product-item__title">
+																	<a href="/products/${product.id}" class="product-item__title-link">
+																		   ${product.name}
+																	</a>
+																</h5>
+																<ul class="product-info__rating justify-content-center align-items-center">
+																	<li class="product-info__rating-item">
+																		<i class="fas fa-star"></i>
+																	</li>
+																	<li class="product-info__rating-item">
+																		<i class="fas fa-star"></i>
+																	</li>
+																	<li class="product-info__rating-item">
+																		<i class="fas fa-star"></i>
+																	</li>
+																	<li class="product-info__rating-item">
+																		<i class="fas fa-star"></i>
+																	</li>
+																	<li class="product-info__rating-item">
+																		<i class="fas fa-star-half-alt"></i>
+																	</li>
+																	<li class="product-info__number">
+																		4.8
+																	</li>
+																</ul>
+																<h6 class="product-item__price">
+													                  <span class="product-item__price-new">$${product.oldPrice}</span> $${product.newPrice}
+										                        </h6>
+																<button class="btn btn--base pill btn--sm" onclick="addToCart('${product.id}', '${product.name}', ${product.newPrice}, '${product.images[0]}')">Add to Cart</button>
+															</div>
+														</div>
+													</div>`
+						);
+						productSelect.append(option);
+					});
+				})
+				.fail(function (error) {
+					console.error('Lỗi:', error);
+				});
+		}
+		// Hàm thêm sản phẩm vào giỏ hàng
+		function addToCart(productId, productName, productPrice, images) {
+			// Lấy giỏ hàng hiện tại từ localStorage
+			let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-		// Thông báo cho người dùng
-		alert(`${productName} đã được thêm vào giỏ hàng!`);
-	}
-</script>
+			// Tạo sản phẩm mới
+			const product = {
+				id: productId,
+				name: productName,
+				price: productPrice,
+				images: images,
+				quantity: 1
+			};
+
+			// Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+			const existingProductIndex = cart.findIndex(item => item.id === productId);
+			if (existingProductIndex > -1) {
+				// Nếu có, tăng số lượng
+				cart[existingProductIndex].quantity += 1;
+			} else {
+				// Nếu không, thêm sản phẩm mới vào giỏ hàng
+				cart.push(product);
+			}
+
+			// Lưu giỏ hàng vào localStorage
+			localStorage.setItem('cart', JSON.stringify(cart));
+
+			// Thông báo cho người dùng
+			alert(`${productName} đã được thêm vào giỏ hàng!`);
+		}
+	</script>
+</body>
 
 </html>
