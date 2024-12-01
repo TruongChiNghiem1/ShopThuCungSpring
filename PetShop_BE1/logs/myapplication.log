@@ -1,3 +1,793 @@
+
+2024-12-01T09:10:01.362+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 1880 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:10:01.365+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:10:01.391+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-01T09:10:01.392+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-01T09:10:01.865+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:10:01.905+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:10:02.137+07:00  WARN 1880 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:10:02.165+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:10:02.325+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:10:02.338+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:10:02.338+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:10:02.380+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:10:02.380+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 988 ms
+2024-12-01T09:10:02.713+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:10:02.733+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-01T09:10:02.789+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2a7a8f92
+2024-12-01T09:10:02.791+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-01T09:10:03.466+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:10:03.764+07:00  WARN 1880 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:10:03.898+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:10:03.961+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:10:03.984+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:10:04.019+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:10:04.035+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:10:04.181+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:10:04.207+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:10:04.214+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 3.147 seconds (process running for 3.472)
+2024-12-01T09:10:25.021+07:00  INFO 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-01T09:10:25.021+07:00  INFO 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-01T09:10:25.022+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-01T09:10:25.022+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-01T09:10:25.022+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-01T09:10:25.023+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@137ed653
+2024-12-01T09:10:25.023+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@39c20e6b
+2024-12-01T09:10:25.023+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-01T09:10:25.023+07:00  INFO 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-01T09:10:25.028+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2024-12-01T09:10:25.034+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.AuthController#login(LoginDTO, BindingResult)
+2024-12-01T09:10:25.082+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [iuh.fit.se.dtos.LoginDTO@3deeb0ad]
+2024-12-01T09:10:25.216+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:10:25.217+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=200, data=iuh.fit.se.dtos.UserDTO@36f781f4}]
+2024-12-01T09:10:25.233+07:00 DEBUG 1880 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:12:27.822+07:00  INFO 1880 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:12:27.825+07:00  INFO 1880 --- [PetShop_BE1] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:12:27.837+07:00  INFO 1880 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:12:27.840+07:00  INFO 1880 --- [PetShop_BE1] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:12:27.846+07:00  INFO 1880 --- [PetShop_BE1] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-01T09:12:27.848+07:00  INFO 1880 --- [PetShop_BE1] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-01T09:12:27.900+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 1880 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:12:27.901+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:12:28.019+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:12:28.028+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:12:28.065+07:00  WARN 1880 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:12:28.066+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:12:28.087+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:12:28.088+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:12:28.088+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:12:28.099+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:12:28.100+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 199 ms
+2024-12-01T09:12:28.125+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:12:28.126+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-01T09:12:28.128+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@7c25bd60
+2024-12-01T09:12:28.128+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-01T09:12:28.198+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:12:28.261+07:00  WARN 1880 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:12:28.296+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:12:28.314+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:12:28.319+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:12:28.323+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:12:28.328+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:12:28.374+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:12:28.382+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:12:28.385+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.505 seconds (process running for 147.642)
+2024-12-01T09:12:28.387+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:12:42.075+07:00  INFO 1880 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:12:42.077+07:00  INFO 1880 --- [PetShop_BE1] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:12:42.089+07:00  INFO 1880 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:12:42.092+07:00  INFO 1880 --- [PetShop_BE1] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:12:42.092+07:00  INFO 1880 --- [PetShop_BE1] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-12-01T09:12:42.093+07:00  INFO 1880 --- [PetShop_BE1] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-12-01T09:12:42.147+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 1880 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:12:42.148+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:12:42.257+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:12:42.266+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:12:42.301+07:00  WARN 1880 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:12:42.302+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:12:42.322+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:12:42.322+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:12:42.322+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:12:42.336+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:12:42.336+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2024-12-01T09:12:42.360+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:12:42.360+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-12-01T09:12:42.362+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@7233d59
+2024-12-01T09:12:42.362+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-12-01T09:12:42.425+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:12:42.487+07:00  WARN 1880 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:12:42.522+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:12:42.537+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:12:42.542+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:12:42.546+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:12:42.551+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:12:42.598+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:12:42.606+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:12:42.610+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.482 seconds (process running for 161.868)
+2024-12-01T09:12:42.611+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:13:04.476+07:00  INFO 1880 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:13:04.478+07:00  INFO 1880 --- [PetShop_BE1] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:13:04.490+07:00  INFO 1880 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:13:04.491+07:00  INFO 1880 --- [PetShop_BE1] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:13:04.492+07:00  INFO 1880 --- [PetShop_BE1] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-12-01T09:13:04.493+07:00  INFO 1880 --- [PetShop_BE1] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-12-01T09:13:04.538+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 1880 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:13:04.538+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:13:04.643+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:13:04.651+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:13:04.684+07:00  WARN 1880 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:13:04.685+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:13:04.707+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:13:04.708+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:13:04.708+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:13:04.722+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:13:04.722+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 183 ms
+2024-12-01T09:13:04.745+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:13:04.746+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-12-01T09:13:04.747+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@60664aa0
+2024-12-01T09:13:04.748+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-12-01T09:13:04.810+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:13:04.871+07:00  WARN 1880 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:13:04.907+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:13:04.921+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:13:04.925+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:13:04.929+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:13:04.934+07:00 DEBUG 1880 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:13:04.979+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:13:04.986+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:13:04.990+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.471 seconds (process running for 184.248)
+2024-12-01T09:13:04.991+07:00  INFO 1880 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:13:05.335+07:00  INFO 1880 --- [PetShop_BE1] [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-01T09:13:05.336+07:00  INFO 1880 --- [PetShop_BE1] [RMI TCP Connection(18)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:13:05.346+07:00  INFO 1880 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:13:05.347+07:00  INFO 1880 --- [PetShop_BE1] [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:13:05.347+07:00  INFO 1880 --- [PetShop_BE1] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-12-01T09:13:05.348+07:00  INFO 1880 --- [PetShop_BE1] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-12-01T09:13:10.109+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21652 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:13:10.110+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:13:10.134+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-01T09:13:10.134+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-01T09:13:10.582+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:13:10.619+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:13:10.804+07:00  WARN 21652 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:13:10.817+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:13:10.956+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:13:10.964+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:13:10.964+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:13:10.995+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:13:10.995+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 860 ms
+2024-12-01T09:13:11.267+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:13:11.284+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-01T09:13:11.331+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@8ed182c
+2024-12-01T09:13:11.332+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-01T09:13:11.953+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:13:12.221+07:00  WARN 21652 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:13:12.345+07:00 DEBUG 21652 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:13:12.403+07:00 DEBUG 21652 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:13:12.424+07:00 DEBUG 21652 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:13:12.453+07:00 DEBUG 21652 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:13:12.467+07:00 DEBUG 21652 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:13:12.611+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:13:12.634+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:13:12.641+07:00  INFO 21652 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 2.809 seconds (process running for 3.124)
+2024-12-01T09:13:36.065+07:00  INFO 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-01T09:13:36.065+07:00  INFO 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-01T09:13:36.065+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-01T09:13:36.065+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-01T09:13:36.065+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-01T09:13:36.066+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6fdad686
+2024-12-01T09:13:36.067+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1aedbdc7
+2024-12-01T09:13:36.067+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-01T09:13:36.067+07:00  INFO 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-01T09:13:36.071+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2024-12-01T09:13:36.078+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.AuthController#login(LoginDTO, BindingResult)
+2024-12-01T09:13:36.116+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [iuh.fit.se.dtos.LoginDTO@7b5e9bd2]
+2024-12-01T09:13:36.232+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:13:36.232+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=200, data=iuh.fit.se.dtos.UserDTO@fcdeb1c}]
+2024-12-01T09:13:36.247+07:00 DEBUG 21652 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:15:11.708+07:00  INFO 21652 --- [PetShop_BE1] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-01T09:15:11.710+07:00  INFO 21652 --- [PetShop_BE1] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:15:11.721+07:00  INFO 21652 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:15:11.724+07:00  INFO 21652 --- [PetShop_BE1] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:15:11.726+07:00  INFO 21652 --- [PetShop_BE1] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-01T09:15:11.727+07:00  INFO 21652 --- [PetShop_BE1] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-01T09:15:20.455+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 7284 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:15:20.456+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:15:20.480+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-01T09:15:20.480+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-01T09:15:20.940+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:15:20.975+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:15:21.161+07:00  WARN 7284 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:15:21.174+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:15:21.315+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:15:21.323+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:15:21.323+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:15:21.359+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:15:21.359+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 878 ms
+2024-12-01T09:15:21.632+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:15:21.650+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-01T09:15:21.696+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@596e71b6
+2024-12-01T09:15:21.697+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-01T09:15:22.325+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:15:22.598+07:00  WARN 7284 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:15:22.725+07:00 DEBUG 7284 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:15:22.783+07:00 DEBUG 7284 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:15:22.803+07:00 DEBUG 7284 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:15:22.831+07:00 DEBUG 7284 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:15:22.846+07:00 DEBUG 7284 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:15:22.989+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:15:23.013+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:15:23.020+07:00  INFO 7284 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 2.832 seconds (process running for 3.166)
+2024-12-01T09:15:36.080+07:00  INFO 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-01T09:15:36.080+07:00  INFO 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-01T09:15:36.080+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-01T09:15:36.081+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-01T09:15:36.081+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-01T09:15:36.082+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5fc58622
+2024-12-01T09:15:36.082+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1ab443de
+2024-12-01T09:15:36.082+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-01T09:15:36.082+07:00  INFO 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-01T09:15:36.087+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2024-12-01T09:15:36.093+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.AuthController#login(LoginDTO, BindingResult)
+2024-12-01T09:15:36.131+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [iuh.fit.se.dtos.LoginDTO@6575e19b]
+2024-12-01T09:15:36.243+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:15:36.244+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=200, data=iuh.fit.se.dtos.UserDTO@bff1519}]
+2024-12-01T09:15:36.259+07:00 DEBUG 7284 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:18:29.364+07:00  INFO 7284 --- [PetShop_BE1] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-01T09:18:29.367+07:00  INFO 7284 --- [PetShop_BE1] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:18:29.376+07:00  INFO 7284 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:18:29.379+07:00  INFO 7284 --- [PetShop_BE1] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:18:29.381+07:00  INFO 7284 --- [PetShop_BE1] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-01T09:18:29.382+07:00  INFO 7284 --- [PetShop_BE1] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-01T09:18:36.560+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21792 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:18:36.561+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:18:36.584+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-01T09:18:36.585+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-01T09:18:37.043+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:18:37.079+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:18:37.263+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:18:37.276+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:18:37.416+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:18:37.423+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:18:37.424+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:18:37.455+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:18:37.456+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 870 ms
+2024-12-01T09:18:37.727+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:18:37.744+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-01T09:18:37.792+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@66d2ed6d
+2024-12-01T09:18:37.793+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-01T09:18:38.418+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:18:38.691+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:18:38.816+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:18:38.875+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:18:38.895+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:18:38.923+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:18:38.938+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:18:39.079+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:18:39.103+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:18:39.110+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 2.81 seconds (process running for 3.122)
+2024-12-01T09:18:52.264+07:00  INFO 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-01T09:18:52.264+07:00  INFO 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-01T09:18:52.265+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-01T09:18:52.265+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-01T09:18:52.265+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-01T09:18:52.266+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3ebac39
+2024-12-01T09:18:52.266+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5fc58622
+2024-12-01T09:18:52.266+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-01T09:18:52.266+07:00  INFO 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-01T09:18:52.271+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2024-12-01T09:18:52.277+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.AuthController#login(LoginDTO, BindingResult)
+2024-12-01T09:18:52.316+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [iuh.fit.se.dtos.LoginDTO@6575e19b]
+2024-12-01T09:18:52.431+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:18:52.432+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=200, data=iuh.fit.se.dtos.UserDTO@bff1519}]
+2024-12-01T09:18:52.446+07:00 DEBUG 21792 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:27:11.462+07:00  INFO 21792 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-01T09:27:11.465+07:00  INFO 21792 --- [PetShop_BE1] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:27:11.476+07:00  INFO 21792 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:27:11.479+07:00  INFO 21792 --- [PetShop_BE1] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:27:11.482+07:00  INFO 21792 --- [PetShop_BE1] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-01T09:27:11.483+07:00  INFO 21792 --- [PetShop_BE1] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-01T09:27:11.541+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21792 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:27:11.541+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:27:11.666+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:27:11.676+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:27:11.716+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:27:11.720+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:27:11.746+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:27:11.747+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:27:11.747+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:27:11.762+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:27:11.762+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 220 ms
+2024-12-01T09:27:11.794+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:27:11.795+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-01T09:27:11.797+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@40a384d8
+2024-12-01T09:27:11.798+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-01T09:27:11.898+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:27:11.904+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2024-12-01T09:27:11.904+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:27:11.905+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-12-01T09:27:11.932+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-12-01T09:27:11.933+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-12-01T09:27:11.938+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-01T09:27:11.950+07:00 ERROR 21792 --- [PetShop_BE1] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at iuh.fit.se.PetShopBe1Application.main(PetShopBe1Application.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [iuh.fit.se.serviceImpl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@96f2d75]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 40 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: List
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: List
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 46 common frames omitted
+
+2024-12-01T09:27:16.492+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21792 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:27:16.492+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:27:16.603+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:27:16.612+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:27:16.644+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:27:16.645+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:27:16.666+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:27:16.667+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:27:16.667+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:27:16.682+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:27:16.682+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 189 ms
+2024-12-01T09:27:16.708+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:27:16.709+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-12-01T09:27:16.710+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@f448265
+2024-12-01T09:27:16.710+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-12-01T09:27:16.773+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:27:16.841+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:27:16.882+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:27:16.898+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:27:16.904+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:27:16.908+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:27:16.914+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:27:16.972+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:27:16.980+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:27:16.983+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.513 seconds (process running for 520.996)
+2024-12-01T09:27:16.985+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:27:37.844+07:00  INFO 21792 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:27:37.845+07:00  INFO 21792 --- [PetShop_BE1] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:27:37.858+07:00  INFO 21792 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:27:37.860+07:00  INFO 21792 --- [PetShop_BE1] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:27:37.860+07:00  INFO 21792 --- [PetShop_BE1] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-12-01T09:27:37.861+07:00  INFO 21792 --- [PetShop_BE1] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-12-01T09:27:37.912+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21792 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:27:37.912+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:27:38.016+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:27:38.025+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:27:38.057+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:27:38.057+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:27:38.082+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:27:38.082+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:27:38.082+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:27:38.092+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:27:38.092+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 179 ms
+2024-12-01T09:27:38.118+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:27:38.118+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-12-01T09:27:38.120+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@52fb0149
+2024-12-01T09:27:38.120+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-12-01T09:27:38.177+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:27:38.182+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2024-12-01T09:27:38.182+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:27:38.183+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-12-01T09:27:38.183+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-12-01T09:27:38.183+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-12-01T09:27:38.186+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-01T09:27:38.188+07:00 ERROR 21792 --- [PetShop_BE1] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at iuh.fit.se.PetShopBe1Application.main(PetShopBe1Application.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [iuh.fit.se.serviceImpl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2655fcf4]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 40 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: List
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: List
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 46 common frames omitted
+
+2024-12-01T09:28:09.980+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21792 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:28:09.980+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:28:10.082+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:28:10.087+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.NoClassDefFoundError: Role
+2024-12-01T09:28:10.090+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-01T09:28:10.091+07:00 ERROR 21792 --- [PetShop_BE1] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NoClassDefFoundError: Role
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.privateGetPublicMethods(Class.java:3427)
+	at java.base/java.lang.Class.getMethods(Class.java:2019)
+	at org.springframework.data.util.ReactiveWrappers.usesReactiveType(ReactiveWrappers.java:141)
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.isReactiveRepository(AbstractRepositoryMetadata.java:135)
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.useRepositoryConfiguration(RepositoryConfigurationExtensionSupport.java:344)
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:98)
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:168)
+	at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions(AbstractRepositoryConfigurationSourceSupport.java:62)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:387)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:386)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:149)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:121)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:430)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at iuh.fit.se.PetShopBe1Application.main(PetShopBe1Application.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.ClassNotFoundException: Role
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 33 common frames omitted
+
+2024-12-01T09:28:16.579+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21792 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:28:16.579+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:28:16.680+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:28:16.689+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:28:16.723+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:28:16.724+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:28:16.744+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:28:16.744+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:28:16.744+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:28:16.759+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:28:16.759+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 179 ms
+2024-12-01T09:28:16.783+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:28:16.783+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-12-01T09:28:16.785+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.mariadb.jdbc.Connection@150b6fd5
+2024-12-01T09:28:16.785+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-12-01T09:28:16.842+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:28:16.846+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2024-12-01T09:28:16.846+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:28:16.847+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-12-01T09:28:16.847+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-12-01T09:28:16.847+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-12-01T09:28:16.850+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-01T09:28:16.852+07:00 ERROR 21792 --- [PetShop_BE1] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at iuh.fit.se.PetShopBe1Application.main(PetShopBe1Application.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [iuh.fit.se.serviceImpl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5e384fcc]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 40 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: List
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: List
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 46 common frames omitted
+
+2024-12-01T09:28:20.321+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21792 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:28:20.321+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:28:20.423+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:28:20.432+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:28:20.463+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:28:20.464+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:28:20.484+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:28:20.485+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:28:20.485+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:28:20.495+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:28:20.496+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 174 ms
+2024-12-01T09:28:20.519+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:28:20.519+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-12-01T09:28:20.521+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.mariadb.jdbc.Connection@1155c826
+2024-12-01T09:28:20.521+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-12-01T09:28:20.576+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:28:20.636+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:28:20.669+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:28:20.683+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:28:20.688+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:28:20.692+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:28:20.697+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:28:20.742+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:28:20.749+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:28:20.752+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.447 seconds (process running for 584.766)
+2024-12-01T09:28:20.753+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:39:24.155+07:00  INFO 21792 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:39:24.156+07:00  INFO 21792 --- [PetShop_BE1] [Thread-14] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:39:24.169+07:00  INFO 21792 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:39:24.171+07:00  INFO 21792 --- [PetShop_BE1] [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:39:24.171+07:00  INFO 21792 --- [PetShop_BE1] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-12-01T09:39:24.172+07:00  INFO 21792 --- [PetShop_BE1] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-12-01T09:39:24.219+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21792 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:39:24.219+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:39:24.328+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:39:24.337+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:39:24.373+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:39:24.374+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:39:24.401+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:39:24.401+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:39:24.401+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:39:24.415+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:39:24.415+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 195 ms
+2024-12-01T09:39:24.441+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:39:24.441+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-12-01T09:39:24.443+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection org.mariadb.jdbc.Connection@161db50
+2024-12-01T09:39:24.443+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-12-01T09:39:24.495+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:39:24.549+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed
+2024-12-01T09:39:24.549+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:39:24.549+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-12-01T09:39:24.579+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-12-01T09:39:24.579+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-12-01T09:39:24.582+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-01T09:39:24.583+07:00 ERROR 21792 --- [PetShop_BE1] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at iuh.fit.se.PetShopBe1Application.main(PetShopBe1Application.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [iuh.fit.se.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4cec2880]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Role
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Role
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+
+2024-12-01T09:39:44.489+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 21792 (C:\SubProject_JAVA\PetShop_BE1\target\classes started by TGC in C:\SubProject_JAVA\PetShop_BE1)
+2024-12-01T09:39:44.489+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:39:44.585+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:39:44.594+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:39:44.627+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:39:44.628+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:39:44.648+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:39:44.648+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:39:44.648+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:39:44.662+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:39:44.662+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 172 ms
+2024-12-01T09:39:44.685+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:39:44.685+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-12-01T09:39:44.687+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection org.mariadb.jdbc.Connection@6622c477
+2024-12-01T09:39:44.687+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-12-01T09:39:44.738+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:39:44.802+07:00  WARN 21792 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:39:44.841+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:39:44.856+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:39:44.861+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:39:44.865+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:39:44.871+07:00 DEBUG 21792 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:39:44.925+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-01T09:39:44.933+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:39:44.936+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.46 seconds (process running for 1268.95)
+2024-12-01T09:39:44.937+07:00  INFO 21792 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:41:05.265+07:00  INFO 21792 --- [PetShop_BE1] [RMI TCP Connection(43)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-01T09:41:05.266+07:00  INFO 21792 --- [PetShop_BE1] [RMI TCP Connection(43)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:41:05.275+07:00  INFO 21792 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:41:05.276+07:00  INFO 21792 --- [PetShop_BE1] [RMI TCP Connection(43)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:41:05.277+07:00  INFO 21792 --- [PetShop_BE1] [RMI TCP Connection(43)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-12-01T09:41:05.277+07:00  INFO 21792 --- [PetShop_BE1] [RMI TCP Connection(43)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+=======
 2024-12-01T00:10:51.506+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/products", parameters={}
 2024-12-01T00:10:52.071+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.ProductController#getAllProducts()
 2024-12-01T00:10:52.387+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
@@ -1365,3 +2155,4 @@ Identify and stop the process that's listening on port 9998 or configure this ap
 2024-12-01T10:11:11.182+07:00  INFO 30204 --- [PetShop_BE1] [RMI TCP Connection(890)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-12-01T10:11:11.183+07:00  INFO 30204 --- [PetShop_BE1] [RMI TCP Connection(890)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
 2024-12-01T10:11:11.183+07:00  INFO 30204 --- [PetShop_BE1] [RMI TCP Connection(890)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+

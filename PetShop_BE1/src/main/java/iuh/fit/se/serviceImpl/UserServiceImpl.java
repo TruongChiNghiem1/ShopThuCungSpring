@@ -9,6 +9,8 @@ import iuh.fit.se.repository.UserRepository;
 import iuh.fit.se.services.UserService;
 import jakarta.transaction.Transactional;
 
+import java.util.List;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -58,7 +60,7 @@ public class UserServiceImpl implements UserService {
 		        userDTO.setEmailAddress(user.getEmailAddress());
 		        userDTO.setName(user.getName());
 		        userDTO.setUsername(user.getUsername());
-
+		        userDTO.setRole(user.getRole());
 		        return userDTO;
 		    }
 		    return null;
@@ -85,6 +87,13 @@ public class UserServiceImpl implements UserService {
 	
 		    return null;
 	}
+	
+	
+	@Override
+    public List<User> findByRole(Role role) {
+        return userRepository.findByRole(role);
+    }
+	
 	@Override
     public boolean changePassword(long userId, String oldPassword, String newPassword) throws Exception {
         // Tìm user theo ID

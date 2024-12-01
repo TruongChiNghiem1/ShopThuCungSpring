@@ -1,5 +1,7 @@
 package iuh.fit.se.services;
 
+import java.util.List;
+
 import iuh.fit.se.dtos.LoginDTO;
 import iuh.fit.se.dtos.ProductDTO;
 import iuh.fit.se.dtos.RegisterDTO;
@@ -13,4 +15,5 @@ public interface UserService {
     UserDTO  authenticate(LoginDTO loginDTO);
     UserDTO update(Long id, UserDTO UserDTO);
     boolean changePassword(long userId, String oldPassword, String newPassword) throws Exception;
+    List<User> findByRole(Role role);
 }

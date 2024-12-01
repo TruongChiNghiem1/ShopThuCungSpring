@@ -30,6 +30,8 @@ public class UserDTO {
 	@NotEmpty(message = "Email address không được rỗng")
 	@Email(message = "Email không đúng định dạng")
 	private String emailAddress;
+	
+	private Role role;
 
 	@JsonIgnore
 	private Set<Order> orders;
@@ -73,5 +75,14 @@ public class UserDTO {
 	public void setOrders(Set<Order> orders) {
 		this.orders = orders;
 	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
+	
 
 }
