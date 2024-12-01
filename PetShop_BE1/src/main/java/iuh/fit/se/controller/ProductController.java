@@ -118,7 +118,7 @@ public class ProductController {
 //        }
 //    }
     
-    private final String uploadDir = "D:/JAVA/www/spring/project/SubProject_WWW_JAVA/PetShop_BE1/src/main/resources/static/assets/upload/images/";
+    private final String uploadDir = "E:/_IUH/IUH_8/WWW/ShopThuCungSpring/PetShop_BE1/src/main/resources/static/assets/upload/images/";
     public String saveImage(MultipartFile image) {
         String originalFilename = image.getOriginalFilename();
         String fileExtension = originalFilename != null ? originalFilename.substring(originalFilename.lastIndexOf(".")) : "";
