@@ -799,3 +799,569 @@
 2024-12-01T09:33:21.045+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
 2024-12-01T09:33:21.045+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[iuh.fit.se.entities.Category@14e77795, iuh.fit.se.entities.Category@4faaac18, iuh.fit.se.entities.C (truncated)...]
 2024-12-01T09:33:21.045+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:37:09.213+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/categories", parameters={}
+2024-12-01T09:37:09.213+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#getAllCategories()
+2024-12-01T09:37:09.235+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:37:09.235+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[iuh.fit.se.entities.Category@33c10f8f, iuh.fit.se.entities.Category@eaf2b78, iuh.fit.se.entities.Ca (truncated)...]
+2024-12-01T09:37:09.236+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:37:12.688+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : DELETE "/api/categories/5", parameters={}
+2024-12-01T09:37:12.688+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#deleteCategory(Long)
+2024-12-01T09:37:12.693+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2024-12-01T09:37:12.693+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Cannot delete category. There are products associated with this category."]
+2024-12-01T09:37:12.694+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 409 CONFLICT
+2024-12-01T09:37:16.384+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/categories/6", parameters={}
+2024-12-01T09:37:16.384+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#deleteCategory(Long)
+2024-12-01T09:37:16.385+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:37:16.387+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : DELETE "/api/categories/6", parameters={}
+2024-12-01T09:37:16.387+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#deleteCategory(Long)
+2024-12-01T09:37:16.449+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2024-12-01T09:37:16.449+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Category deleted successfully."]
+2024-12-01T09:37:16.449+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:37:16.454+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/categories", parameters={}
+2024-12-01T09:37:16.454+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#getAllCategories()
+2024-12-01T09:37:16.468+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:37:16.468+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[iuh.fit.se.entities.Category@264791cd, iuh.fit.se.entities.Category@31ae2713, iuh.fit.se.entities.C (truncated)...]
+2024-12-01T09:37:16.477+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:37:19.378+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/categories", parameters={}
+2024-12-01T09:37:19.379+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#getAllCategories()
+2024-12-01T09:37:19.381+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:37:19.382+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[iuh.fit.se.entities.Category@187f78cf, iuh.fit.se.entities.Category@724184e1, iuh.fit.se.entities.C (truncated)...]
+2024-12-01T09:37:19.382+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:37:51.715+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/categories/find-id/2", parameters={}
+2024-12-01T09:37:51.715+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#getCategoryById(Long)
+2024-12-01T09:37:51.738+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:37:51.739+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [iuh.fit.se.entities.Category@1e3999b7]
+2024-12-01T09:37:51.739+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:38:00.677+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/64899e2f-d0cc-4930-84bc-87f6fe57986a.png", parameters={}
+2024-12-01T09:38:00.678+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/c08ca374-9ff9-4509-8a83-07da7a930751.jpg", parameters={}
+2024-12-01T09:38:00.678+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/ca6787a8-5b4f-4441-8b4e-e636be9223f5.png", parameters={}
+2024-12-01T09:38:00.678+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:38:00.678+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:38:00.678+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:38:00.685+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:38:00.685+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:38:00.685+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:38:11.070+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/products/find-id/3", parameters={}
+2024-12-01T09:38:11.071+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.ProductController#getCategoryById(Long)
+2024-12-01T09:38:11.071+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/categories", parameters={}
+2024-12-01T09:38:11.071+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#getAllCategories()
+2024-12-01T09:38:11.076+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:38:11.076+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[iuh.fit.se.entities.Category@4fa53e14, iuh.fit.se.entities.Category@1c8e82d0, iuh.fit.se.entities.C (truncated)...]
+2024-12-01T09:38:11.092+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:38:11.093+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:38:11.102+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Product [id=3, name=aaaaa, oldPrice=111.0, newPrice=1111.0, description=sdff, size=11, color=11, qua (truncated)...]
+2024-12-01T09:38:11.102+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:38:36.114+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/64899e2f-d0cc-4930-84bc-87f6fe57986a.png", parameters={}
+2024-12-01T09:38:36.115+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:38:36.115+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/ca6787a8-5b4f-4441-8b4e-e636be9223f5.png", parameters={}
+2024-12-01T09:38:36.115+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:38:36.116+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:38:36.118+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/c08ca374-9ff9-4509-8a83-07da7a930751.jpg", parameters={}
+2024-12-01T09:38:36.118+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:38:36.119+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:38:36.119+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:40:52.604+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/products", parameters={}
+2024-12-01T09:40:52.604+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.ProductController#getAllProducts()
+2024-12-01T09:40:52.612+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:40:52.615+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Product [id=1, name=aaaaaa, oldPrice=111.0, newPrice=22.0, description=dsf, size=22, color=22, quan (truncated)...]
+2024-12-01T09:40:52.615+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:40:53.470+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/64899e2f-d0cc-4930-84bc-87f6fe57986a.png", parameters={}
+2024-12-01T09:40:53.471+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/c08ca374-9ff9-4509-8a83-07da7a930751.jpg", parameters={}
+2024-12-01T09:40:53.471+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:40:53.471+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/ca6787a8-5b4f-4441-8b4e-e636be9223f5.png", parameters={}
+2024-12-01T09:40:53.472+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:40:53.472+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:40:53.473+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:40:53.473+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:40:53.475+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:41:57.790+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/ca6787a8-5b4f-4441-8b4e-e636be9223f5.png", parameters={}
+2024-12-01T09:41:57.790+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/assets/upload/images/64899e2f-d0cc-4930-84bc-87f6fe57986a.png", parameters={}
+2024-12-01T09:41:57.790+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:41:57.790+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T09:41:57.793+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:41:57.794+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:51:22.910+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:51:22.996+07:00  INFO 30204 --- [PetShop_BE1] [Thread-33] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:51:23.115+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:51:23.160+07:00  INFO 30204 --- [PetShop_BE1] [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:51:23.195+07:00  INFO 30204 --- [PetShop_BE1] [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-12-01T09:51:23.211+07:00  INFO 30204 --- [PetShop_BE1] [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-12-01T09:51:23.905+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T09:51:23.905+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:51:24.076+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:51:24.088+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:51:24.168+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:51:24.172+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:51:24.265+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:51:24.266+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:51:24.266+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:51:24.282+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:51:24.282+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 375 ms
+2024-12-01T09:51:24.318+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:51:24.319+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-12-01T09:51:24.325+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection org.mariadb.jdbc.Connection@361dcea
+2024-12-01T09:51:24.325+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-12-01T09:51:24.405+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:51:24.494+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:51:24.565+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:51:24.586+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:51:24.593+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:51:24.601+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:51:24.609+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:51:24.686+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T09:51:24.700+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:51:24.704+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.859 seconds (process running for 40976.113)
+2024-12-01T09:51:24.706+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:51:30.163+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:51:30.164+07:00  INFO 30204 --- [PetShop_BE1] [Thread-37] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:51:30.242+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:51:30.244+07:00  INFO 30204 --- [PetShop_BE1] [Thread-37] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:51:30.244+07:00  INFO 30204 --- [PetShop_BE1] [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-12-01T09:51:30.246+07:00  INFO 30204 --- [PetShop_BE1] [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2024-12-01T09:51:30.334+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T09:51:30.334+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:51:30.475+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:51:30.486+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:51:30.524+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:51:30.526+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:51:30.573+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:51:30.573+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:51:30.573+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:51:30.587+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:51:30.587+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 252 ms
+2024-12-01T09:51:30.616+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:51:30.616+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-12-01T09:51:30.617+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection org.mariadb.jdbc.Connection@497a85d0
+2024-12-01T09:51:30.617+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-12-01T09:51:30.714+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:51:30.792+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:51:30.850+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:51:30.867+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:51:30.874+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:51:30.880+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:51:30.887+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:51:30.945+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T09:51:30.955+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:51:30.960+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.647 seconds (process running for 40982.37)
+2024-12-01T09:51:30.962+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:51:33.404+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:51:33.405+07:00  INFO 30204 --- [PetShop_BE1] [Thread-41] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:51:33.497+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:51:33.502+07:00  INFO 30204 --- [PetShop_BE1] [Thread-41] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:51:33.503+07:00  INFO 30204 --- [PetShop_BE1] [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2024-12-01T09:51:33.503+07:00  INFO 30204 --- [PetShop_BE1] [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2024-12-01T09:51:33.568+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T09:51:33.568+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:51:33.703+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:51:33.716+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:51:33.755+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:51:33.756+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:51:33.782+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:51:33.782+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:51:33.782+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:51:33.799+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:51:33.799+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
+2024-12-01T09:51:33.831+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:51:33.831+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2024-12-01T09:51:33.833+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection org.mariadb.jdbc.Connection@4cc73b9d
+2024-12-01T09:51:33.833+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2024-12-01T09:51:33.898+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:51:33.973+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:51:34.016+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:51:34.033+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:51:34.039+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:51:34.046+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:51:34.052+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:51:34.108+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T09:51:34.124+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:51:34.128+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.579 seconds (process running for 40985.537)
+2024-12-01T09:51:34.129+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:52:20.272+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:52:20.273+07:00  INFO 30204 --- [PetShop_BE1] [Thread-45] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:52:20.363+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:52:20.364+07:00  INFO 30204 --- [PetShop_BE1] [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:52:20.365+07:00  INFO 30204 --- [PetShop_BE1] [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2024-12-01T09:52:20.366+07:00  INFO 30204 --- [PetShop_BE1] [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2024-12-01T09:52:20.434+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T09:52:20.434+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:52:20.599+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:52:20.610+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:52:20.656+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:52:20.657+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:52:20.686+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:52:20.686+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:52:20.686+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:52:20.701+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:52:20.701+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 266 ms
+2024-12-01T09:52:20.739+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:52:20.739+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2024-12-01T09:52:20.741+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection org.mariadb.jdbc.Connection@49ce3a9b
+2024-12-01T09:52:20.741+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2024-12-01T09:52:20.813+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:52:20.912+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:52:20.958+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:52:20.976+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:52:20.983+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:52:20.990+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:52:20.996+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:52:21.071+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T09:52:21.083+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:52:21.086+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.672 seconds (process running for 41032.496)
+2024-12-01T09:52:21.089+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:54:27.612+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-01T09:54:27.613+07:00  INFO 30204 --- [PetShop_BE1] [Thread-49] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:54:27.693+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:54:27.694+07:00  INFO 30204 --- [PetShop_BE1] [Thread-49] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:54:27.696+07:00  INFO 30204 --- [PetShop_BE1] [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2024-12-01T09:54:27.696+07:00  INFO 30204 --- [PetShop_BE1] [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2024-12-01T09:54:27.766+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T09:54:27.766+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:54:27.909+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:54:27.919+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:54:27.958+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:54:27.958+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:54:27.984+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:54:27.984+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:54:27.984+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:54:28.000+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:54:28.000+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 233 ms
+2024-12-01T09:54:28.031+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:54:28.032+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2024-12-01T09:54:28.034+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection org.mariadb.jdbc.Connection@1bce67c7
+2024-12-01T09:54:28.034+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2024-12-01T09:54:28.105+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:54:28.182+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:54:28.226+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:54:28.245+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:54:28.252+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:54:28.258+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:54:28.266+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:54:28.328+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T09:54:28.340+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:54:28.343+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.597 seconds (process running for 41159.753)
+2024-12-01T09:54:28.346+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:56:17.410+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:56:17.411+07:00  INFO 30204 --- [PetShop_BE1] [Thread-53] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:56:17.488+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:56:17.490+07:00  INFO 30204 --- [PetShop_BE1] [Thread-53] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:56:17.490+07:00  INFO 30204 --- [PetShop_BE1] [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2024-12-01T09:56:17.491+07:00  INFO 30204 --- [PetShop_BE1] [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2024-12-01T09:56:17.550+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T09:56:17.550+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:56:17.684+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:56:17.696+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:56:17.735+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:56:17.736+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:56:17.763+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:56:17.763+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:56:17.763+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:56:17.779+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:56:17.779+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 228 ms
+2024-12-01T09:56:17.809+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:56:17.809+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2024-12-01T09:56:17.812+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection org.mariadb.jdbc.Connection@4bf75bea
+2024-12-01T09:56:17.812+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2024-12-01T09:56:18.265+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:56:18.337+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:56:18.391+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:56:18.408+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:56:18.414+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:56:18.420+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:56:18.432+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:56:18.484+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T09:56:18.494+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:56:18.499+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.967 seconds (process running for 41269.908)
+2024-12-01T09:56:18.500+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:57:13.708+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:57:13.708+07:00  INFO 30204 --- [PetShop_BE1] [Thread-57] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:57:13.790+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:57:13.791+07:00  INFO 30204 --- [PetShop_BE1] [Thread-57] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:57:13.791+07:00  INFO 30204 --- [PetShop_BE1] [Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2024-12-01T09:57:13.792+07:00  INFO 30204 --- [PetShop_BE1] [Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2024-12-01T09:57:13.859+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T09:57:13.859+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:57:13.990+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:57:14.001+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:57:14.039+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:57:14.040+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:57:14.071+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:57:14.072+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:57:14.072+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:57:14.086+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:57:14.086+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 226 ms
+2024-12-01T09:57:14.116+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:57:14.116+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2024-12-01T09:57:14.119+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection org.mariadb.jdbc.Connection@7fb53bfd
+2024-12-01T09:57:14.119+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2024-12-01T09:57:14.187+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:57:14.259+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:57:14.308+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:57:14.334+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:57:14.341+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:57:14.348+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:57:14.355+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:57:14.424+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T09:57:14.438+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:57:14.443+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.602 seconds (process running for 41325.853)
+2024-12-01T09:57:14.445+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:57:34.120+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-01T09:57:34.120+07:00  INFO 30204 --- [PetShop_BE1] [Thread-61] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:57:34.199+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:57:34.201+07:00  INFO 30204 --- [PetShop_BE1] [Thread-61] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:57:34.201+07:00  INFO 30204 --- [PetShop_BE1] [Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2024-12-01T09:57:34.202+07:00  INFO 30204 --- [PetShop_BE1] [Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2024-12-01T09:57:34.270+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T09:57:34.270+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:57:34.420+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:57:34.431+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:57:34.472+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:57:34.474+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:57:34.499+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:57:34.500+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:57:34.500+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:57:34.514+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:57:34.514+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 243 ms
+2024-12-01T09:57:34.545+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:57:34.546+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2024-12-01T09:57:34.547+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection org.mariadb.jdbc.Connection@2250cce1
+2024-12-01T09:57:34.548+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2024-12-01T09:57:34.618+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:57:34.715+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:57:34.762+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:57:34.784+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:57:34.790+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:57:34.795+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:57:34.801+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:57:34.854+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T09:57:34.863+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:57:34.868+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.618 seconds (process running for 41346.277)
+2024-12-01T09:57:34.869+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:58:30.025+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T09:58:30.025+07:00  INFO 30204 --- [PetShop_BE1] [Thread-65] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T09:58:30.104+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T09:58:30.105+07:00  INFO 30204 --- [PetShop_BE1] [Thread-65] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:58:30.106+07:00  INFO 30204 --- [PetShop_BE1] [Thread-65] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2024-12-01T09:58:30.107+07:00  INFO 30204 --- [PetShop_BE1] [Thread-65] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2024-12-01T09:58:30.168+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T09:58:30.169+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T09:58:30.296+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T09:58:30.305+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2024-12-01T09:58:30.344+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T09:58:30.345+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T09:58:30.371+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T09:58:30.372+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T09:58:30.372+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T09:58:30.386+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T09:58:30.386+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 216 ms
+2024-12-01T09:58:30.416+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T09:58:30.417+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2024-12-01T09:58:30.418+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection org.mariadb.jdbc.Connection@4f2d4a38
+2024-12-01T09:58:30.418+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2024-12-01T09:58:30.483+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T09:58:30.552+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T09:58:30.593+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T09:58:30.611+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T09:58:30.617+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T09:58:30.623+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T09:58:30.628+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T09:58:30.685+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T09:58:30.695+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T09:58:30.699+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.548 seconds (process running for 41402.109)
+2024-12-01T09:58:30.701+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T09:59:05.905+07:00  INFO 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-01T09:59:05.905+07:00  INFO 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-01T09:59:05.905+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-01T09:59:05.905+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-01T09:59:05.905+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-01T09:59:05.906+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@59a52f64
+2024-12-01T09:59:05.906+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7e1fab37
+2024-12-01T09:59:05.906+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-01T09:59:05.906+07:00  INFO 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-01T09:59:05.907+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/categories", parameters={}
+2024-12-01T09:59:05.907+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#getAllCategories()
+2024-12-01T09:59:05.914+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:59:05.914+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[iuh.fit.se.entities.Category@167081fb, iuh.fit.se.entities.Category@2c33b40d, iuh.fit.se.entities.C (truncated)...]
+2024-12-01T09:59:05.918+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:59:17.107+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2024-12-01T09:59:17.107+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.AuthController#login(LoginDTO, BindingResult)
+2024-12-01T09:59:17.117+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [iuh.fit.se.dtos.LoginDTO@1e79eee5]
+2024-12-01T09:59:17.131+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:59:17.131+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=200, data=iuh.fit.se.dtos.UserDTO@35104bc6}]
+2024-12-01T09:59:17.132+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T09:59:17.502+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/categories", parameters={}
+2024-12-01T09:59:17.502+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.CategoryController#getAllCategories()
+2024-12-01T09:59:17.507+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T09:59:17.507+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[iuh.fit.se.entities.Category@299d028f, iuh.fit.se.entities.Category@11ae9b86, iuh.fit.se.entities.C (truncated)...]
+2024-12-01T09:59:17.508+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T10:02:40.238+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T10:02:40.239+07:00  INFO 30204 --- [PetShop_BE1] [Thread-69] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T10:02:40.315+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T10:02:40.317+07:00  INFO 30204 --- [PetShop_BE1] [Thread-69] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T10:02:40.317+07:00  INFO 30204 --- [PetShop_BE1] [Thread-69] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2024-12-01T10:02:40.318+07:00  INFO 30204 --- [PetShop_BE1] [Thread-69] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2024-12-01T10:02:40.378+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T10:02:40.378+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T10:02:40.514+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T10:02:40.523+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2024-12-01T10:02:40.564+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T10:02:40.565+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T10:02:40.590+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T10:02:40.590+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T10:02:40.590+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T10:02:40.603+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T10:02:40.603+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 223 ms
+2024-12-01T10:02:40.634+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T10:02:40.635+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2024-12-01T10:02:40.636+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection org.mariadb.jdbc.Connection@2d9b21cf
+2024-12-01T10:02:40.637+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2024-12-01T10:02:40.698+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T10:02:40.765+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T10:02:40.805+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T10:02:40.821+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T10:02:40.829+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T10:02:40.835+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T10:02:40.841+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T10:02:40.894+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T10:02:40.903+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T10:02:40.908+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.546 seconds (process running for 41652.317)
+2024-12-01T10:02:40.909+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T10:07:21.175+07:00  INFO 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-01T10:07:21.176+07:00  INFO 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-01T10:07:21.176+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-01T10:07:21.176+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-01T10:07:21.176+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-01T10:07:21.177+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@71694080
+2024-12-01T10:07:21.177+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@214886f4
+2024-12-01T10:07:21.177+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-01T10:07:21.177+07:00  INFO 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-01T10:07:21.177+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/orders", parameters={}
+2024-12-01T10:07:21.178+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T10:07:21.178+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-01T10:07:21.180+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/orders", parameters={}
+2024-12-01T10:07:21.180+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T10:07:21.181+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-12-01T10:07:21.181+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource orders.]
+2024-12-01T10:07:21.182+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-01T10:07:21.183+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/api/error", parameters={}
+2024-12-01T10:07:21.183+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-01T10:07:21.184+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T10:07:21.186+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 10:07:21 ICT 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-12-01T10:07:21.187+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-12-01T10:07:56.959+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/orders", parameters={}
+2024-12-01T10:07:56.959+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-01T10:07:56.960+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-12-01T10:07:56.961+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource orders.]
+2024-12-01T10:07:56.961+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-01T10:07:56.961+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/api/error", parameters={}
+2024-12-01T10:07:56.961+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-01T10:07:56.962+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T10:07:56.962+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 10:07:56 ICT 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-12-01T10:07:56.963+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-12-01T10:08:40.962+07:00  INFO 30204 --- [PetShop_BE1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-01T10:08:40.963+07:00  INFO 30204 --- [PetShop_BE1] [Thread-73] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T10:08:41.049+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T10:08:41.051+07:00  INFO 30204 --- [PetShop_BE1] [Thread-73] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T10:08:41.052+07:00  INFO 30204 --- [PetShop_BE1] [Thread-73] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2024-12-01T10:08:41.053+07:00  INFO 30204 --- [PetShop_BE1] [Thread-73] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2024-12-01T10:08:41.127+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 30204 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T10:08:41.127+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T10:08:41.300+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T10:08:41.310+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2024-12-01T10:08:41.359+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T10:08:41.360+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T10:08:41.395+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T10:08:41.396+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T10:08:41.396+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T10:08:41.419+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T10:08:41.419+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 290 ms
+2024-12-01T10:08:41.449+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T10:08:41.450+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2024-12-01T10:08:41.453+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-20 - Added connection org.mariadb.jdbc.Connection@21e45101
+2024-12-01T10:08:41.453+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2024-12-01T10:08:41.518+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T10:08:41.612+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T10:08:41.674+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T10:08:41.700+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T10:08:41.707+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T10:08:41.714+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T10:08:41.721+07:00 DEBUG 30204 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T10:08:41.794+07:00  WARN 30204 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T10:08:41.806+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/api'
+2024-12-01T10:08:41.810+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Started PetShopBe1Application in 0.704 seconds (process running for 42013.22)
+2024-12-01T10:08:41.812+07:00  INFO 30204 --- [PetShop_BE1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-01T10:08:44.350+07:00  INFO 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-01T10:08:44.350+07:00  INFO 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-01T10:08:44.350+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-01T10:08:44.350+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-01T10:08:44.350+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-01T10:08:44.351+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@371aa712
+2024-12-01T10:08:44.351+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6c4c2c77
+2024-12-01T10:08:44.351+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-01T10:08:44.351+07:00  INFO 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-01T10:08:44.352+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/orders", parameters={}
+2024-12-01T10:08:44.352+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.OrderController#placeOrder(OrderDTO)
+2024-12-01T10:08:44.360+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T10:08:44.360+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=500, message=Failed to place order.}]
+2024-12-01T10:08:44.361+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-01T10:09:36.226+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/orders", parameters={}
+2024-12-01T10:09:36.226+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.OrderController#placeOrder(OrderDTO)
+2024-12-01T10:09:36.227+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T10:09:36.227+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=500, message=Failed to place order.}]
+2024-12-01T10:09:36.228+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-01T10:10:11.852+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/orders", parameters={}
+2024-12-01T10:10:11.852+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controller.OrderController#placeOrder(OrderDTO)
+2024-12-01T10:10:11.852+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2024-12-01T10:10:11.852+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=500, message=Failed to place order.}]
+2024-12-01T10:10:11.853+07:00 DEBUG 30204 --- [PetShop_BE1] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-01T10:11:01.237+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : Starting PetShopBe1Application using Java 17.0.12 with PID 9516 (D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1\target\classes started by Nghiem in D:\JAVA\www\spring\project\SubProject_WWW_JAVA\PetShop_BE1)
+2024-12-01T10:11:01.239+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] iuh.fit.se.PetShopBe1Application         : No active profile set, falling back to 1 default profile: "default"
+2024-12-01T10:11:01.279+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-01T10:11:01.280+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-01T10:11:02.111+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01T10:11:02.177+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+2024-12-01T10:11:02.516+07:00  WARN 9516 --- [PetShop_BE1] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-01T10:11:02.554+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-01T10:11:02.850+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-01T10:11:02.865+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-01T10:11:02.866+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01T10:11:02.930+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-12-01T10:11:02.931+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1651 ms
+2024-12-01T10:11:03.467+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01T10:11:03.499+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-01T10:11:03.594+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@b478d57
+2024-12-01T10:11:03.597+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-01T10:11:04.686+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T10:11:05.184+07:00  WARN 9516 --- [PetShop_BE1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01T10:11:05.391+07:00 DEBUG 9516 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-12-01T10:11:05.494+07:00 DEBUG 9516 --- [PetShop_BE1] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-01T10:11:05.530+07:00 DEBUG 9516 --- [PetShop_BE1] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-01T10:11:05.583+07:00 DEBUG 9516 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-01T10:11:05.610+07:00 DEBUG 9516 --- [PetShop_BE1] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-01T10:11:05.841+07:00  WARN 9516 --- [PetShop_BE1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-01T10:11:05.870+07:00  WARN 9516 --- [PetShop_BE1] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-12-01T10:11:05.872+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T10:11:05.876+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-01T10:11:05.878+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-01T10:11:05.892+07:00  INFO 9516 --- [PetShop_BE1] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-01T10:11:05.908+07:00 ERROR 9516 --- [PetShop_BE1] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9998 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9998 or configure this application to listen on another port.
+
+2024-12-01T10:11:11.095+07:00  INFO 30204 --- [PetShop_BE1] [RMI TCP Connection(890)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-01T10:11:11.095+07:00  INFO 30204 --- [PetShop_BE1] [RMI TCP Connection(890)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01T10:11:11.179+07:00  INFO 30204 --- [PetShop_BE1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-01T10:11:11.182+07:00  INFO 30204 --- [PetShop_BE1] [RMI TCP Connection(890)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01T10:11:11.183+07:00  INFO 30204 --- [PetShop_BE1] [RMI TCP Connection(890)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2024-12-01T10:11:11.183+07:00  INFO 30204 --- [PetShop_BE1] [RMI TCP Connection(890)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
