@@ -13,7 +13,7 @@ public class User {
 	    private String username; 
 	    private String emailAddress; 
 	    private String password; 
-	   
+	    private Role role;
 	    @JsonIgnore
 	    private Set<Order> orders;
 		public Long getId() {
@@ -58,19 +58,38 @@ public class User {
 
 
 
-		public User(Long id, String name, String username, String emailAddress, String password) {
+	public User(Long id, String name, String username, String emailAddress, String password, Role role,
+				Set<Order> orders) {
 			super();
 			this.id = id;
 			this.name = name;
 			this.username = username;
 			this.emailAddress = emailAddress;
 			this.password = password;
-	
+			this.role = role;
+			this.orders = orders;
 		}
 
 		public User() {
 			super();
 			// TODO Auto-generated constructor stub
+		}
+		
+
+		public Role getRole() {
+			return role;
+		}
+
+		public void setRole(Role role) {
+			this.role = role;
+		}
+
+		public Set<Order> getOrders() {
+			return orders;
+		}
+
+		public void setOrders(Set<Order> orders) {
+			this.orders = orders;
 		}
 
 		@Override
