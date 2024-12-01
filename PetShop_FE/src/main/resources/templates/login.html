@@ -103,113 +103,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- ==================== Header Top End Here ==================== -->
-	<nav class="category-two">
-		<span class="close-sidebar"><i class="las la-times"></i></span>
-		<ul class="category-menu-two">
-			<!-- Dog Food -->
-			<li class="category-menu-two__item has-dropdown-two"><a href="#" class="category-menu-two__link"> <span
-						class="category-menu-two__thumb"> <img th:src="@{/assets/images/icons/dog01.png}"
-							alt="Dog Food">
-					</span> Dog Food <span class="category-menu-two__icon"><i class="las la-angle-down"></i></span>
-				</a>
-				<ul class="category-dropdown-two">
-					<li class="category-dropdown-two__item"><a th:href="@{/product-category}"
-							class="category-dropdown-two__link">
-							<span class="category-dropdown-two__thumb"> <img th:src="@{/assets/images/icons/dog01.png}"
-									alt="Category Dropdown One">
-							</span> Category Dropdown One
-						</a></li>
-					<li class="category-dropdown-two__item"><a th:href="@{/product-category}"
-							class="category-dropdown-two__link">
-							<span class="category-dropdown-two__thumb"> <img th:src="@{/assets/images/icons/dog01.png}"
-									alt="Category Dropdown Two">
-							</span> Category Dropdown Two
-						</a></li>
-					<li class="category-dropdown-two__item"><a th:href="@{/product-category}"
-							class="category-dropdown-two__link">
-							<span class="category-dropdown-two__thumb"> <img th:src="@{/assets/images/icons/dog01.png}"
-									alt="Category Dropdown Three">
-							</span> Category Dropdown Three
-						</a></li>
-				</ul>
-			</li>
-			<!-- Cat -->
-			<li class="category-menu-two__item"><a th:href="@{/product-category}" class="category-menu-two__link">
-					<span class="category-menu-two__thumb"> <img th:src="@{/assets/images/icons/cat.png}" alt="Cat">
-					</span> Cat
-				</a></li>
-			<!-- Fish -->
-			<li class="category-menu-two__item"><a th:href="@{/product-category}" class="category-menu-two__link">
-					<span class="category-menu-two__thumb"> <img th:src="@{/assets/images/icons/fish.png}" alt="Fish">
-					</span> Fish
-				</a></li>
-			<!-- Pet Toy -->
-			<li class="category-menu-two__item"><a th:href="@{/product-category}" class="category-menu-two__link">
-					<span class="category-menu-two__thumb"> <img th:src="@{/assets/images/icons/toys.png}"
-							alt="Pet Toy">
-					</span> Pet Toy
-				</a></li>
-			<!-- Parrot Food -->
-			<li class="category-menu-two__item has-dropdown-two"><a href="#" class="category-menu-two__link"> <span
-						class="category-menu-two__thumb"> <img th:src="@{/assets/images/icons/parrot.png}"
-							alt="Parrot Food">
-					</span> Parrot Food <span class="category-menu-two__icon"><i class="las la-angle-down"></i></span>
-				</a>
-				<ul class="category-dropdown-two">
-					<li class="category-dropdown-two__item"><a th:href="@{/product-category}"
-							class="category-dropdown-two__link">
-							<span class="category-dropdown-two__thumb"> <img th:src="@{/assets/images/icons/parrot.png}"
-									alt="Category Dropdown One">
-							</span> Category Dropdown One
-						</a></li>
-					<li class="category-dropdown-two__item"><a th:href="@{/product-category}"
-							class="category-dropdown-two__link">
-							<span class="category-dropdown-two__thumb"> <img th:src="@{/assets/images/icons/parrot.png}"
-									alt="Category Dropdown Two">
-							</span> Category Dropdown Two
-						</a></li>
-					<li class="category-dropdown-two__item"><a th:href="@{/product-category}"
-							class="category-dropdown-two__link">
-							<span class="category-dropdown-two__thumb"> <img th:src="@{/assets/images/icons/parrot.png}"
-									alt="Category Dropdown Three">
-							</span> Category Dropdown Three
-						</a></li>
-				</ul>
-			</li>
-			<!-- Rabbit -->
-			<li class="category-menu-two__item"><a th:href="@{/product-category}" class="category-menu-two__link">
-					<span class="category-menu-two__thumb"> <img th:src="@{/assets/images/icons/rabbit.png}"
-							alt="Rabbit">
-					</span> Rabbit
-				</a></li>
-			<!-- Accessories -->
-			<li class="category-menu-two__item"><a th:href="@{/product-category}" class="category-menu-two__link">
-					<span class="category-menu-two__thumb"> <img th:src="@{/assets/images/icons/accessories.png}"
-							alt="Accessories">
-					</span> Accessories
-				</a></li>
-			<!-- Small Pet -->
-			<li class="category-menu-two__item"><a th:href="@{/product-category}" class="category-menu-two__link">
-					<span class="category-menu-two__thumb"> <img th:src="@{/assets/images/icons/dog02.png}"
-							alt="Small Pet">
-					</span> Small Pet
-				</a></li>
-		</ul>
-		<!-- Contact Info for Mobile -->
-		<div class="contact-list__wrapper d-md-none d-block">
-			<div class="contact-list">
-				<span class="contact-list__icon"> <img th:src="@{/assets/images/icons/phone.png}" alt="Phone">
-				</span> <span class="contact-list__info">000 - 8888 - 9999</span>
-			</div>
-			<div class="contact-list">
-				<span class="contact-list__icon"> <img th:src="@{/assets/images/icons/email.png}" alt="">
-				</span> <span class="contact-list__info"> <a th:href="'mailto:' + ${email}">example@example.com</a>
-				</span>
-			</div>
-		</div>
-	</nav>
-
 
 	<!-- ==================== Bottom Header End Here ==================== -->
 	<header class="main-header">
@@ -220,41 +113,15 @@
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span id="hiddenNav"><i class="las la-bars"></i></span>
 				</button>
-				<div class="header-category-two">
-					<button class="header-category-two__item">
-						Categories <span class="header-category-two__icon"><i class="las la-bars"></i></span>
-					</button>
-				</div>
+		
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav nav-menu me-auto">
-						<li class="nav-item dropdown"><a class="nav-link" href="#" role="button"
-								data-bs-toggle="dropdown" aria-expanded="false">
-								Home <span class="nav-item__icon"><i class="las la-angle-down"></i></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										th:href="@{/index}">Home
-										One</a></li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										th:href="@{/index-two}">Home Two</a></li>
-							</ul>
+						<li class="nav-item">
+							<a class="nav-link" href="/" role="button"> Home</a>
 						</li>
 						<li class="nav-item"><a class="nav-link" th:href="@{/about}" aria-current="page">About</a></li>
 						<li class="nav-item dropdown"><a class="nav-link" href="/products" role="button" > Products</a>
 						</li>
-						<li class="nav-item dropdown"><a class="nav-link" href="#" role="button"
-								data-bs-toggle="dropdown" aria-expanded="false">
-								Blog <span class="nav-item__icon"><i class="las la-angle-down"></i></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										th:href="@{/blog}">Blog</a>
-								</li>
-								<li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link"
-										th:href="@{/blog-details}">Blog Details</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link" th:href="@{/contact}">Contact</a></li>
 						<li class="nav-item">
 							<div class="toggle-search-box d-none d-lg-block">
 								<button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-box"
@@ -278,9 +145,6 @@
 					<div class="header-info__cart">
 						<a th:href="@{/cart}" class="header-info__link"><i class="fas fa-shopping-cart"></i></a> <span
 							class="header-info__cart-quantity" th:text="${cartQuantity}">03</span>
-					</div>
-					<div class="header-info__user">
-						<a th:href="@{/login}" class="header-info__link"><i class="far fa-user"></i></a>
 					</div>
 				</div>
 			</nav>
@@ -443,7 +307,6 @@
 								<li class="footer-menu__item"><a href="faq.html" class="footer-menu__link"> Faq</a></li>
 								<li class="footer-menu__item"><a href="/cart" class="footer-menu__link">Shopping Cart
 									</a></li>
-								<li class="footer-menu__item"><a href="blog.html" class="footer-menu__link"> Blog</a>
 								</li>
 								<li class="footer-menu__item"><a href="product-two-details.html"
 										class="footer-menu__link"> Product Details</a></li>
@@ -462,9 +325,7 @@
 								</li>
 								<li class="footer-menu__item"><a href="/user/registrationPage"
 										class="footer-menu__link"> Registration </a></li>
-								<li class="footer-menu__item"><a href="contact.html" class="footer-menu__link"> Contact
-										Us </a></li>
-							</ul>
+						
 						</div>
 					</div>
 					<div class="col-xl-1 d-xl-block d-none"></div>
