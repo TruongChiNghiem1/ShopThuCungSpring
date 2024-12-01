@@ -47,7 +47,6 @@
 <!-- ==================== Scroll to Top End Here ==================== -->
 <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
 <!-- ==================== Scroll to Top End Here ==================== -->
-
 <nav class="category-two">
     <span class="close-sidebar"><i class="las la-times"></i></span>
     <ul class="category-menu-two">
@@ -129,7 +128,7 @@
              <span class="contact-list__icon">
                <img src="assets/images/icons/email.png" alt="">
             </span>
-             <span class="contact-list__info"> <a href="https://template.viserlab.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cfb9a6bcaabdbfaabb8fa8a2aea6a3e1aca0a2">[email&#160;protected]</a></span>
+             <span class="contact-list__info"> <a href="https://template.viserlab.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e19788928493918495a1868c80888dcf828e8c">[email&#160;protected]</a></span>
         </div>
      </div>
 </nav>
@@ -152,9 +151,6 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="/products" role="button" > Products</a>
                       </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
                     <li class=" nav-item">
                       <div class="toggle-search-box d-none d-lg-block">
                           <button type="button" class="" data-bs-toggle="modal" data-bs-target="#search-box" data-bs-whatever="@mdo"><i class="las la-search"></i></button>
@@ -216,11 +212,11 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="breadcumb__wrapper">
-                    <h1 class="breadcumb__title"> Check Out </h1>
+                    <h1 class="breadcumb__title"> Your Shoping Cart</h1>
                     <ul class="breadcumb__list">
-                        <li class="breadcumb__item"><a href="/" class="breadcumb__link"> <i class="las la-home"></i> Home</a> </li>
+                        <li class="breadcumb__item"><a href="index.html" class="breadcumb__link"> <i class="las la-home"></i> Home</a> </li>
                         <li class="breadcumb__item"> / </li>
-                        <li class="breadcumb__item"> <span class="breadcumb__item-text"> Check Out  </span> </li>
+                        <li class="breadcumb__item"> <span class="breadcumb__item-text"> Your Shoping Cart </span> </li>
                     </ul>
                 </div>
             </div>
@@ -229,83 +225,67 @@
 </section>
 <!-- ==================== Breadcumb End Here ==================== -->
 
-<!-- =================check out section start here ===================-->
-
-<div class="checkout-section py-120">
+<!-- ================cart-section start here================ -->
+<div class="cart-section py-120">
     <div class="container">
-        <div class="row gy-4">
-            <div class="col-lg-8">
-                <div class="billing-details">
-                    <h5 class="billing-details__title">Billing Details </h5>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="first-name" class="form--label">First Name<span class="required">*</span></label>
-                                <input type="text" class="form--control" id="first-name" >
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="last-name" class="form--label">Last Name<span class="required">*</span></label>
-                                <input type="text" class="form--control" id="last-name">
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label for="address" class="form--label"> Address<span class="required">*</span></label>
-                                <input type="text" class="form--control" placeholder="House number and street name" id="address" >
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="tel" class="form--label"> Phone Number </label>
-                                <input type="tel" class="form--control" id="tel">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="email" class="form--label">Email Address </label>
-                                <input type="email" class="form--control" id="email">
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label for="ordernote" class="form--label"> Order notes (optional) </label>
-                                <textarea class="form--control" id="ordernote" rows="3" placeholder="Type your note"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="billing-details__button d-flex flex-wrap justify-content-between align-items-center">
-                                <a href="/products" class="btn btn--base pill billing-details__button-margin">CONTINUE SHOPPING</a>
-                                <a href="/cart" class="color-style">Return to cart</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h3 class="section-heading__title style-two"> Your Cart Items <span class="section-heading__bars"></span></h3>
+                 </div>
             </div>
-            <div class="col-lg-4">
-				<div class="your-order">
-				    <h6 class="your-order__title">Your Order</h6>
-					<div class="order-items" id="order-items">
-					    <!-- Sản phẩm sẽ được render ở đây -->
-					</div>
-				    <div class="order d-flex justify-content-between align-items-center">
-				        <ul class="order-title">
-				            <li class="order-title__one">Total</li>
-				        </ul>
-				        <span class="order__number" id="total-price">$0.00</span> <!-- Tổng giá -->
-				    </div>
-				    <div class="place-order">
-				        <button id="order-now" class="btn btn--base pill">ORDER NOW</button>
-				    </div>
-				</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table--responsive--lg cart-table">
+                  <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Until Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                        <th>Delete</th>
+                    </tr>
+                  </thead>
+				  <tbody id="cart-body">
+			          <!-- Sản phẩm sẽ được thêm vào đây -->
+			      </tbody>
+                 </table>
+            </div>
+        </div>
+        <div class="cart-btn-area d-flex justify-content-between flex-wrap">
+            <div class="shopping-cart mb-0">
+                <a href="/products" class="btn btn--base pill shopping-cart__pr mb-3">CONTINUE SHOPPING</a>
+               
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="order-summery ms-auto">
+                   <div class="order-summery__one d-flex justify-content-between">
+                     <h6 class="order-summery__title"> Subtotal </h6>
+                     <span class="order-summery__number">$24000.00</span>
+                   </div>
+                   <div class="order-summery__two d-flex justify-content-between">
+                     <h6 class="order-summery__title-two"> Grand Total : </h6>
+                     <span class="order-summery__number-two">$24000.00</span>
+                  </div>
+                  <div class="checkout">
+                    <a href="/checkout" class="btn btn--base pill">PROCEED TO CHECKOUT</a>
+                    <p class="checkout__desc">Checkout With Multiple Addresses</p>
+                  </div>
+                 
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- =================checkout section end here===================== -->
+<!-- ===============cart section end here ==================-->
+
+
+
 <!--============================feature section start here =======================-->
 <div class="feature-section bg-img py-60" style="background-image: url(assets/images/thumbs/feature/feature-img.png);">
     <div class="container">
@@ -437,7 +417,7 @@
   
 
 <!-- Jquery js -->
-<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.1.min.js"></script>
 <!-- Popper js -->
 <script src="assets/js/popper.min.js"></script>
 <!-- Bootstrap Js -->
@@ -453,100 +433,110 @@
 <!-- magnific popup js -->
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
  <!-- main js -->
- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script src="assets/js/main.js"></script>
 <script>
-	const apiUrl = 'http://localhost:9998/api';
-	document.getElementById('order-now').addEventListener('click', function() {
-	    // Lấy thông tin từ các trường nhập liệu
-	    const firstName = document.getElementById('first-name').value;
-	    const lastName = document.getElementById('last-name').value;
-	    const address = document.getElementById('address').value;
-	    const phone = document.getElementById('tel').value;
-	    const email = document.getElementById('email').value;
-	    const orderNote = document.getElementById('ordernote').value;
-
-	    // Lấy thông tin sản phẩm từ giỏ hàng
-	    const orderItems = products.map(product => ({
-	        productId: product.id, // Giả sử mỗi sản phẩm có id
-	        quantity: product.quantity,
-	        price: product.price
-	    }));
-
-	    // Tạo đối tượng đơn hàng
-		const orderData = {
-		        firstName,
-		        lastName,
-		        address,
-		        phone,
-		        email,
-		        note: orderNote,
-		        totalAmount: parseFloat(document.getElementById('total-price').innerText.replace('$', '')),
-		        products: orderItems
-		    };
-
-	    // Gửi thông tin đơn hàng đến server
-	    fetch('http://localhost:9998/api/orders', {
-	        method: 'POST',
-	        headers: {
-	            'Content-Type': 'application/json'
-	        },
-	        body: JSON.stringify(orderData)
-	    })
-	    .then(response => response.json())
-	    .then(data => {
-	        if (data.status === 200) {
-	            Swal.fire({
-	                title: "Success!",
-	                text: "Your order has been placed successfully.",
-	                icon: "success"
-	            });
-	        } else {
-	            Swal.fire({
-	                title: "Error!",
-	                text: data.message || "There was an error placing your order.",
-	                icon: "error"
-	            });
-	        }
-	    })
-	    .catch(error => {
-	        console.error('Error:', error);
-	        Swal.fire({
-	            title: "Error!",
-	            text: "An unexpected error occurred.",
-	            icon: "error"
-	        });
+	const apiUrlBackend = 'http://localhost:9998/api';
+	// Cập nhật tổng giá trị giỏ hàng
+	function updateCartTotal() {
+	    let total = 0;
+	    $('.cart-table tbody tr').each(function() {
+	        const price = parseFloat($(this).find('td[data-label="Until Price"]').text().replace('$', '').replace(',', ''));
+	        const qty = parseInt($(this).find('.product-qty__value').val());
+	        const subtotal = price * qty;
+	        total += subtotal;
+	        $(this).find('td[data-label="Subtotal"]').text(`$${subtotal.toFixed(2)}`);
 	    });
-	});
-
-	
-	// Lấy sản phẩm từ local storage
-	const products = JSON.parse(localStorage.getItem('cart')) || [];
-
-	// Hàm để render sản phẩm
-	function renderProducts() {
-	    const orderItemsContainer = document.getElementById('order-items');
-	    orderItemsContainer.innerHTML = ''; // Xóa nội dung cũ
-		let dataCart = ``;
-	    products.forEach(product => {
-
-			dataCart += `			<div class="order d-flex justify-content-between align-items-center">
-			                        <ul class="order-title">
-			                            <li class="order-title__one">${product.name}</li>
-			                            <li class="order-title__one"> X ${product.quantity}</li>
-			                        </ul>
-			                        <span class="order__number">$${(product.price * product.quantity).toFixed(2)}</span>
-			                    </div> `
-	    });
-
-	    // Tính tổng giá trị đơn hàng
-	    const totalPrice = products.reduce((total, product) => total + (product.price * product.quantity), 0);
-	    document.getElementById('total-price').innerText = `$${totalPrice.toFixed(2)}`;
-		$('.order-items').append(dataCart)
+	    $('.order-summery__number').text(`$${total.toFixed(2)}`);
+	    $('.order-summery__number-two').text(`$${total.toFixed(2)}`);
 	}
 
-	// Gọi hàm render khi trang được tải
-	document.addEventListener('DOMContentLoaded', renderProducts);
+	// Tăng số lượng sản phẩm
+	$(document).on('click', '.product-qty__increment', function() {
+	    const input = $(this).siblings('.product-qty__value');
+	    let value = parseInt(input.val());
+	    input.val(value); // Tăng thêm 1
+	    updateCartTotal(); // Cập nhật tổng giỏ hàng
+	});
+
+	// Giảm số lượng sản phẩm
+	$(document).on('click', '.product-qty__decrement', function() {
+	    const input = $(this).siblings('.product-qty__value');
+	    let value = parseInt(input.val());
+	    if (value > 1) {
+	        input.val(value); // Giảm đi 1
+	    }
+		updateCartTotal(); // Cập nhật tổng giỏ hàng
+	});
+
+	// Xóa sản phẩm khỏi giỏ hàng
+	$(document).on('click', '.delete-icon', function() {
+	    $(this).closest('tr').remove();
+	    updateCartTotal();
+	});
+
+	// Khởi động hàm cập nhật tổng khi trang được tải
+	$(document).ready(function() {
+	    updateCartTotal();
+	});
+
+	let products = JSON.parse(localStorage.getItem('cart')) || [];
+
+	function renderCartItems() {
+	    const cartBody = document.getElementById('cart-body');
+	    cartBody.innerHTML = ''; // Xóa nội dung cũ
+
+	    products.forEach(product => {
+	        const subtotal = product.price * product.quantity;
+	        const row = `
+	            <tr>
+					<input type="hidden" class="product_id" value="${product.id}">
+	                <td data-label="Product Name">
+	                    <div class="customer">
+	                        <div class="customer__thumb">
+	                            <img src="${apiUrlBackend}/assets/upload${product.images}" alt="">
+	                        </div>
+	                        <div class="customer__content">
+	                            <h6 class="customer__name">${product.name}</h6>
+	                        </div>
+	                    </div>
+	                </td>
+	                <td data-label="Until Price">$${product.price}</td>
+	                <td data-label="Qty">
+	                    <div class="qty-cart d-flex style-two">
+	                        <div class="product-qty">
+	                            <button type="button" class="product-qty__decrement"><i class="las la-angle-down"></i></button>
+	                            <input type="number" class="product-qty__value" value="${product.quantity}">
+	                            <button type="button" class="product-qty__increment"><i class="las la-angle-up"></i></button>
+	                        </div>
+	                    </div>
+	                </td>
+	                <td data-label="Subtotal">$${subtotal.toFixed(2)}</td>
+	                <td data-label="Delete">
+	                    <button type="button" class="delete-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete">
+	                        <i class="las la-trash-alt"></i>
+	                    </button>
+	                </td>
+	            </tr>
+	        `;
+	        cartBody.innerHTML += row; // Thêm dòng sản phẩm vào bảng
+	    });
+	}
+
+	// Gọi hàm để render sản phẩm khi trang được tải
+	document.addEventListener('DOMContentLoaded', renderCartItems);
+	
+	// Xóa sản phẩm khỏi giỏ hàng
+	$(document).on('click', '.delete-icon', function() {
+	    const row = $(this).closest('tr');
+	    const productName = row.find('.customer__name').text(); // Lấy tên sản phẩm để tìm trong local storage
+
+	    // Xóa sản phẩm khỏi local storage
+	    products = products.filter(product => product.name !== productName);
+	    localStorage.setItem('cart', JSON.stringify(products)); // Cập nhật local storage
+
+	    row.remove(); // Xóa dòng sản phẩm khỏi bảng
+	    updateCartTotal(); // Cập nhật tổng giỏ hàng
+	});
 </script>
 </body>
 
