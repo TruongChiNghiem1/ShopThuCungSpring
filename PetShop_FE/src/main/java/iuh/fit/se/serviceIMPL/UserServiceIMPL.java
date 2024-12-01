@@ -11,6 +11,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
+
+import iuh.fit.se.entities.Role;
 import iuh.fit.se.entities.User;
 import iuh.fit.se.services.UserService;
 import iuh.fit.se.utils.APResponse;
@@ -104,6 +106,31 @@ public class UserServiceIMPL implements UserService {
 	            return new APResponse(500, null, null, "Update failed: " + e.getMessage());
 	        }
 	    }
+	 
+	 
+	 @Override
+	 public APResponse findByRole(Role role) {
+	     try {
+	         // Gửi yêu cầu GET đến API của backend
+	         return restClient.get()
+	                 .uri(diaChi + "/users/role?role=" + role.toString()) 
+	                 .accept(MediaType.APPLICATION_JSON)
+	                 .exchange((request, response) -> {
+	                     APResponse apResponse = null;
+	                     if (response.getBody().available() > 0) {
+	                        
+	                         apResponse = objectMapper.readValue(response.getBody(), APResponse.class);
+	                     }
+	                     return apResponse;
+	                 });
+	     } catch (RestClientException e) {
+	         // Xử lý lỗi nếu xảy ra
+	         return new APResponse(500, null, null, "Find by role failed: " + e.getMessage());
+	     }
+	 }
+
+	 
+	 
 
 	 @Override
 		public APResponse changePasswordUser(long id, String oldPassword, String newPassword, String confirmPassword) {

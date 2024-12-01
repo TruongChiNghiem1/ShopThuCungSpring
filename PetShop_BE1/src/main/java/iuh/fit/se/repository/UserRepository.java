@@ -1,6 +1,10 @@
 package iuh.fit.se.repository;
 
+import iuh.fit.se.entities.Role;
 import iuh.fit.se.entities.User;
+
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
@@ -13,4 +17,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
 	User findByEmailAddress(String emailAddress);
 
 	User findByEmailAddressAndPassword(String emailAddress, String password);
+	
+	 List<User> findByRole(Role role);
 }
